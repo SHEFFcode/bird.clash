@@ -1,0 +1,10 @@
+#ifndef __DEFINITIONS_H__
+#define __DEFINITIONS_H__
+
+#define PTM_RATIO 32
+
+#define BIRD_COLLISION_BITMASK 0x000001
+#define BORDER_COLLISION_BITMASK 0x000002
+
+
+#endif // __DEFINITIONS_H__
