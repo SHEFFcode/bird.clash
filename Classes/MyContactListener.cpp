@@ -5,8 +5,9 @@ USING_NS_CC;
 
 void MyContactListener::BeginContact(b2Contact* contact)
 {
-    UserDefault *def = UserDefault::getInstance();
     Size visibleSize = Director::getInstance()->getVisibleSize();
+    
+    UserDefault *def = UserDefault::getInstance();
     int visibleWidth = visibleSize.width;
     int visibleHeight = visibleSize. height;
     int halfVisibleWidth = visibleSize.width / 2;
@@ -39,7 +40,9 @@ void MyContactListener::BeginContact(b2Contact* contact)
         auto birdTag = birdSprite->getTag();
         long borderCheck = (long)border->GetUserData();
         
-        auto blue = def->getIntegerForKey("blue", 0);
+        auto blue1 = def->getIntegerForKey("blue1");
+        auto blue2 = def->getIntegerForKey("blue2");
+        auto blue3 = def->getIntegerForKey("blue3");
         auto velocity = def->getFloatForKey("velocity", 0);
         
         auto rotation = rand() % 46 + 1;
@@ -107,7 +110,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
             {
                 if( birdX > halfVisibleWidth )
                 {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_left.png");
                     } else {
                         birdSprite->setTexture("blue_left.png");
@@ -117,7 +120,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
                     positionX = -(birdX + xPos);
                     positionY = birdY + yPos;
                 } else {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_right.png");
                     } else {
                         birdSprite->setTexture("blue_right.png");
@@ -128,7 +131,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
                     positionY = birdY + yPos;
                 }
             } else {  // Right
-                if(whichBird != blue) {
+                if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                     birdSprite->setTexture("bird_left.png");
                 } else {
                     birdSprite->setTexture("blue_left.png");
@@ -153,17 +156,18 @@ void MyContactListener::BeginContact(b2Contact* contact)
             {
                 if( birdX > halfVisibleWidth )
                 {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_left.png");
                     } else {
                         birdSprite->setTexture("blue_left.png");
                     }
+
                     birdSprite->setTag(3);
                     birdSprite->setRotation(-rotation);
                     positionX = -(birdX + xPos);
                     positionY = -(birdY + yPos);
                 } else {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_right.png");
                     } else {
                         birdSprite->setTexture("blue_right.png");
@@ -174,11 +178,12 @@ void MyContactListener::BeginContact(b2Contact* contact)
                     positionY = -(birdY + yPos);
                 }
             } else {  // Right
-                if(whichBird != blue) {
+                if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                     birdSprite->setTexture("bird_left.png");
                 } else {
                     birdSprite->setTexture("blue_left.png");
                 }
+
                 if( birdY > halfVisibleHeight )
                 {
                     birdSprite->setTag(5);
@@ -199,17 +204,18 @@ void MyContactListener::BeginContact(b2Contact* contact)
             {
                 if( birdX > halfVisibleWidth )
                 {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_left.png");
                     } else {
                         birdSprite->setTexture("blue_left.png");
                     }
+
                     birdSprite->setTag(7);
                     birdSprite->setRotation(rotation);
                     positionX = -(birdX + xPos);
                     positionY = birdY + yPos;
                 } else {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_right.png");
                     } else {
                         birdSprite->setTexture("blue_right.png");
@@ -220,7 +226,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
                     positionY = birdY + yPos;
                 }
             } else {  // Left
-                if(whichBird != blue) {
+                if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                     birdSprite->setTexture("bird_right.png");
                 } else {
                     birdSprite->setTexture("blue_right.png");
@@ -245,17 +251,18 @@ void MyContactListener::BeginContact(b2Contact* contact)
             {
                 if( birdX > halfVisibleWidth )
                 {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_left.png");
                     } else {
                         birdSprite->setTexture("blue_left.png");
                     }
+
                     birdSprite->setTag(3);
                     birdSprite->setRotation(-rotation);
                     positionX = -(birdX + xPos);
                     positionY = -(birdY + yPos);
                 } else {
-                    if(whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         birdSprite->setTexture("bird_right.png");
                     } else {
                         birdSprite->setTexture("blue_right.png");
@@ -266,7 +273,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
                     positionY = -(birdY + yPos);
                 }
             } else {  // Left
-                if(whichBird != blue) {
+                if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                     birdSprite->setTexture("bird_right.png");
                 } else {
                     birdSprite->setTexture("blue_right.png");

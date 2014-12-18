@@ -58,7 +58,7 @@ bool Store::init()
     __String *doneString = __String::create("Done");
     __String *buyString = __String::create("Buy");
     
-    auto storeText = Label::createWithTTF( storeString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.075);
+    auto storeText = Label::createWithTTF( storeString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.075);
     storeText->setColor(Color3B::BLACK);
     storeText->setPosition(Point(startWidth + (backgroundWidth * 0.1), startHeight + (backgroundHeight * 0.935)));
     
@@ -116,63 +116,63 @@ bool Store::init()
     auto banner3 = Sprite::create("menu_purchase/banner.png");
     banner3->setPosition(Point(buy4->getPositionX(), startHeight + (backgroundHeight * 0.42)));
     
-    auto bannerText1 = Label::createWithTTF("Save 20%", "fonts/Arial_Regular.ttf", visibleSize.height * 0.036);
+    auto bannerText1 = Label::createWithTTF("Save 20%", "Arial_Regular.ttf", visibleSize.height * 0.036);
     bannerText1->setColor(Color3B::WHITE);
     bannerText1->setPosition(Point(banner1->getPositionX(), banner1->getPositionY() + (backgroundHeight * 0.008)));
     
-    auto bannerText2 = Label::createWithTTF("Save 33%", "fonts/Arial_Regular.ttf", visibleSize.height * 0.036);
+    auto bannerText2 = Label::createWithTTF("Save 33%", "Arial_Regular.ttf", visibleSize.height * 0.036);
     bannerText2->setColor(Color3B::WHITE);
     bannerText2->setPosition(Point(banner2->getPositionX(), banner2->getPositionY() + (backgroundHeight * 0.008)));
     
-    auto bannerText3 = Label::createWithTTF("Save 50%", "fonts/Arial_Regular.ttf", visibleSize.height * 0.036);
+    auto bannerText3 = Label::createWithTTF("Save 50%", "Arial_Regular.ttf", visibleSize.height * 0.036);
     bannerText3->setColor(Color3B::WHITE);
     bannerText3->setPosition(Point(banner3->getPositionX(), banner3->getPositionY() + (backgroundHeight * 0.008)));
     
-    auto creditsText1 = Label::createWithTTF("+400", "fonts/Arial_Regular.ttf", visibleSize.height * 0.08);
+    auto creditsText1 = Label::createWithTTF("+400", "Arial_Regular.ttf", visibleSize.height * 0.08);
     creditsText1->setColor(Color3B::RED);
     creditsText1->setPosition(Point(buy1->getPositionX() - (backgroundWidth * 0.008), startHeight + (backgroundHeight * 0.71)));
     
-    auto creditsText2 = Label::createWithTTF("+1000", "fonts/Arial_Regular.ttf", visibleSize.height * 0.08);
+    auto creditsText2 = Label::createWithTTF("+1000", "Arial_Regular.ttf", visibleSize.height * 0.08);
     creditsText2->setColor(Color3B::RED);
     creditsText2->setPosition(Point(buy2->getPositionX() - (backgroundWidth * 0.008), startHeight + (backgroundHeight * 0.71)));
     
-    auto creditsText3 = Label::createWithTTF("+3000", "fonts/Arial_Regular.ttf", visibleSize.height * 0.08);
+    auto creditsText3 = Label::createWithTTF("+3000", "Arial_Regular.ttf", visibleSize.height * 0.08);
     creditsText3->setColor(Color3B::RED);
     creditsText3->setPosition(Point(buy3->getPositionX() - (backgroundWidth * 0.008), startHeight + (backgroundHeight * 0.33)));
     
-    auto creditsText4 = Label::createWithTTF("+8000", "fonts/Arial_Regular.ttf", visibleSize.height * 0.08);
+    auto creditsText4 = Label::createWithTTF("+8000", "Arial_Regular.ttf", visibleSize.height * 0.08);
     creditsText4->setColor(Color3B::RED);
     creditsText4->setPosition(Point(buy4->getPositionX() - (backgroundWidth * 0.008), startHeight + (backgroundHeight * 0.33)));
     
-    auto priceText1 = Label::createWithTTF("$0.99", "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto priceText1 = Label::createWithTTF("$0.99", "Arial_Regular.ttf", visibleSize.height * 0.04);
     priceText1->setColor(Color3B::BLACK);
     priceText1->setPosition(Point(buy1->getPositionX(), startHeight + (backgroundHeight * 0.635)));
     
-    auto priceText2 = Label::createWithTTF("$1.99", "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto priceText2 = Label::createWithTTF("$1.99", "Arial_Regular.ttf", visibleSize.height * 0.04);
     priceText2->setColor(Color3B::BLACK);
     priceText2->setPosition(Point(buy2->getPositionX(), startHeight + (backgroundHeight * 0.635)));
     
-    auto priceText3 = Label::createWithTTF("$4.99", "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto priceText3 = Label::createWithTTF("$4.99", "Arial_Regular.ttf", visibleSize.height * 0.04);
     priceText3->setColor(Color3B::BLACK);
     priceText3->setPosition(Point(buy3->getPositionX(), startHeight + (backgroundHeight * 0.255)));
     
-    auto priceText4 = Label::createWithTTF("$9.99", "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto priceText4 = Label::createWithTTF("$9.99", "Arial_Regular.ttf", visibleSize.height * 0.04);
     priceText4->setColor(Color3B::BLACK);
     priceText4->setPosition(Point(buy4->getPositionX(), startHeight + (backgroundHeight * 0.255)));
     
-    auto buyText1 = Label::createWithTTF( buyString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText1 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText1->setColor(Color3B::WHITE);
     buyText1->setPosition(Point(buy1->getPositionX(), buy1->getPositionY()));
     
-    auto buyText2 = Label::createWithTTF( buyString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText2 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText2->setColor(Color3B::WHITE);
     buyText2->setPosition(Point(buy2->getPositionX(), buy2->getPositionY()));
     
-    auto buyText3 = Label::createWithTTF( buyString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText3 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText3->setColor(Color3B::WHITE);
     buyText3->setPosition(Point(buy3->getPositionX(), buy3->getPositionY()));
     
-    auto buyText4 = Label::createWithTTF( buyString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText4 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText4->setColor(Color3B::WHITE);
     buyText4->setPosition(Point(buy4->getPositionX(), buy4->getPositionY()));
     
@@ -180,7 +180,7 @@ bool Store::init()
     auto done = MenuItemImage::create("menu_purchase/done2.png", "menu_purchase/done2.png", CC_CALLBACK_1(Store::GoToGamePlay, this));
     done->setPosition(Point(startWidth + (backgroundWidth * 0.5), startHeight + (backgroundHeight * 0.06)));
     
-    auto doneText = Label::createWithTTF( doneString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto doneText = Label::createWithTTF( doneString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
     doneText->setColor(Color3B::BLACK);
     doneText->setPosition(Point(done->getPositionX(), done->getPositionY()));
     

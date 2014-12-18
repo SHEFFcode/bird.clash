@@ -95,11 +95,13 @@ private:
     void Rate(cocos2d::Ref *sender);
     void Replay(cocos2d::Ref *sender);
     void FacebookShare(cocos2d::Ref *sender);
+    void Tutorial(cocos2d::Ref *sender);
     void Sound(cocos2d::Ref *sender);
     void GoToStore(cocos2d::Ref *sender);
     void UseCherries(cocos2d::Ref *sender);
     void PlayQuack();
     void RemoveBird( cocos2d::Sprite *sprite );
+    void RemoveText( cocos2d::Label *label );
 
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
     //AdMob

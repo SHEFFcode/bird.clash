@@ -57,7 +57,7 @@ bool CherryStore::init()
     __String *storeString = __String::create("Store");
     __String *doneString = __String::create("Done");
     
-    auto storeText = Label::createWithTTF( storeString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.075);
+    auto storeText = Label::createWithTTF( storeString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.075);
     storeText->setColor(Color3B::BLACK);
     storeText->setPosition(Point(startWidth + (backgroundWidth * 0.1), startHeight + (backgroundHeight * 0.935)));
     
@@ -69,7 +69,7 @@ bool CherryStore::init()
     auto done = MenuItemImage::create("menu_purchase/done2.png", "menu_purchase/done2.png", CC_CALLBACK_1(CherryStore::GoToGamePlay, this));
     done->setPosition(Point(startWidth + (backgroundWidth * 0.5), startHeight + (backgroundHeight * 0.06)));
     
-    auto doneText = Label::createWithTTF( doneString->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto doneText = Label::createWithTTF( doneString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
     doneText->setColor(Color3B::BLACK);
     doneText->setPosition(Point(done->getPositionX(), done->getPositionY()));
     

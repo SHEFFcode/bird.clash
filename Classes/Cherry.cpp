@@ -1,11 +1,16 @@
 #include "Cherry.h"
 #include "Math.h"
+#include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
 Cherry::Cherry( cocos2d::Layer *layer )
 {
     auto visibleSize = Director::getInstance()->getVisibleSize();
+    
+    UserDefault *def = UserDefault::getInstance();
+    soundOn = def->getIntegerForKey("sound");
+    def->flush();
 
     auto cherry = Sprite::create("cherry.png");
     cherry->setTag(999);
@@ -36,8 +41,24 @@ bool Cherry::onTouchBegan( cocos2d::Touch *touch, cocos2d::Event *event, cocos2d
     
     if (rect.containsPoint(locationInNode))
     {
+        auto cherryAnimation = Sprite::create("cherry_animation.png");
+        cherryAnimation->setPosition(Vec2(target->getPositionX(), target->getPositionY()));
+        cherryAnimation->setScale(0.25);
+        layer->addChild(cherryAnimation,49);
         layer->removeChild(target);
+        auto animation = ScaleTo::create(0.1, 0.5);
+        cherryAnimation->runAction(animation);
+        Sequence *seq = Sequence::create(DelayTime::create(0.1), CallFunc::create(std::bind(&Cherry::RemoveCherry, this, cherryAnimation, layer)), NULL);
+        layer->runAction(seq);
+        if(soundOn){
+            CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/cherry.wav");
+        }
         return true;
     }
     return false;
+}
+
+void Cherry::RemoveCherry( cocos2d::Sprite *sprite, cocos2d::Layer *layer )
+{
+    layer->removeChild(sprite);
 }

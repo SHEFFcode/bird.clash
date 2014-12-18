@@ -126,14 +126,21 @@ bool GamePlay::init()
     def->setIntegerForKey("missed_birds", 0);
     def->setIntegerForKey("bird_count", 0);
     def->setIntegerForKey("score", 0);
+    def->setIntegerForKey("power3_activated", 0);
+    def->setIntegerForKey("blue1", 0);
+    def->setIntegerForKey("blue2", 0);
+    def->setIntegerForKey("blue3", 0);
     
     auto blue_bird = rand() % 4 + 1;
     auto whichBird = rand() % 3 + 1;
     if( blue_bird == 1 )
     {
-        def->setIntegerForKey("blue", whichBird);
-    } else {
-        def->setIntegerForKey("blue", 0);
+        if(whichBird == 1)
+            def->setIntegerForKey("blue1", 1);
+        if(whichBird == 2)
+            def->setIntegerForKey("blue2", 1);
+        if(whichBird == 3)
+            def->setIntegerForKey("blue3", 1);
     }
     auto calculatedVelocity = (640 / visibleSize.height) * 0.002;
     def->setFloatForKey("velocity", calculatedVelocity);
@@ -208,9 +215,9 @@ bool GamePlay::init()
     playItem->setScale(ratio);
     playItem->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.415));
     
-    // Facebook
-    auto share = MenuItemImage::create("facebook_front.png", "facebook_front.png", CC_CALLBACK_1(GamePlay::FacebookShare, this));
-    share->setPosition(Point(((visibleSize.width / 2 - playItem->getContentSize().width) / 2), visibleSize.height * 0.55));
+    // Tutorial
+    auto tutorial = MenuItemImage::create("question.png", "question.png", CC_CALLBACK_1(GamePlay::Tutorial, this));
+    tutorial->setPosition(Point(((visibleSize.width / 2 - playItem->getContentSize().width) / 2), visibleSize.height * 0.55));
     
     // Sound
     soundSprite = Sprite::create("sound.png");
@@ -224,21 +231,21 @@ bool GamePlay::init()
     
     // Store
     auto storeItem = MenuItemImage::create("store.png", "store.png", CC_CALLBACK_1(GamePlay::GoToStore, this));
-    storeItem->setPosition(Point(visibleSize.width - share->getPositionX(), visibleSize.height * 0.55));
+    storeItem->setPosition(Point(visibleSize.width - tutorial->getPositionX(), visibleSize.height * 0.55));
     
     // Cherry
     auto cherryItem = MenuItemImage::create("cherry_front.png", "cherry_front.png", CC_CALLBACK_1(GamePlay::UseCherries, this));
-    cherryItem->setPosition(Point(visibleSize.width - share->getPositionX(), visibleSize.height * 0.28));
+    cherryItem->setPosition(Point(visibleSize.width - tutorial->getPositionX(), visibleSize.height * 0.28));
     
     // Menu
-    menu = Menu::create(playItem, share, sound, storeItem, cherryItem, NULL);
+    menu = Menu::create(playItem, tutorial, sound, storeItem, cherryItem, NULL);
     menu->setPosition(Point::ZERO);
     
     this->addChild(menu);
     
     __String *play = __String::create("Play");
 
-    playText = Label::createWithTTF( play->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.1);
+    playText = Label::createWithTTF( play->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.1);
     playText->setColor(Color3B::WHITE);
     playText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.415));
 
@@ -247,7 +254,7 @@ bool GamePlay::init()
     __String *gameName = __String::create("Bird Clash");
     Color3B color = {0, 173, 239};
     
-    gameText = Label::createWithTTF( gameName->getCString(), "fonts/ShowG.ttf", visibleSize.height * 0.2);
+    gameText = Label::createWithTTF( gameName->getCString(), "ShowG.ttf", visibleSize.height * 0.2);
     gameText->setColor(color);
     gameText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.8));
     
@@ -276,11 +283,11 @@ void GamePlay::StartGame(cocos2d::Ref *sender)
     def->flush();
     
     if(soundOn)
-        CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sounds/ambience.wav");
+        CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sounds/ambience.mp3", true);
     
     srand((unsigned)time(NULL));
     
-    auto createCherry = rand() % 3 + 1;
+    auto createCherry = rand() % 2 + 1;
     if(createCherry == 1) {
         auto cherryTime = rand() % 3 + 1;
         this->scheduleOnce(schedule_selector(GamePlay::AddCherry), cherryTime);
@@ -358,14 +365,18 @@ void GamePlay::RemoveCherry( float dt )
 
 void GamePlay::update( float dt )
 {
+    Size visibleSize = Director::getInstance()->getVisibleSize();
     UserDefault *def = UserDefault::getInstance();
     float32 timeStep = 1.0f / 60.0f;
     int32 velocityIterations = 8;
     int32 positionIterations = 1;
     auto bird_count = def->getIntegerForKey("bird_count", 0);
     auto missed_birds = def->getIntegerForKey("missed_birds", 0);
-    auto blue = def->getIntegerForKey("blue", 0);
+    auto blue1 = def->getIntegerForKey("blue1");
+    auto blue2 = def->getIntegerForKey("blue2");
+    auto blue3 = def->getIntegerForKey("blue3");
     auto soundOn = def->getIntegerForKey("sound");
+    auto power3_activated = def->getIntegerForKey("power3_activated");
     long whichBird;
     
     for (int32 i = 0; i < 60; i++)
@@ -392,14 +403,28 @@ void GamePlay::update( float dt )
                             whichBird = (long)f->GetUserData();
                         }
                     }
-                    if( whichBird != blue) {
+                    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                         sprite->setTexture("bird_front.png");
                     } else {
                         sprite->setTexture("blue_front.png");
+     
                         if(soundOn) {
                             Sequence *seq = Sequence::create(DelayTime::create(0.25), CallFunc::create(std::bind(&GamePlay::PlayQuack, this)), NULL);
                             this->runAction(seq);
                         }
+                        // Add +2 here
+                        auto plus2 = Label::createWithTTF("+2", "Arial_Regular.ttf", visibleSize.height * 0.08);
+                        Color3B color = {0, 173, 239};
+                        plus2->setColor(color);
+                        plus2->setPosition(Vec2(sprite->getPositionX(), sprite->getPositionY() + (sprite->getContentSize().height / 2) + (plus2->getContentSize().height / 2)));
+                        
+                        if(!power3_activated){
+                            plus2->setPosition(Vec2(plus2->getPositionX(), sprite->getPositionY() + (sprite->getContentSize().height / 1.5 / 2) + (plus2->getContentSize().height / 2) ));
+                        }
+                        
+                        this->addChild(plus2,1);
+                        Sequence *seq2 = Sequence::create(DelayTime::create(1), CallFunc::create(std::bind(&GamePlay::RemoveText, this, plus2)), NULL);
+                        this->runAction(seq2);
                     }
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(sprite);
                     sprite->setRotation(0);
@@ -413,7 +438,7 @@ void GamePlay::update( float dt )
                     auto score = def->getIntegerForKey("score", 0);
                     auto highScore = def->getIntegerForKey("highScore", 0);
                     score++;
-                    if( whichBird == blue) {
+                    if((whichBird == 1 && blue1) || (whichBird == 2 && blue2) || (whichBird == 3 && blue3)) {
                         score++;
                     }
                     def->setIntegerForKey("score", score);
@@ -488,6 +513,7 @@ void GamePlay::GameOver()
 #endif
     
     this->RemoveCherry(0);
+    powerups->HideAll();
     
     CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
     
@@ -496,7 +522,6 @@ void GamePlay::GameOver()
     UserDefault *def = UserDefault::getInstance();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
-    def->setIntegerForKey("bird_count", 0);
     auto score = def->getIntegerForKey("score", 0);
     auto highScore = def->getIntegerForKey("highScore", 0);
     def->flush();
@@ -511,23 +536,23 @@ void GamePlay::GameOver()
     popover = Node::create();
     popover->setPosition(Point(0,0));
     
-    auto theGameOver = Label::createWithTTF( gameOverText->getCString(), "fonts/ShowG.ttf", visibleSize.height * 0.2);
+    auto theGameOver = Label::createWithTTF( gameOverText->getCString(), "ShowG.ttf", visibleSize.height * 0.2);
     theGameOver->setColor(Color3B::RED);
     theGameOver->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.8));
 
-    auto scoreText = Label::createWithTTF( tempScoreText->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.05);
+    auto scoreText = Label::createWithTTF( tempScoreText->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.05);
     scoreText->setColor(Color3B::BLACK);
     scoreText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.675));
 
-    auto theScore = Label::createWithTTF( tempScore->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.1);
+    auto theScore = Label::createWithTTF( tempScore->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.1);
     theScore->setColor(Color3B::BLACK);
     theScore->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.575));
 
-    auto highScoreText = Label::createWithTTF( tempHighScoreText->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.05);
+    auto highScoreText = Label::createWithTTF( tempHighScoreText->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.05);
     highScoreText->setColor(Color3B::BLACK);
     highScoreText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.475));
     
-    auto theHighScore = Label::createWithTTF( tempHighScore->getCString(), "fonts/Arial_Regular.ttf", visibleSize.height * 0.1);
+    auto theHighScore = Label::createWithTTF( tempHighScore->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.1);
     theHighScore->setColor(Color3B::BLACK);
     theHighScore->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.375));
     
@@ -547,16 +572,16 @@ void GamePlay::GameOver()
     // Add icon menu to bottom
     auto home = MenuItemImage::create("home.png", "home.png", CC_CALLBACK_1(GamePlay::Home, this));
     auto w = home->getContentSize().width;
-    home->setPosition(Vec2(visibleSize.width / 2 - (w * 2.25), visibleSize.height * 0.215));
+    home->setPosition(Vec2(visibleSize.width / 2 - (w * 2), visibleSize.height * 0.215));
     
     auto facebook = MenuItemImage::create("facebook.png", "facebook.png", CC_CALLBACK_1(GamePlay::Share, this));
-    facebook->setPosition(Vec2(visibleSize.width / 2 - (w * 0.75), visibleSize.height * 0.215));
+    facebook->setPosition(Vec2(visibleSize.width / 2 - (w * 0.65), visibleSize.height * 0.215));
     
     auto rate = MenuItemImage::create("rate.png", "rate.png", CC_CALLBACK_1(GamePlay::Rate, this));
-    rate->setPosition(Vec2(visibleSize.width / 2 + (w * 0.75), visibleSize.height * 0.215));
+    rate->setPosition(Vec2(visibleSize.width / 2 + (w * 0.65), visibleSize.height * 0.215));
     
     auto replay = MenuItemImage::create("replay.png", "replay.png", CC_CALLBACK_1(GamePlay::Replay, this));
-    replay->setPosition(Vec2(visibleSize.width / 2 + (w * 2.25), visibleSize.height * 0.215));
+    replay->setPosition(Vec2(visibleSize.width / 2 + (w * 2), visibleSize.height * 0.215));
     
     auto menu2 = Menu::create(home,facebook,rate,replay, NULL);
     menu2->setPosition(Point::ZERO);
@@ -590,7 +615,7 @@ void GamePlay::ResetBirds( float dt )
     
     if(cherryCreated == 0)
     {
-        auto createCherry = rand() % 3 + 1;
+        auto createCherry = rand() % 2 + 1;
         if(createCherry == 1) {
             auto cherryTime = rand() % 3 + 1;
             this->scheduleOnce(schedule_selector(GamePlay::AddCherry), cherryTime);
@@ -600,12 +625,17 @@ void GamePlay::ResetBirds( float dt )
     auto blue_bird = rand() % 4 + 1;
     auto whichBird = rand() % 3 + 1;
     
-    def->setIntegerForKey("blue", 0);
+    def->setIntegerForKey("blue1", 0);
+    def->setIntegerForKey("blue2", 0);
+    def->setIntegerForKey("blue3", 0);
     if( blue_bird == 1 )
     {
-        def->setIntegerForKey("blue", whichBird);
-    } else {
-        def->setIntegerForKey("blue", 0);
+        if(whichBird == 1)
+            def->setIntegerForKey("blue1", 1);
+        if(whichBird == 2)
+            def->setIntegerForKey("blue2", 1);
+        if(whichBird == 3)
+            def->setIntegerForKey("blue3", 1);
     }
     def->setIntegerForKey("bird1_collisions", 0);
     def->setIntegerForKey("bird2_collisions", 0);
@@ -670,6 +700,8 @@ void GamePlay::Replay(cocos2d::Ref *sender)
     
     CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sounds/ambience.wav");
     
+    powerups->ShowAll();
+    
     redX->setTexture("BlackX.png");
     redX->setOpacity(95);
     redX2->setTexture("BlackX.png");
@@ -689,14 +721,20 @@ void GamePlay::Replay(cocos2d::Ref *sender)
     auto whichBird = rand() % 3 + 1;
     
     UserDefault *def = UserDefault::getInstance();
+    def->setIntegerForKey("blue1", 0);
+    def->setIntegerForKey("blue2", 0);
+    def->setIntegerForKey("blue3", 0);
     if( blue_bird == 1 )
     {
-        def->setIntegerForKey("blue", whichBird);
-    }  else {
-        def->setIntegerForKey("blue", 0);
+        if(whichBird == 1)
+            def->setIntegerForKey("blue1", 1);
+        if(whichBird == 2)
+            def->setIntegerForKey("blue2", 1);
+        if(whichBird == 3)
+            def->setIntegerForKey("blue3", 1);
     }
 
-    auto createCherry = rand() % 3 + 1;
+    auto createCherry = rand() % 2 + 1;
     if(createCherry == 1) {
         auto cherryTime = rand() % 3 + 1;
         this->scheduleOnce(schedule_selector(GamePlay::AddCherry), cherryTime);
@@ -710,6 +748,7 @@ void GamePlay::Replay(cocos2d::Ref *sender)
     def->setIntegerForKey("missed_birds", 0);
     def->setIntegerForKey("bird_count", 0);
     def->setIntegerForKey("score", 0);
+    def->setIntegerForKey("power3_activated", 0);
     auto calculatedVelocity = (640 / visibleSize.height) * 0.002;
     def->setFloatForKey("velocity", calculatedVelocity);
     def->flush();
@@ -727,6 +766,11 @@ void GamePlay::RemoveBird( cocos2d::Sprite *sprite )
 }
 
 void GamePlay::FacebookShare(cocos2d::Ref *sender)
+{
+    
+}
+
+void GamePlay::Tutorial(cocos2d::Ref *sender)
 {
     
 }
@@ -776,6 +820,9 @@ void GamePlay::PlayQuack()
     CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/quack.wav");
 }
 
+void GamePlay::RemoveText( cocos2d::Label *label) {
+    this->removeChild(label);
+}
 
 
 

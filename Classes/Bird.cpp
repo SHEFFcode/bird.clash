@@ -19,9 +19,12 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
     // Adjust random region based on previous regions
     UserDefault *def = UserDefault::getInstance();
     auto velocity = def->getFloatForKey("velocity", 0);
+    auto power3_activated = def->getIntegerForKey("power3_activated",0);
     auto bird1_region = def->getIntegerForKey("bird1_region", 0);
     auto bird2_region = def->getIntegerForKey("bird2_region", 0);
-    auto blue = def->getIntegerForKey("blue", 0);
+    auto blue1 = def->getIntegerForKey("blue1");
+    auto blue2 = def->getIntegerForKey("blue2");
+    auto blue3 = def->getIntegerForKey("blue3");
     
     if(bird1_region == 0) {
         def->setIntegerForKey("bird1_region", region);
@@ -41,7 +44,7 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
         }
     }
     
-    if(whichBird != blue) {
+    if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
         bird = Sprite::create("bird_left.png");
     } else {
         bird = Sprite::create("blue_left.png");
@@ -76,7 +79,7 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
     if(region == 1)  // Left
     {
         bird->setPosition(Point(-halfBird,birdY));
-        if(whichBird != blue) {
+        if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
             bird->setTexture("bird_right.png");
         } else {
             bird->setTexture("blue_right.png");
@@ -109,7 +112,7 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
         else   // Before middle of screen on x axis
         {
             bird->setTag(4);
-            if(whichBird != blue) {
+            if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                 bird->setTexture("bird_right.png");
             } else {
                 bird->setTexture("blue_right.png");
@@ -149,7 +152,7 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
         }
         else   // Before middle of screen on x axis
         {
-            if(whichBird != blue) {
+            if((whichBird == 1 && !blue1) || (whichBird == 2 && !blue2) || (whichBird == 3 && !blue3)) {
                 bird->setTexture("bird_right.png");
             } else {
                 bird->setTexture("blue_right.png");
@@ -183,6 +186,12 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
     ballShapeDef.userData = (void*) whichBird;
     ballBody->SetLinearVelocity( b2Vec2(positionX * velocity / PTM_RATIO, positionY * velocity / PTM_RATIO));
     ballBody->CreateFixture(&ballShapeDef);
+    
+    if(!power3_activated){
+        auto tmpScale = bird->getScale();
+        tmpScale = tmpScale / 1.5;
+        bird->setScale(tmpScale);
+    }
     
     layer->addChild(bird, 100);
     
