@@ -30,6 +30,8 @@ public:
     b2Body* ballBody;
     cocos2d::Node* popover;
     cocos2d::Sprite* soundSprite;
+    cocos2d::Sprite* cherrySprite;
+    cocos2d::Label* cherryScore;
     
     bool redCheck;
     bool redCheck2;

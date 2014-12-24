@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1EB7920F1A49CEF20074A0EE /* Tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */; };
+		1EB792101A49CEF20074A0EE /* Tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */; };
 		1EBFD53C1A2D105A00DC1DF8 /* Arial_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFD53B1A2D105A00DC1DF8 /* Arial_Regular.ttf */; };
 		1EBFD53D1A2D105A00DC1DF8 /* Arial_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFD53B1A2D105A00DC1DF8 /* Arial_Regular.ttf */; };
 		1EC94DE11A1BCFA10007B8BF /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = 1EC94DE01A1BCFA10007B8BF /* iphone */; };
@@ -136,6 +138,8 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* birdcrush iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "birdcrush iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tutorial.cpp; sourceTree = "<group>"; };
+		1EB7920E1A49CEF20074A0EE /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
 		1EBFD53B1A2D105A00DC1DF8 /* Arial_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arial_Regular.ttf; sourceTree = "<group>"; };
 		1EC94DE01A1BCFA10007B8BF /* iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iphone; sourceTree = "<group>"; };
 		1EC94DE31A1BD05A0007B8BF /* GamePlay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePlay.cpp; sourceTree = "<group>"; };
@@ -459,6 +463,8 @@
 				1EDC269F1A3639590071F94F /* SplashScreen.h */,
 				1EDC26AD1A3A83170071F94F /* Store.cpp */,
 				1EDC26AE1A3A83170071F94F /* Store.h */,
+				1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */,
+				1EB7920E1A49CEF20074A0EE /* Tutorial.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -660,6 +666,7 @@
 				1EC94DE51A1BD05A0007B8BF /* GamePlay.cpp in Sources */,
 				1EC94DF71A1E53550007B8BF /* MyContactListener.cpp in Sources */,
 				1EDC26A01A3639590071F94F /* SplashScreen.cpp in Sources */,
+				1EB7920F1A49CEF20074A0EE /* Tutorial.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
@@ -684,6 +691,7 @@
 				1EDC26B41A3BE8730071F94F /* CherryStore.cpp in Sources */,
 				1EDC26A81A3904820071F94F /* Cherry.cpp in Sources */,
 				1EDC26B81A3CB92F0071F94F /* Powerups.cpp in Sources */,
+				1EB792101A49CEF20074A0EE /* Tutorial.cpp in Sources */,
 				1EDC26B01A3A83170071F94F /* Store.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

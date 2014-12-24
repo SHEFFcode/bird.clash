@@ -1,6 +1,7 @@
 #include "GamePlay.h"
 #include "Bird.h"
 #include "Cherry.h"
+#include "Tutorial.h"
 #include "Definitions.h"
 #include "Time.h"
 #include "external/Box2d/Box2d.h"
@@ -130,6 +131,9 @@ bool GamePlay::init()
     def->setIntegerForKey("blue1", 0);
     def->setIntegerForKey("blue2", 0);
     def->setIntegerForKey("blue3", 0);
+//    def->setIntegerForKey("power1",1000);
+//    def->setIntegerForKey("power2",1000);
+//    def->setIntegerForKey("power3",1000);
     
     auto blue_bird = rand() % 4 + 1;
     auto whichBird = rand() % 3 + 1;
@@ -242,19 +246,16 @@ bool GamePlay::init()
     menu->setPosition(Point::ZERO);
     
     this->addChild(menu);
-    
-    __String *play = __String::create("Play");
 
-    playText = Label::createWithTTF( play->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.1);
+    playText = Label::createWithTTF("Play", "Arial_Regular.ttf", visibleSize.height * 0.1);
     playText->setColor(Color3B::WHITE);
     playText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.415));
 
     this->addChild(playText,1);
     
-    __String *gameName = __String::create("Bird Clash");
     Color3B color = {0, 173, 239};
     
-    gameText = Label::createWithTTF( gameName->getCString(), "ShowG.ttf", visibleSize.height * 0.2);
+    gameText = Label::createWithTTF( "Bird Clash", "ShowG.ttf", visibleSize.height * 0.2);
     gameText->setColor(color);
     gameText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.8));
     
@@ -280,6 +281,7 @@ void GamePlay::StartGame(cocos2d::Ref *sender)
 #endif
     UserDefault *def = UserDefault::getInstance();
     auto soundOn = def->getIntegerForKey("sound");
+    auto currency = def->getIntegerForKey("cherry_currency", 0);
     def->flush();
     
     if(soundOn)
@@ -308,24 +310,52 @@ void GamePlay::StartGame(cocos2d::Ref *sender)
     // Add X's
     redX = Sprite::create("BlackX.png");
     auto xWidth = redX->getContentSize().width;
-    redX->setPosition(Point(visibleSize.width - (xWidth / 2) - 10, visibleSize.height - (xWidth / 2) - 10));
+    auto adjust = visibleSize.height - (visibleSize.height - (redX->getContentSize().height * 0.75));
+    redX->setPosition(Point(visibleSize.width - adjust, visibleSize.height - (redX->getContentSize().height * 0.75)));
     redX->setOpacity(95);
     redX->retain();
     this->addChild(redX);
     
     redX2 = Sprite::create("BlackX.png");
-    redX2->setPosition(Point( redX->getPositionX() - xWidth - 10, redX->getPositionY()));
+    redX2->setPosition(Point( redX->getPositionX() - (xWidth * 1.25), redX->getPositionY()));
     redX2->setOpacity(95);
     redX2->retain();
     this->addChild(redX2);
     
     redX3 = Sprite::create("BlackX.png");
-    redX3->setPosition(Point( redX2->getPositionX() - xWidth - 10, redX2->getPositionY()));
+    redX3->setPosition(Point( redX2->getPositionX() - (xWidth * 1.25), redX2->getPositionY()));
     redX3->setOpacity(95);
     redX3->retain();
     this->addChild(redX3);
     
     powerups = new Powerups(this,world);
+    
+    auto instructions = Label::createWithTTF("Tap birds to score points.", "Arial_Regular.ttf", visibleSize.height * 0.05);
+    instructions->setColor(Color3B::BLACK);
+    instructions->setOpacity(125);
+    instructions->setPosition(Point(visibleSize.width / 2, playText->getPositionY() - (playText->getContentSize().height / 2) - (instructions->getContentSize().height / 2)));
+    
+    this->addChild(instructions,1);
+    
+    auto hide = FadeTo::create(1,0);
+    
+    Sequence *seq = Sequence::create(DelayTime::create(4), hide, NULL);
+    instructions->runAction(seq);
+    
+    cherrySprite = Sprite::create("cherry.png");
+    cherrySprite->setPosition(Vec2((cherrySprite->getContentSize().width * 0.4), redX->getPositionY()));
+    cherrySprite->setOpacity(125);
+    cherrySprite->setScale(0.5);
+    this->addChild(cherrySprite);
+    
+    __String *tmpCurrency = __String::createWithFormat("%i", currency);
+    
+    cherryScore = Label::createWithTTF( tmpCurrency->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.05);
+    cherryScore->setColor(Color3B::RED);
+    cherryScore->setOpacity(95);
+    cherryScore->setPosition(Vec2(cherrySprite->getPositionX() + (cherrySprite->getContentSize().width / 2) + (cherryScore->getContentSize().width / 2), cherrySprite->getPositionY() - (cherryScore->getContentSize().height * 0.15)));
+    
+    this->addChild(cherryScore,1);
     
     this->scheduleOnce(schedule_selector(GamePlay::AddBird), 0.5);
     this->scheduleOnce(schedule_selector(GamePlay::AddBird2), 1);
@@ -351,7 +381,7 @@ void GamePlay::AddBird3 ( float dt )
 void GamePlay::AddCherry( float dt )
 {
     cherryCreated = 1;
-    cherry = new Cherry(this);
+    cherry = new Cherry(this, cherryScore);
     this->scheduleOnce(schedule_selector(GamePlay::RemoveCherry), 2);
 }
 
@@ -466,21 +496,30 @@ void GamePlay::update( float dt )
         if(soundOn)
             CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/flyAway.mp3");
         redX3->setTexture("RedX.png");
+        redX3->setScale(1.5);
         redX3->setOpacity(255);
+        auto scale = ScaleTo::create(0.5, 1);
+        redX3->runAction(scale);
     }
     if(missed_birds == 2 && redCheck2 == 0) {
         redCheck2 = 1;
         if(soundOn)
             CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/flyAway.mp3");
         redX2->setTexture("RedX.png");
+        redX2->setScale(1.5);
         redX2->setOpacity(255);
+        auto scale = ScaleTo::create(0.5, 1);
+        redX2->runAction(scale);
     }
     if(missed_birds == 3 && redCheck == 0) {
         redCheck = 1;
         if(soundOn)
             CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/flyAway.mp3");
         redX->setTexture("RedX.png");
+        redX->setScale(1.5);
         redX->setOpacity(255);
+        auto scale = ScaleTo::create(0.5, 1);
+        redX->runAction(scale);
     }
     
     if(bird_count >= 3 && missed_birds < 3)
@@ -514,6 +553,18 @@ void GamePlay::GameOver()
     
     this->RemoveCherry(0);
     powerups->HideAll();
+    
+    auto hide = FadeTo::create(1,0);
+    auto hide2 = FadeTo::create(1,0);
+    auto hide3 = FadeTo::create(1,0);
+    auto hide4 = FadeTo::create(1,0);
+    auto hide5 = FadeTo::create(1,0);
+
+    redX->runAction(hide);
+    redX2->runAction(hide2);
+    redX3->runAction(hide3);
+    cherrySprite->runAction(hide4);
+    cherryScore->runAction(hide5);
     
     CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
     
@@ -698,9 +749,10 @@ void GamePlay::Replay(cocos2d::Ref *sender)
     AdmobHelper::hideAd();
 #endif
     
-    CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sounds/ambience.wav");
-    
     powerups->ShowAll();
+    
+    cherrySprite->setOpacity(255);
+    cherryScore->setOpacity(255);
     
     redX->setTexture("BlackX.png");
     redX->setOpacity(95);
@@ -711,6 +763,9 @@ void GamePlay::Replay(cocos2d::Ref *sender)
     
     playText->setOpacity(95);
     playText->setString("0");
+    
+    cherrySprite->setOpacity(255);
+    cherryScore->setOpacity(255);
     
     redCheck = 0;
     redCheck2 = 0;
@@ -724,6 +779,10 @@ void GamePlay::Replay(cocos2d::Ref *sender)
     def->setIntegerForKey("blue1", 0);
     def->setIntegerForKey("blue2", 0);
     def->setIntegerForKey("blue3", 0);
+    auto soundOn = def->getIntegerForKey("sound", 1);
+    if(soundOn)
+        CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sounds/ambience.mp3", true);
+    
     if( blue_bird == 1 )
     {
         if(whichBird == 1)
@@ -772,7 +831,15 @@ void GamePlay::FacebookShare(cocos2d::Ref *sender)
 
 void GamePlay::Tutorial(cocos2d::Ref *sender)
 {
+#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+    iOSHelper::hideAdmobBanner();
+#endif
+#if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
+    AdmobHelper::hideAd();
+#endif
     
+    auto scene = Tutorial::createScene();
+    Director::getInstance()->replaceScene(scene);
 }
 
 void GamePlay::Sound(cocos2d::Ref *sender)

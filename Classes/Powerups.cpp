@@ -309,13 +309,18 @@ void Powerups::HideShowMenu( cocos2d::Ref *sender )
 }
 
 void Powerups::HideAll() {
-    menu2->setOpacity(0);
     menu2->setEnabled(false);
-    menu->setOpacity(0);
     menu->setEnabled(false);
-    power1Text->setOpacity(0);
-    power2Text->setOpacity(0);
-    power3Text->setOpacity(0);
+    auto hide1 = FadeTo::create(1,0);
+    auto hide2 = FadeTo::create(1,0);
+    auto hide3 = FadeTo::create(1,0);
+    auto hide4 = FadeTo::create(1,0);
+    auto hide5 = FadeTo::create(1,0);
+    menu2->runAction(hide1);
+    menu->runAction(hide2);
+    power1Text->runAction(hide3);
+    power2Text->runAction(hide4);
+    power3Text->runAction(hide5);
 }
 
 void Powerups::ShowAll() {

@@ -4,7 +4,7 @@
 
 USING_NS_CC;
 
-Cherry::Cherry( cocos2d::Layer *layer )
+Cherry::Cherry( cocos2d::Layer *layer, cocos2d::Label *cherryScore)
 {
     auto visibleSize = Director::getInstance()->getVisibleSize();
     
@@ -27,11 +27,11 @@ Cherry::Cherry( cocos2d::Layer *layer )
     //setup touch listener
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->setSwallowTouches( true );
-    touchListener->onTouchBegan = CC_CALLBACK_2( Cherry::onTouchBegan, this, layer );
+    touchListener->onTouchBegan = CC_CALLBACK_2( Cherry::onTouchBegan, this, layer, cherryScore);
     Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, cherry);
 }
 
-bool Cherry::onTouchBegan( cocos2d::Touch *touch, cocos2d::Event *event, cocos2d::Layer *layer )
+bool Cherry::onTouchBegan( cocos2d::Touch *touch, cocos2d::Event *event, cocos2d::Layer *layer, cocos2d::Label *cherryScore)
 {
     auto target = static_cast<Sprite*>(event->getCurrentTarget());
     
@@ -41,6 +41,13 @@ bool Cherry::onTouchBegan( cocos2d::Touch *touch, cocos2d::Event *event, cocos2d
     
     if (rect.containsPoint(locationInNode))
     {
+        UserDefault *def = UserDefault::getInstance();
+        auto currency = def->getIntegerForKey("cherry_currency");
+        currency++;
+        def->setIntegerForKey("cherry_currency", currency);
+        __String *tempScore = __String::createWithFormat("%i", currency);
+        cherryScore->setString(tempScore->getCString());
+        def->flush();
         auto cherryAnimation = Sprite::create("cherry_animation.png");
         cherryAnimation->setPosition(Vec2(target->getPositionX(), target->getPositionY()));
         cherryAnimation->setScale(0.25);
