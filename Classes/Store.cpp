@@ -251,7 +251,7 @@ bool Store::onTouchBegan( cocos2d::Touch *touch, cocos2d::Event *event )
 
 void Store::GoToGamePlay( cocos2d::Ref *sender )
 {
-    auto scene = GamePlay::createScene();
+    auto scene = GamePlay::createScene(0);
     Director::getInstance()->replaceScene(scene);
 }
 

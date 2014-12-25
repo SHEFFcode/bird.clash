@@ -204,7 +204,7 @@ bool Tutorial::init()
 
 void Tutorial::GoToGamePlay( cocos2d::Ref *sender )
 {
-    auto scene = GamePlay::createScene();
+    auto scene = GamePlay::createScene(0);
     Director::getInstance()->replaceScene(scene);
 }
 
@@ -555,7 +555,7 @@ void Tutorial::Finish(){
 }
 
 void Tutorial::FinishRedirect(){
-    auto scene = GamePlay::createScene();
+    auto scene = GamePlay::createScene(0);
     Director::getInstance()->replaceScene(scene);
 }
 

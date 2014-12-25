@@ -47,7 +47,7 @@ public:
     Powerups *powerups;
     
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
-    static cocos2d::Scene* createScene();
+    static cocos2d::Scene* createScene( unsigned int startGame );
     
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();
@@ -87,16 +87,10 @@ private:
     void AddBird2( float dt );
     void AddBird3( float dt );
     void ResetBirds( float dt );
-    void RemoveBirds( float dt );
     void update ( float dt );
     void AddCherry ( float dt );
     void RemoveCherry ( float dt );
-    void GameOver();
-    void Home(cocos2d::Ref *sender);
-    void Share(cocos2d::Ref *sender);
-    void Rate(cocos2d::Ref *sender);
-    void Replay(cocos2d::Ref *sender);
-    void FacebookShare(cocos2d::Ref *sender);
+    void GameOver( float dt );
     void Tutorial(cocos2d::Ref *sender);
     void Sound(cocos2d::Ref *sender);
     void GoToStore(cocos2d::Ref *sender);

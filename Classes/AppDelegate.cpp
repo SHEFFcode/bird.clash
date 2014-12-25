@@ -53,7 +53,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 #if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
     auto scene = SplashScreen::createScene();
 #else
-    auto scene = GamePlay::createScene();
+    auto scene = GamePlay::createScene(0);
 #endif
     
     // run

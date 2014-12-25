@@ -44,7 +44,7 @@ bool SplashScreen::init()
 
 void SplashScreen::GoToGamePlay(float dt)
 {
-    auto scene = GamePlay::createScene();
+    auto scene = GamePlay::createScene(0);
     Director::getInstance()->replaceScene(scene);
 }
 

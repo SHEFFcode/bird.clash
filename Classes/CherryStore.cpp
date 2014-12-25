@@ -140,7 +140,7 @@ bool CherryStore::onTouchBegan( cocos2d::Touch *touch, cocos2d::Event *event )
 
 void CherryStore::GoToGamePlay( cocos2d::Ref *sender )
 {
-    auto scene = GamePlay::createScene();
+    auto scene = GamePlay::createScene(0);
     Director::getInstance()->replaceScene(scene);
 }
 

@@ -2,6 +2,7 @@
 #include "Bird.h"
 #include "Cherry.h"
 #include "Tutorial.h"
+#include "GameOver.h"
 #include "Definitions.h"
 #include "Time.h"
 #include "external/Box2d/Box2d.h"
@@ -16,7 +17,6 @@
 #endif
 
 USING_NS_CC;
-bool newHighScore = false;
 
 //AdMob Implementation
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
@@ -39,8 +39,12 @@ bool newHighScore = false;
     };
 #endif
 
-Scene* GamePlay::createScene()
+unsigned int gameStarted;
+
+Scene* GamePlay::createScene( unsigned int startGame )
 {
+    gameStarted = startGame;
+    
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
@@ -268,6 +272,9 @@ bool GamePlay::init()
     
     scheduleUpdate();
     
+    if(gameStarted)
+        this->StartGame(this);
+    
     return true;
 }
 
@@ -481,7 +488,9 @@ void GamePlay::update( float dt )
                     {
                         highScore = score;
                         def->setIntegerForKey("highScore", highScore);
-                        newHighScore = true;
+                        def->setIntegerForKey("newHighScore", 1);
+                    } else {
+                        def->setIntegerForKey("newHighScore", 0);
                     }
                     
                     // Add to bird count for the round
@@ -534,14 +543,13 @@ void GamePlay::update( float dt )
         def->setIntegerForKey("bird3_collisions", 3);
         def->setIntegerForKey("missed_birds", 0);
         def->setIntegerForKey("bird_count", 0);
-        this->scheduleOnce(schedule_selector(GamePlay::RemoveBirds), 0.5);
-        this->GameOver();
+        this->scheduleOnce(schedule_selector(GamePlay::GameOver), 0.5);
     }
 
     def->flush();
 }
 
-void GamePlay::GameOver()
+void GamePlay::GameOver( float dt )
 {
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
     iOSHelper::showAdmobBanner();
@@ -551,95 +559,12 @@ void GamePlay::GameOver()
     AdmobHelper::showAd();
 #endif
     
-    this->RemoveCherry(0);
-    powerups->HideAll();
-    
-    auto hide = FadeTo::create(1,0);
-    auto hide2 = FadeTo::create(1,0);
-    auto hide3 = FadeTo::create(1,0);
-    auto hide4 = FadeTo::create(1,0);
-    auto hide5 = FadeTo::create(1,0);
-
-    redX->runAction(hide);
-    redX2->runAction(hide2);
-    redX3->runAction(hide3);
-    cherrySprite->runAction(hide4);
-    cherryScore->runAction(hide5);
+    playText->setOpacity(0);
     
     CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
     
-    playText->setOpacity(0);
-    
-    UserDefault *def = UserDefault::getInstance();
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    
-    auto score = def->getIntegerForKey("score", 0);
-    auto highScore = def->getIntegerForKey("highScore", 0);
-    def->flush();
-    
-    __String *gameOverText = __String::create("Game Over");
-    __String *tempScore = __String::createWithFormat("%i", score);
-    __String *tempHighScore = __String::createWithFormat("%i", highScore);
-    __String *tempScoreText = __String::create("Score");
-    __String *tempHighScoreText = __String::create("Best");
-    
-    // Add game over popover
-    popover = Node::create();
-    popover->setPosition(Point(0,0));
-    
-    auto theGameOver = Label::createWithTTF( gameOverText->getCString(), "ShowG.ttf", visibleSize.height * 0.2);
-    theGameOver->setColor(Color3B::RED);
-    theGameOver->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.8));
-
-    auto scoreText = Label::createWithTTF( tempScoreText->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.05);
-    scoreText->setColor(Color3B::BLACK);
-    scoreText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.675));
-
-    auto theScore = Label::createWithTTF( tempScore->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.1);
-    theScore->setColor(Color3B::BLACK);
-    theScore->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.575));
-
-    auto highScoreText = Label::createWithTTF( tempHighScoreText->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.05);
-    highScoreText->setColor(Color3B::BLACK);
-    highScoreText->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.475));
-    
-    auto theHighScore = Label::createWithTTF( tempHighScore->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.1);
-    theHighScore->setColor(Color3B::BLACK);
-    theHighScore->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.375));
-    
-    popover->addChild(scoreText,2);
-    popover->addChild(theScore,2);
-    popover->addChild(highScoreText,2);
-    popover->addChild(theHighScore,2);
-    popover->addChild(theGameOver);
-    
-    if(newHighScore)
-    {
-        auto newBest = Sprite::create("new.png");
-        newBest->setPosition(Vec2((visibleSize.width / 2) + (theHighScore->getContentSize().width / 2) + (newBest->getContentSize().width / 2) + 15, visibleSize.height * 0.375));
-        popover->addChild(newBest,2);
-    }
-    
-    // Add icon menu to bottom
-    auto home = MenuItemImage::create("home.png", "home.png", CC_CALLBACK_1(GamePlay::Home, this));
-    auto w = home->getContentSize().width;
-    home->setPosition(Vec2(visibleSize.width / 2 - (w * 2), visibleSize.height * 0.215));
-    
-    auto facebook = MenuItemImage::create("facebook.png", "facebook.png", CC_CALLBACK_1(GamePlay::Share, this));
-    facebook->setPosition(Vec2(visibleSize.width / 2 - (w * 0.65), visibleSize.height * 0.215));
-    
-    auto rate = MenuItemImage::create("rate.png", "rate.png", CC_CALLBACK_1(GamePlay::Rate, this));
-    rate->setPosition(Vec2(visibleSize.width / 2 + (w * 0.65), visibleSize.height * 0.215));
-    
-    auto replay = MenuItemImage::create("replay.png", "replay.png", CC_CALLBACK_1(GamePlay::Replay, this));
-    replay->setPosition(Vec2(visibleSize.width / 2 + (w * 2), visibleSize.height * 0.215));
-    
-    auto menu2 = Menu::create(home,facebook,rate,replay, NULL);
-    menu2->setPosition(Point::ZERO);
-    
-    popover->addChild(menu2);
-    
-    this->addChild(popover,10000);
+    auto scene = GameOver::createScene();
+    Director::getInstance()->replaceScene(TransitionCrossFade::create(2, scene));
 }
 
 // Removes birds then reset birds with new velocity
@@ -706,127 +631,9 @@ void GamePlay::ResetBirds( float dt )
     this->scheduleOnce(schedule_selector(GamePlay::AddBird3), 1.5);
 }
 
-// Removes all the birds
-void GamePlay::RemoveBirds( float dt )
-{
-    for (b2Body* b = world->GetBodyList(); b; b = b->GetNext())
-    {
-        if(b->GetType() == b2_dynamicBody)
-        {
-            Sprite* sprite = (Sprite*)b->GetUserData();
-            this->removeChild(sprite);
-            world->DestroyBody(b);
-        }
-    }
-}
-
-void GamePlay::Home(cocos2d::Ref *sender)
-{
-    auto scene = GamePlay::createScene();
-    Director::getInstance()->replaceScene(scene);
-}
-
-void GamePlay::Share(cocos2d::Ref *sender)
-{
-    
-}
-
-void GamePlay::Rate(cocos2d::Ref *sender)
-{
-    
-}
-
-void GamePlay::Replay(cocos2d::Ref *sender)
-{
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    
-    this->removeChild(popover);
-    
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    iOSHelper::hideAdmobBanner();
-#endif
-#if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
-    AdmobHelper::hideAd();
-#endif
-    
-    powerups->ShowAll();
-    
-    cherrySprite->setOpacity(255);
-    cherryScore->setOpacity(255);
-    
-    redX->setTexture("BlackX.png");
-    redX->setOpacity(95);
-    redX2->setTexture("BlackX.png");
-    redX2->setOpacity(95);
-    redX3->setTexture("BlackX.png");
-    redX3->setOpacity(95);
-    
-    playText->setOpacity(95);
-    playText->setString("0");
-    
-    cherrySprite->setOpacity(255);
-    cherryScore->setOpacity(255);
-    
-    redCheck = 0;
-    redCheck2 = 0;
-    redCheck3 = 0;
-    
-    srand((unsigned)time(NULL));
-    auto blue_bird = rand() % 4 + 1;
-    auto whichBird = rand() % 3 + 1;
-    
-    UserDefault *def = UserDefault::getInstance();
-    def->setIntegerForKey("blue1", 0);
-    def->setIntegerForKey("blue2", 0);
-    def->setIntegerForKey("blue3", 0);
-    auto soundOn = def->getIntegerForKey("sound", 1);
-    if(soundOn)
-        CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("sounds/ambience.mp3", true);
-    
-    if( blue_bird == 1 )
-    {
-        if(whichBird == 1)
-            def->setIntegerForKey("blue1", 1);
-        if(whichBird == 2)
-            def->setIntegerForKey("blue2", 1);
-        if(whichBird == 3)
-            def->setIntegerForKey("blue3", 1);
-    }
-
-    auto createCherry = rand() % 2 + 1;
-    if(createCherry == 1) {
-        auto cherryTime = rand() % 3 + 1;
-        this->scheduleOnce(schedule_selector(GamePlay::AddCherry), cherryTime);
-    }
-    
-    def->setIntegerForKey("bird1_collisions", 0);
-    def->setIntegerForKey("bird2_collisions", 0);
-    def->setIntegerForKey("bird3_collisions", 0);
-    def->setIntegerForKey("bird1_region", 0);
-    def->setIntegerForKey("bird2_region", 0);
-    def->setIntegerForKey("missed_birds", 0);
-    def->setIntegerForKey("bird_count", 0);
-    def->setIntegerForKey("score", 0);
-    def->setIntegerForKey("power3_activated", 0);
-    auto calculatedVelocity = (640 / visibleSize.height) * 0.002;
-    def->setFloatForKey("velocity", calculatedVelocity);
-    def->flush();
-    
-    srand((unsigned)time(NULL));
-    
-    this->scheduleOnce(schedule_selector(GamePlay::AddBird), 0.5);
-    this->scheduleOnce(schedule_selector(GamePlay::AddBird2), 1);
-    this->scheduleOnce(schedule_selector(GamePlay::AddBird3), 1.5);
-}
-
 void GamePlay::RemoveBird( cocos2d::Sprite *sprite )
 {
     this->removeChild(sprite);
-}
-
-void GamePlay::FacebookShare(cocos2d::Ref *sender)
-{
-    
 }
 
 void GamePlay::Tutorial(cocos2d::Ref *sender)
