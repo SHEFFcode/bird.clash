@@ -14,8 +14,6 @@ Powerups::~Powerups(){
 
 Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
 {
-    activated = 0;
-    
     UserDefault *def = UserDefault::getInstance();
     power1 = def->getIntegerForKey("power1",0);
     power2 = def->getIntegerForKey("power2",0);
@@ -119,7 +117,7 @@ Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
 
 void Powerups::BlueBirds( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world)
 {
-    if(!activated && power1 > 0)
+    if(power1 > 0)
     {
         UserDefault *def = UserDefault::getInstance();
         auto power1 = def->getIntegerForKey("power1");
@@ -162,8 +160,6 @@ void Powerups::BlueBirds( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *
             }
         }
         
-        activated = 1;
-        
         Size visibleSize = Director::getInstance()->getVisibleSize();
         
         auto blueBig = Sprite::create("powerups/blue_big.png");
@@ -174,7 +170,7 @@ void Powerups::BlueBirds( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *
         layer->addChild(blueBig,5);
         auto reveal = FadeTo::create(0.5,150);
         auto hide = FadeTo::create(0.5,0);
-        Sequence *seq = Sequence::create(reveal, DelayTime::create(0.25), hide, CallFunc::create(std::bind(&Powerups::DisableActivation, this)),NULL);
+        Sequence *seq = Sequence::create(reveal, DelayTime::create(0.25), hide, NULL);
         blueBig->runAction(seq);
         
         if(soundOn){
@@ -187,7 +183,7 @@ void Powerups::BlueBirds( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *
 
 void Powerups::Lightning( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world)
 {
-    if(!activated && power2 > 0)
+    if(power2 > 0)
     {
         UserDefault *def = UserDefault::getInstance();
         auto power2 = def->getIntegerForKey("power2");
@@ -212,8 +208,6 @@ void Powerups::Lightning( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *
             }
         }
         
-        activated = 1;
-        
         Size visibleSize = Director::getInstance()->getVisibleSize();
         
         auto lightBig = Sprite::create("powerups/lightning_big.png");
@@ -224,7 +218,7 @@ void Powerups::Lightning( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *
         layer->addChild(lightBig,5);
         auto reveal = FadeTo::create(0.5,150);
         auto hide = FadeTo::create(0.5,0);
-        Sequence *seq = Sequence::create(reveal, DelayTime::create(0.25), hide, CallFunc::create(std::bind(&Powerups::DisableActivation, this)),NULL);
+        Sequence *seq = Sequence::create(reveal, DelayTime::create(0.25), hide, NULL);
         lightBig->runAction(seq);
         
         if(soundOn){
@@ -235,7 +229,7 @@ void Powerups::Lightning( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *
 
 void Powerups::Grow( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world)
 {
-    if(!activated && power3 > 0)
+    if(power3 > 0)
     {
         UserDefault *def = UserDefault::getInstance();
         if(def->getIntegerForKey("power3_activated") == 1)
@@ -265,9 +259,7 @@ void Powerups::Grow( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world
                 sprite->setScale(scale * 1.5);
             }
         }
-        
-        activated = 1;
-        
+
         Size visibleSize = Director::getInstance()->getVisibleSize();
         
         auto growBig = Sprite::create("powerups/grow_big.png");
@@ -278,7 +270,7 @@ void Powerups::Grow( cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world
         layer->addChild(growBig,5);
         auto reveal = FadeTo::create(0.5,150);
         auto hide = FadeTo::create(0.5,0);
-        Sequence *seq = Sequence::create(reveal, DelayTime::create(0.25), hide, CallFunc::create(std::bind(&Powerups::DisableActivation, this)),NULL);
+        Sequence *seq = Sequence::create(reveal, DelayTime::create(0.25), hide, NULL);
         growBig->runAction(seq);
         
         if(soundOn){
@@ -306,47 +298,6 @@ void Powerups::HideShowMenu( cocos2d::Ref *sender )
         def->setIntegerForKey("powerupShow", 0);
     }
     def->flush();
-}
-
-void Powerups::HideAll() {
-    menu2->setEnabled(false);
-    menu->setEnabled(false);
-    auto hide1 = FadeTo::create(1,0);
-    auto hide2 = FadeTo::create(1,0);
-    auto hide3 = FadeTo::create(1,0);
-    auto hide4 = FadeTo::create(1,0);
-    auto hide5 = FadeTo::create(1,0);
-    menu2->runAction(hide1);
-    menu->runAction(hide2);
-    power1Text->runAction(hide3);
-    power2Text->runAction(hide4);
-    power3Text->runAction(hide5);
-}
-
-void Powerups::ShowAll() {
-    if(menuShow){
-        menu->setOpacity(255);
-        menu->setEnabled(true);
-        menu2->setOpacity(255);
-        menu2->setEnabled(true);
-        this->ShowText();
-    } else {
-        menu->setOpacity(255);
-        menu->setEnabled(true);
-        menu2->setOpacity(false);
-        menu2->setEnabled(false);
-        this->HideText();
-    }
-    growSprite->setTexture("powerups/grow.png");
-    if(power3 > 0) {
-        growSelected->setTexture("powerups/grow_selected.png");
-    } else {
-        growSelected->setTexture("powerups/grow.png");
-    }
-}
-
-void Powerups::DisableActivation(){
-    activated = 0;
 }
 
 void Powerups::ShowText(){

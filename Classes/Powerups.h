@@ -8,7 +8,6 @@ class Powerups
 {
 public:
     bool menuShow;
-    bool activated;
     unsigned int power1;
     unsigned int power2;
     unsigned int power3;
@@ -26,8 +25,6 @@ public:
     cocos2d::Label *power3Text;
     
     Powerups( cocos2d::Layer *layer, b2World *world);
-    void HideAll();
-    void ShowAll();
     
     ~Powerups();
     
@@ -36,7 +33,6 @@ private:
     void Lightning(cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world);
     void Grow(cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world);
     void HideShowMenu(cocos2d::Ref *sender);
-    void DisableActivation();
     void ShowText();
     void HideText();
     
