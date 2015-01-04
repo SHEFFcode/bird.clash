@@ -141,6 +141,8 @@ bool GamePlay::init()
         def->setIntegerForKey("power1",5);
         def->setIntegerForKey("power2",5);
         def->setIntegerForKey("power3",2);
+        def->getIntegerForKey("sound", 1);
+        
     }
 //    def->setIntegerForKey("power1",0);
 //    def->setIntegerForKey("power2",0);
@@ -160,7 +162,7 @@ bool GamePlay::init()
     }
     auto calculatedVelocity = (640 / visibleSize.height) * 0.002;
     def->setFloatForKey("velocity", calculatedVelocity);
-    auto soundOn = def->getIntegerForKey("sound", 1);
+    auto soundOn = def->getIntegerForKey("sound");
     def->flush();
     
     // Setup Physics
