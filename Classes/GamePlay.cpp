@@ -142,7 +142,6 @@ bool GamePlay::init()
         def->setIntegerForKey("power2",5);
         def->setIntegerForKey("power3",2);
         def->getIntegerForKey("sound", 1);
-        
     }
 //    def->setIntegerForKey("power1",0);
 //    def->setIntegerForKey("power2",0);

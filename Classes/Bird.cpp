@@ -189,7 +189,7 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
     
     if(!power3_activated){
         auto tmpScale = bird->getScale();
-        tmpScale = tmpScale / 1.5;
+        //tmpScale = tmpScale / 1.5;
         bird->setScale(tmpScale);
     }
     
