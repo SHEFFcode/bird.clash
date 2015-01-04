@@ -191,6 +191,8 @@ Bird::Bird( cocos2d::Layer *layer, b2World *world )
         auto tmpScale = bird->getScale();
         //tmpScale = tmpScale / 1.5;
         bird->setScale(tmpScale);
+    } else {
+        bird->setScale(1.5);
     }
     
     layer->addChild(bird, 100);

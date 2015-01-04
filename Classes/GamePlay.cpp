@@ -462,10 +462,10 @@ void GamePlay::update( float dt )
                         auto plus2 = Label::createWithTTF("+2", "Arial_Regular.ttf", visibleSize.height * 0.08);
                         Color3B color = {0, 173, 239};
                         plus2->setColor(color);
-                        plus2->setPosition(Vec2(sprite->getPositionX(), sprite->getPositionY() + (sprite->getContentSize().height / 2) + (plus2->getContentSize().height / 2)));
+                        plus2->setPosition(Vec2(sprite->getPositionX(), sprite->getPositionY() + (sprite->getContentSize().height * 1.5 / 2) + (plus2->getContentSize().height / 2)));
                         
                         if(!power3_activated){
-                            plus2->setPosition(Vec2(plus2->getPositionX(), sprite->getPositionY() + (sprite->getContentSize().height / 1.5 / 2) + (plus2->getContentSize().height / 2) ));
+                            plus2->setPosition(Vec2(plus2->getPositionX(), sprite->getPositionY() + (sprite->getContentSize().height / 2) + (plus2->getContentSize().height / 2) ));
                         }
                         
                         this->addChild(plus2,1);
@@ -582,6 +582,7 @@ void GamePlay::ResetBirds( float dt )
     UserDefault *def = UserDefault::getInstance();
     // Failsafe for resetting birds if 3 misses
     auto missed = def->getIntegerForKey("missed_birds", 0);
+    
     if(missed >= 3) {
         return;
     }
