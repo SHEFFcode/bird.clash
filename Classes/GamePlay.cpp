@@ -135,9 +135,17 @@ bool GamePlay::init()
     def->setIntegerForKey("blue1", 0);
     def->setIntegerForKey("blue2", 0);
     def->setIntegerForKey("blue3", 0);
-//    def->setIntegerForKey("power1",1000);
-//    def->setIntegerForKey("power2",1000);
-//    def->setIntegerForKey("power3",1000);
+    auto freshInstall = def->getIntegerForKey("install", 0);
+    if(freshInstall == 0) {
+        def->setIntegerForKey("install", 1);
+        def->setIntegerForKey("power1",5);
+        def->setIntegerForKey("power2",5);
+        def->setIntegerForKey("power3",2);
+    }
+//    def->setIntegerForKey("power1",0);
+//    def->setIntegerForKey("power2",0);
+//    def->setIntegerForKey("power3",0);
+//    def->setIntegerForKey("cherry_currency", 9999);
     
     auto blue_bird = rand() % 4 + 1;
     auto whichBird = rand() % 3 + 1;
@@ -685,7 +693,7 @@ void GamePlay::UseCherries(cocos2d::Ref *sender)
     AdmobHelper::hideAd();
 #endif
     
-    auto scene = CherryStore::createScene();
+    auto scene = CherryStore::createScene(1);
     Director::getInstance()->replaceScene(scene);
 }
 

@@ -31,6 +31,11 @@ bool Store::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
+    UserDefault *def = UserDefault::getInstance();
+    auto cherries = def->getIntegerForKey("cherry_currency", 0);
+    __String *temp = __String::createWithFormat("%i", cherries);
+    def->flush();
+    
     auto backgroundOrig = Sprite::create("background.png");
     backgroundOrig->setScaleX(visibleSize.width / backgroundOrig->getContentSize().width);
     backgroundOrig->setScaleY(visibleSize.height / backgroundOrig->getContentSize().height);
@@ -54,17 +59,19 @@ bool Store::init()
     auto backgroundWidth = background->getContentSize().width * background->getScaleX();
     auto backgroundHeight = background->getContentSize().height * background->getScaleY();
     
-    __String *storeString = __String::create("Store");
-    __String *doneString = __String::create("Done");
-    __String *buyString = __String::create("Buy");
-    
-    auto storeText = Label::createWithTTF( storeString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.075);
+    auto storeText = Label::createWithTTF("Cherry Store", "Arial_Regular.ttf", visibleSize.height * 0.075);
     storeText->setColor(Color3B::BLACK);
-    storeText->setPosition(Point(startWidth + (backgroundWidth * 0.1), startHeight + (backgroundHeight * 0.935)));
+    storeText->setPosition(Point(startWidth + (backgroundWidth * 0.015), startHeight + (backgroundHeight * 0.935)));
+    storeText->setAnchorPoint(Vec2(0,0.5));
     
     auto cherry = Sprite::create("cherry.png");
     cherry->setPosition(Point(startWidth + (backgroundWidth * 0.95), startHeight + (backgroundHeight * 0.935)));
     cherry->setScale(0.75);
+    
+    auto cherryText = Label::createWithTTF(temp->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.075);
+    cherryText->setColor(Color3B::BLACK);
+    cherryText->setPosition(Vec2(cherry->getPositionX() - (cherry->getContentSize().width / 2), storeText->getPositionY()));
+    cherryText->setAnchorPoint(Vec2(1.0, 0.5));  // Align right
     
     auto cherrySale1 = Sprite::create("cherry.png");
     cherrySale1->setPosition(Point(startWidth + (backgroundWidth * 0.17), startHeight + (backgroundHeight * 0.68)));
@@ -94,6 +101,14 @@ bool Store::init()
     
     auto item4 = MenuItemImage::create("menu_purchase/sale2.png", "menu_purchase/sale2.png", CC_CALLBACK_1(Store::Sale4, this));
     item4->setPosition(Point(startWidth + (backgroundWidth * 0.73), startHeight + (backgroundHeight * 0.3)));
+    
+#if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+    item1->setScaleX(1.2);
+    item2->setScaleX(1.2);
+    item3->setScaleX(1.2);
+    item4->setScaleX(1.2);
+#endif
+    
     
     auto buy1 = Sprite::create("menu_purchase/buy.png");
     buy1->setPosition(Point(startWidth + (backgroundWidth * 0.35), startHeight + (backgroundHeight * 0.56)));
@@ -160,19 +175,19 @@ bool Store::init()
     priceText4->setColor(Color3B::BLACK);
     priceText4->setPosition(Point(buy4->getPositionX(), startHeight + (backgroundHeight * 0.255)));
     
-    auto buyText1 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText1 = Label::createWithTTF("Buy", "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText1->setColor(Color3B::WHITE);
     buyText1->setPosition(Point(buy1->getPositionX(), buy1->getPositionY()));
     
-    auto buyText2 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText2 = Label::createWithTTF("Buy", "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText2->setColor(Color3B::WHITE);
     buyText2->setPosition(Point(buy2->getPositionX(), buy2->getPositionY()));
     
-    auto buyText3 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText3 = Label::createWithTTF("Buy", "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText3->setColor(Color3B::WHITE);
     buyText3->setPosition(Point(buy3->getPositionX(), buy3->getPositionY()));
     
-    auto buyText4 = Label::createWithTTF( buyString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto buyText4 = Label::createWithTTF("Buy", "Arial_Regular.ttf", visibleSize.height * 0.04);
     buyText4->setColor(Color3B::WHITE);
     buyText4->setPosition(Point(buy4->getPositionX(), buy4->getPositionY()));
     
@@ -180,7 +195,7 @@ bool Store::init()
     auto done = MenuItemImage::create("menu_purchase/done2.png", "menu_purchase/done2.png", CC_CALLBACK_1(Store::GoToGamePlay, this));
     done->setPosition(Point(startWidth + (backgroundWidth * 0.5), startHeight + (backgroundHeight * 0.06)));
     
-    auto doneText = Label::createWithTTF( doneString->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto doneText = Label::createWithTTF("Done", "Arial_Regular.ttf", visibleSize.height * 0.04);
     doneText->setColor(Color3B::BLACK);
     doneText->setPosition(Point(done->getPositionX(), done->getPositionY()));
     
@@ -192,6 +207,7 @@ bool Store::init()
     this->addChild(background,2);
     this->addChild(storeText,3);
     this->addChild(cherry,3);
+    this->addChild(cherryText,3);
     this->addChild(menu,3);
     this->addChild(doneText,4);
     this->addChild(cherrySale1,4);

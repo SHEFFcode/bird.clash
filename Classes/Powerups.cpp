@@ -58,15 +58,15 @@ Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
     power1Text = Label::createWithTTF( pText1->getCString(), "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
     power1Text->setColor(Color3B::BLACK);
     auto textHeight = width + ((bluebird->getContentSize().height - width - power1Text->getContentSize().height / 2) / 2);
-    power1Text->setPosition(Point(bluebird->getPositionX() + (power1Text->getContentSize().width * 0.1), textHeight));
+    power1Text->setPosition(Point(bluebird->getPositionX() + (bluebird->getContentSize().width * 0.04), textHeight));
     
     power2Text = Label::createWithTTF( pText2->getCString(), "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
     power2Text->setColor(Color3B::BLACK);
-    power2Text->setPosition(Point(light->getPositionX() + (power2Text->getContentSize().width * 0.1), textHeight));
+    power2Text->setPosition(Point(light->getPositionX() + (bluebird->getContentSize().width * 0.04), textHeight));
     
     power3Text = Label::createWithTTF( pText3->getCString(), "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
     power3Text->setColor(Color3B::BLACK);
-    power3Text->setPosition(Point(grow->getPositionX() + (power3Text->getContentSize().width * 0.1), textHeight));
+    power3Text->setPosition(Point(grow->getPositionX() + (bluebird->getContentSize().width * 0.04), textHeight));
     
     layer->addChild(power1Text,2);
     layer->addChild(power2Text,2);
@@ -90,22 +90,19 @@ Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
     if(power1 > 99) {
         power1Text->setOpacity(0);
         power1_infinity = Sprite::create("powerups/infinity.png");
-        auto pWidth = power1_infinity->getContentSize().width * 0.15;
-        power1_infinity->setPosition(Vec2(power1Text->getPositionX() - pWidth, power1Text->getPositionY()));
+        power1_infinity->setPosition(Vec2(bluebird->getPositionX() + (bluebird->getContentSize().width * 0.04), power1Text->getPositionY()));
         layer->addChild(power1_infinity,2);
     }
     if(power2 > 99) {
         power2Text->setOpacity(0);
         power2_infinity = Sprite::create("powerups/infinity.png");
-        auto pWidth = power1_infinity->getContentSize().width * 0.15;
-        power2_infinity->setPosition(Vec2(power2Text->getPositionX() - pWidth, power2Text->getPositionY()));
+        power2_infinity->setPosition(Vec2(light->getPositionX() + (bluebird->getContentSize().width * 0.04), power2Text->getPositionY()));
         layer->addChild(power2_infinity,2);
     }
     if(power3 > 99) {
         power3Text->setOpacity(0);
         power3_infinity = Sprite::create("powerups/infinity.png");
-        auto pWidth = power1_infinity->getContentSize().width * 0.15;
-        power3_infinity->setPosition(Vec2(power3Text->getPositionX() - pWidth, power3Text->getPositionY()));
+        power3_infinity->setPosition(Vec2(grow->getPositionX() + (bluebird->getContentSize().width * 0.04), power3Text->getPositionY()));
         layer->addChild(power3_infinity,2);
     }
     if(!menuShow){
