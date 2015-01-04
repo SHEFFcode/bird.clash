@@ -12,6 +12,8 @@
 	<dict>
 		<key>5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C</key>
 		<string>github.com:SHEFFcode/BirdClash.git</string>
+		<key>8FB68EB1A385E01C4DED8D22DBDB215553900830</key>
+		<string>github.com:SHEFFcode/FacebookAndroid.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>proj.ios_mac/birdcrush.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C</key>
 		<string>../../..</string>
+		<key>8FB68EB1A385E01C4DED8D22DBDB215553900830</key>
+		<string>../../../../../cocos2d-x-3.3</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:SHEFFcode/BirdClash.git</string>
@@ -35,6 +39,14 @@
 			<string>5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>birdcrush</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8FB68EB1A385E01C4DED8D22DBDB215553900830</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocos2d-x-3.3</string>
 		</dict>
 	</array>
 </dict>

@@ -10,6 +10,19 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string>Icon-57.png</string>
+	<key>FacebookAppID</key>
+	<string>613422552118580</string>
+	<key>FacebookDisplayName</key>
+	<string>Bird Clash</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb613422552118580</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-29</string>
@@ -42,7 +55,7 @@
 		<string>Icon-144.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.sandwichestudios.birdclash</string>
+	<string>com.sheffmchine.com</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

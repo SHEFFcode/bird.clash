@@ -61,6 +61,8 @@ public:
     void setMatrixPalette(const Vec4* matrixPalette) { _matrixPalette = matrixPalette; }
     
     void setMatrixPaletteSize(int size) { _matrixPaletteSize = size; }
+
+    void setLightMask(unsigned int lightmask) { _lightMask = lightmask; }
     
     void execute();
     
@@ -73,7 +75,7 @@ public:
     
     uint32_t getMaterialID() const { return _materialID; }
     
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WP8 || CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
     void listenRendererRecreated(EventCustom* event);
 #endif
 
@@ -84,11 +86,15 @@ protected:
     
     // apply renderstate
     void applyRenderState();
+
+    void setLightUniforms();
     
     //restore to all false
     void restoreRenderState();
     
     void MatrixPalleteCallBack( GLProgram* glProgram, Uniform* uniform);
+
+    void resetLightUniformValues();
 
     GLuint _textureID;
     GLProgramState* _glProgramState;
@@ -120,8 +126,10 @@ protected:
 
     // ModelView transform
     Mat4 _mv;
-    
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
+
+    unsigned int _lightMask;
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WP8 || CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
     EventListenerCustom* _rendererRecreatedListener;
 #endif
 };

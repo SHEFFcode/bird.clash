@@ -10,7 +10,7 @@
 #include "Store.h"
 #include "CherryStore.h"
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-#include "external/plugin/protocols/include/ProtocolAds.h"
+#include "ProtocolAds.h"
 #endif
 
 

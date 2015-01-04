@@ -8,8 +8,8 @@
 #include "external/Box2d/Box2d.h"
 #include "SimpleAudioEngine.h"
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-#include "external/plugin/protocols/include/PluginManager.h"
-#include "external/plugin/samples/HelloPlugins/Classes/Configs.h"
+#include "PluginManager.h"
+#include "Configs.h"
 #include <iOSHelper.h>
 #endif
 #if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID

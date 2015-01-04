@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1EB740CA1A4C644E00C15380 /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB740C81A4C644E00C15380 /* GameOver.cpp */; };
 		1EB740CB1A4C644E00C15380 /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB740C81A4C644E00C15380 /* GameOver.cpp */; };
@@ -38,13 +37,10 @@
 		1EDC26471A33AF650071F94F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26461A33AF650071F94F /* Security.framework */; };
 		1EDC26491A33AF780071F94F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26481A33AF780071F94F /* StoreKit.framework */; };
 		1EDC264B1A33AF9D0071F94F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC264A1A33AF9D0071F94F /* SystemConfiguration.framework */; };
-		1EDC264D1A33AFAC0071F94F /* libPluginProtocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC264C1A33AFAC0071F94F /* libPluginProtocol.a */; };
 		1EDC264F1A33AFC00071F94F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC264E1A33AFC00071F94F /* libxml2.dylib */; };
 		1EDC26511A33AFCA0071F94F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26501A33AFCA0071F94F /* libz.dylib */; };
-		1EDC26551A33DFDB0071F94F /* libPluginFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26541A33DFDB0071F94F /* libPluginFlurry.a */; };
 		1EDC265C1A33E3B10071F94F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC265A1A33E3B10071F94F /* EventKit.framework */; };
 		1EDC265D1A33E3B10071F94F /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC265B1A33E3B10071F94F /* EventKitUI.framework */; };
-		1EDC26611A33E5960071F94F /* libPluginAdmob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26601A33E5960071F94F /* libPluginAdmob.a */; };
 		1EDC26671A33F84C0071F94F /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC26661A33F84C0071F94F /* BannerViewController.m */; };
 		1EDC26831A34AABD0071F94F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		1EDC26861A34AC660071F94F /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
@@ -67,6 +63,12 @@
 		1EDC26B71A3CB92F0071F94F /* Powerups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC26B51A3CB92F0071F94F /* Powerups.cpp */; };
 		1EDC26B81A3CB92F0071F94F /* Powerups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC26B51A3CB92F0071F94F /* Powerups.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2BE40EA11A59D3B100BEF3AF /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
+		2BE40EA81A59D41700BEF3AF /* libPluginFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EA71A59D3EE00BEF3AF /* libPluginFlurry.a */; };
+		2BE40EAF1A59D71B00BEF3AF /* libPluginAdmob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EAE1A59D71400BEF3AF /* libPluginAdmob.a */; };
+		2BE40EB61A59D74500BEF3AF /* libPluginProtocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EB51A59D73F00BEF3AF /* libPluginProtocol.a */; };
+		2BE40EC01A59D7E400BEF3AF /* libPluginFacebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EBF1A59D7CF00BEF3AF /* libPluginFacebook.a */; };
+		2BE40EC21A59D81C00BEF3AF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
@@ -131,6 +133,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = A07A4C241783777C0073F6A7;
 			remoteInfo = "cocos2dx iOS";
+		};
+		2BE40EA61A59D3EE00BEF3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE40EA21A59D3EE00BEF3AF /* PluginFlurry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA09A372168AFD41008C1C7B;
+			remoteInfo = PluginFlurry;
+		};
+		2BE40EAD1A59D71400BEF3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE40EA91A59D71400BEF3AF /* PluginAdmob.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FADC44A7176EA82000B2D5ED;
+			remoteInfo = PluginAdmob;
+		};
+		2BE40EB41A59D73F00BEF3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE40EB01A59D73F00BEF3AF /* PluginProtocol.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA09A321168ADBC2008C1C7B;
+			remoteInfo = PluginProtocol;
+		};
+		2BE40EBE1A59D7CF00BEF3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE40EBA1A59D7CF00BEF3AF /* PluginFacebook.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BA34A75D195AA8C7002D0ECD;
+			remoteInfo = PluginFacebook;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -210,6 +240,13 @@
 		1EDC26B51A3CB92F0071F94F /* Powerups.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Powerups.cpp; sourceTree = "<group>"; };
 		1EDC26B61A3CB92F0071F94F /* Powerups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Powerups.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BE40E871A59CE7300BEF3AF /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = ../cocos2d/plugin/plugins/admob/proj.ios/Admob/libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		2BE40E891A59CEBC00BEF3AF /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry.a; path = ../cocos2d/plugin/plugins/flurry/proj.ios/libFlurry.a; sourceTree = "<group>"; };
+		2BE40EA21A59D3EE00BEF3AF /* PluginFlurry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginFlurry.xcodeproj; path = ../cocos2d/plugin/plugins/flurry/proj.ios/PluginFlurry.xcodeproj; sourceTree = "<group>"; };
+		2BE40EA91A59D71400BEF3AF /* PluginAdmob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginAdmob.xcodeproj; path = ../cocos2d/plugin/plugins/admob/proj.ios/PluginAdmob.xcodeproj; sourceTree = "<group>"; };
+		2BE40EB01A59D73F00BEF3AF /* PluginProtocol.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginProtocol.xcodeproj; path = ../cocos2d/plugin/protocols/proj.ios/PluginProtocol.xcodeproj; sourceTree = "<group>"; };
+		2BE40EBA1A59D7CF00BEF3AF /* PluginFacebook.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginFacebook.xcodeproj; path = ../cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook.xcodeproj; sourceTree = "<group>"; };
+		2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
@@ -258,14 +295,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE40EC21A59D81C00BEF3AF /* FacebookSDK.framework in Frameworks */,
+				2BE40EC01A59D7E400BEF3AF /* libPluginFacebook.a in Frameworks */,
+				2BE40EB61A59D74500BEF3AF /* libPluginProtocol.a in Frameworks */,
+				2BE40EAF1A59D71B00BEF3AF /* libPluginAdmob.a in Frameworks */,
+				2BE40EA81A59D41700BEF3AF /* libPluginFlurry.a in Frameworks */,
+				2BE40EA11A59D3B100BEF3AF /* libcocos2d iOS.a in Frameworks */,
 				1EDC26281A339D5C0071F94F /* UIKit.framework in Frameworks */,
-				1EDC26611A33E5960071F94F /* libPluginAdmob.a in Frameworks */,
 				1EDC265C1A33E3B10071F94F /* EventKit.framework in Frameworks */,
 				1EDC265D1A33E3B10071F94F /* EventKitUI.framework in Frameworks */,
-				1EDC26551A33DFDB0071F94F /* libPluginFlurry.a in Frameworks */,
 				1EDC26511A33AFCA0071F94F /* libz.dylib in Frameworks */,
 				1EDC264F1A33AFC00071F94F /* libxml2.dylib in Frameworks */,
-				1EDC264D1A33AFAC0071F94F /* libPluginProtocol.a in Frameworks */,
 				1EDC264B1A33AF9D0071F94F /* SystemConfiguration.framework in Frameworks */,
 				1EDC26491A33AF780071F94F /* StoreKit.framework in Frameworks */,
 				1EDC26471A33AF650071F94F /* Security.framework in Frameworks */,
@@ -278,7 +318,6 @@
 				1EDC26391A33AE7B0071F94F /* AudioToolbox.framework in Frameworks */,
 				1EDC26371A33AE6B0071F94F /* AdSupport.framework in Frameworks */,
 				1EDC26301A33ADFA0071F94F /* CoreMotion.framework in Frameworks */,
-				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */,
@@ -352,6 +391,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				2BE40EBA1A59D7CF00BEF3AF /* PluginFacebook.xcodeproj */,
+				2BE40EB01A59D73F00BEF3AF /* PluginProtocol.xcodeproj */,
+				2BE40EA91A59D71400BEF3AF /* PluginAdmob.xcodeproj */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -366,6 +408,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */,
+				2BE40EA21A59D3EE00BEF3AF /* PluginFlurry.xcodeproj */,
+				2BE40E891A59CEBC00BEF3AF /* libFlurry.a */,
+				2BE40E871A59CE7300BEF3AF /* libGoogleAdMobAds.a */,
 				1EDC26801A340A320071F94F /* libxml2.dylib */,
 				1EDC267E1A3409F90071F94F /* libXplugin.dylib */,
 				1EDC267B1A34095B0071F94F /* GameController.framework */,
@@ -421,6 +467,38 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BE40EA31A59D3EE00BEF3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE40EA71A59D3EE00BEF3AF /* libPluginFlurry.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BE40EAA1A59D71400BEF3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE40EAE1A59D71400BEF3AF /* libPluginAdmob.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BE40EB11A59D73F00BEF3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE40EB51A59D73F00BEF3AF /* libPluginProtocol.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BE40EBB1A59D7CF00BEF3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE40EBF1A59D7CF00BEF3AF /* libPluginFacebook.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		46880B7519C43A67006E1F66 /* Resources */ = {
@@ -569,7 +647,7 @@
 				LastUpgradeCheck = 0610;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 3KDMTP3843;
+						DevelopmentTeam = T6E7R2ZW57;
 					};
 					5087E73D17EB910900C73F5D = {
 						DevelopmentTeam = 3KDMTP3843;
@@ -593,6 +671,22 @@
 					ProductGroup = 1AC6FAE6180E9839004C840B /* Products */;
 					ProjectRef = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
 				},
+				{
+					ProductGroup = 2BE40EAA1A59D71400BEF3AF /* Products */;
+					ProjectRef = 2BE40EA91A59D71400BEF3AF /* PluginAdmob.xcodeproj */;
+				},
+				{
+					ProductGroup = 2BE40EBB1A59D7CF00BEF3AF /* Products */;
+					ProjectRef = 2BE40EBA1A59D7CF00BEF3AF /* PluginFacebook.xcodeproj */;
+				},
+				{
+					ProductGroup = 2BE40EA31A59D3EE00BEF3AF /* Products */;
+					ProjectRef = 2BE40EA21A59D3EE00BEF3AF /* PluginFlurry.xcodeproj */;
+				},
+				{
+					ProductGroup = 2BE40EB11A59D73F00BEF3AF /* Products */;
+					ProjectRef = 2BE40EB01A59D73F00BEF3AF /* PluginProtocol.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -615,6 +709,34 @@
 			fileType = archive.ar;
 			path = "libcocos2d iOS.a";
 			remoteRef = 1AC6FB06180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BE40EA71A59D3EE00BEF3AF /* libPluginFlurry.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPluginFlurry.a;
+			remoteRef = 2BE40EA61A59D3EE00BEF3AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BE40EAE1A59D71400BEF3AF /* libPluginAdmob.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPluginAdmob.a;
+			remoteRef = 2BE40EAD1A59D71400BEF3AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BE40EB51A59D73F00BEF3AF /* libPluginProtocol.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPluginProtocol.a;
+			remoteRef = 2BE40EB41A59D73F00BEF3AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BE40EBF1A59D7CF00BEF3AF /* libPluginFacebook.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPluginFacebook.a;
+			remoteRef = 2BE40EBE1A59D7CF00BEF3AF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -727,6 +849,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sheffne/Desktop/cocosFiles/Useless,
+					Crap/BirdClash,
+					copy/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -748,12 +876,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/Admob,
 					"/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/build/Debug-iphoneos",
+					/Users/sheffne/Desktop/cocosFiles/Useless,
+					Crap/BirdClash,
+					copy/cocos2d/plugin/plugins/admob/proj.ios/Admob,
+					/Users/sheffne/Desktop/cocosFiles/Useless,
+					Crap/BirdClash,
+					copy/cocos2d/plugin/plugins/flurry/proj.ios,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../cocos2d/plugin/protocols/include\" \"$(SRCROOT)/../cocos2d/plugin/plugins/admob/proj.ios/Admob\" \"$(SRCROOT)/../cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/A/Headers\"";
 			};
 			name = Debug;
 		};
@@ -764,6 +898,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sheffne/Desktop/cocosFiles/Useless,
+					Crap/BirdClash,
+					copy/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;
@@ -783,12 +923,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/Admob,
 					"/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/build/Debug-iphoneos",
+					/Users/sheffne/Desktop/cocosFiles/Useless,
+					Crap/BirdClash,
+					copy/cocos2d/plugin/plugins/admob/proj.ios/Admob,
+					/Users/sheffne/Desktop/cocosFiles/Useless,
+					Crap/BirdClash,
+					copy/cocos2d/plugin/plugins/flurry/proj.ios,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../cocos2d/plugin/protocols/include\" \"$(SRCROOT)/../cocos2d/plugin/plugins/admob/proj.ios/Admob\" \"$(SRCROOT)/../cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/A/Headers\"";
 			};
 			name = Release;
 		};

@@ -55,8 +55,8 @@ TextFieldTTF::TextFieldTTF()
 , _charCount(0)
 , _inputText("")
 , _placeHolder("")   // prevent Label initWithString assertion
-, _secureTextEntry(false)
 , _colorText(Color4B::WHITE)
+, _secureTextEntry(false)
 {
     _colorSpaceHolder.r = _colorSpaceHolder.g = _colorSpaceHolder.b = 127;
     _colorSpaceHolder.a = 255;
@@ -142,7 +142,11 @@ bool TextFieldTTF::attachWithIME()
         auto pGlView = Director::getInstance()->getOpenGLView();
         if (pGlView)
         {
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_WP8 && CC_TARGET_PLATFORM != CC_PLATFORM_WINRT)
             pGlView->setIMEKeyboardState(true);
+#else
+            pGlView->setIMEKeyboardState(true, _inputText);
+#endif
         }
     }
     return ret;
@@ -157,7 +161,11 @@ bool TextFieldTTF::detachWithIME()
         auto glView = Director::getInstance()->getOpenGLView();
         if (glView)
         {
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_WP8 && CC_TARGET_PLATFORM != CC_PLATFORM_WINRT)
             glView->setIMEKeyboardState(false);
+#else
+            glView->setIMEKeyboardState(false, "");
+#endif
         }
     }
     return ret;
@@ -232,7 +240,7 @@ void TextFieldTTF::deleteBackward()
 
     if (_delegate && _delegate->onTextFieldDeleteBackward(this, _inputText.c_str() + len - deleteLen, static_cast<int>(deleteLen)))
     {
-        // delegate doesn't wan't to delete backwards
+        // delegate doesn't want to delete backwards
         return;
     }
 

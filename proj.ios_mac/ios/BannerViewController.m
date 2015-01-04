@@ -1,5 +1,5 @@
 #import "BannerViewController.h"
-#import "external/plugin/plugins/admob/proj.ios/Admob/GADBannerView.h"
+#import "GADBannerView.h"
 #import <UIKit/UIKit.h>
 
 @interface BannerViewController ()

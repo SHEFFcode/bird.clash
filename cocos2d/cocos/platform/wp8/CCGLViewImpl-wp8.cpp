@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
 
-#include "CCGLViewImpl.h"
+#include "CCGLViewImpl-wp8.h"
 #include "deprecated/CCSet.h"
 #include "base/ccMacros.h"
 #include "base/CCDirector.h"
@@ -49,7 +49,6 @@ using namespace Windows::ApplicationModel::Activation;
 using namespace Windows::Phone::UI::Core;
 using namespace Platform;
 using namespace Microsoft::WRL;
-using namespace PhoneDirect3DXamlAppComponent;
 
 
 NS_CC_BEGIN
@@ -134,17 +133,35 @@ void GLViewImpl::UpdateDevice(EGLDisplay eglDisplay, EGLContext eglContext, EGLS
 
 void GLViewImpl::setIMEKeyboardState(bool bOpen)
 {
+    std::string str;
+    setIMEKeyboardState(bOpen, str);
+}
+
+void GLViewImpl::setIMEKeyboardState(bool bOpen, std::string str)
+{
     if(m_delegate)
     {
         if(bOpen)
         {
-            m_delegate->Invoke(Cocos2dEvent::ShowKeyboard);
+            m_delegate->Invoke(Cocos2dEvent::ShowKeyboard, stringToPlatformString(str));
         }
         else
         {
-            m_delegate->Invoke(Cocos2dEvent::HideKeyboard);
+            m_delegate->Invoke(Cocos2dEvent::HideKeyboard, stringToPlatformString(str));
         }
     }
+}
+
+Platform::String^ GLViewImpl::stringToPlatformString(std::string strSrc)
+{
+    // to wide char
+    int strLen = MultiByteToWideChar(CP_UTF8, 0, strSrc.c_str(), -1, NULL, 0);
+    wchar_t* wstr = new wchar_t[strLen + 1];
+    memset(wstr, 0, strLen + 1);
+    MultiByteToWideChar(CP_UTF8, 0, strSrc.c_str(), -1, wstr, strLen);
+    Platform::String^ strDst = ref new Platform::String(wstr);
+    delete[] wstr;
+    return strDst;
 }
 
 void GLViewImpl::swapBuffers()
@@ -162,6 +179,11 @@ bool GLViewImpl::isOpenGLReady()
 void GLViewImpl::end()
 {
 	m_windowClosed = true;
+    std::string str;
+	if (m_delegate) {
+		// Terminate app on Director::getInstance()->end();
+        m_delegate->Invoke(Cocos2dEvent::TerminateApp, stringToPlatformString(str));
+	}
 }
 
 
@@ -176,10 +198,8 @@ void GLViewImpl::OnResuming(Platform::Object^ sender, Platform::Object^ args)
 // user pressed the Back Key on the phone
 void GLViewImpl::OnBackKeyPress()
 {
-    if(m_delegate)
-    {
-        m_delegate->Invoke(Cocos2dEvent::TerminateApp);
-    }
+	EventKeyboard event(EventKeyboard::KeyCode::KEY_ESCAPE, false);
+	Director::getInstance()->getEventDispatcher()->dispatchEvent(&event);
 }
 
 void GLViewImpl::OnPointerPressed(CoreWindow^ sender, PointerEventArgs^ args)
@@ -513,33 +533,27 @@ void GLViewImpl::setScissorInPoints(float x , float y , float w , float h)
 
 void GLViewImpl::QueueBackKeyPress()
 {
-    std::lock_guard<std::mutex> guard(mMutex);
     std::shared_ptr<BackButtonEvent> e(new BackButtonEvent());
     mInputEvents.push(e);
 }
 
 void GLViewImpl::QueuePointerEvent(PointerEventType type, PointerEventArgs^ args)
 {
-    std::lock_guard<std::mutex> guard(mMutex);
     std::shared_ptr<PointerEvent> e(new PointerEvent(type, args));
     mInputEvents.push(e);
 }
 
 void GLViewImpl::QueueEvent(std::shared_ptr<InputEvent>& event)
 {
-    std::lock_guard<std::mutex> guard(mMutex);
     mInputEvents.push(event);
 }
 
 void GLViewImpl::ProcessEvents()
 {
-    std::lock_guard<std::mutex> guard(mMutex);
-
-    while (!mInputEvents.empty())
+    std::shared_ptr<InputEvent> e;
+    while (mInputEvents.try_pop(e))
     {
-        InputEvent* e = mInputEvents.front().get();
         e->execute();
-        mInputEvents.pop();
     }
 }
 

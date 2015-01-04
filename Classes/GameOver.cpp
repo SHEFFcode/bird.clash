@@ -1,5 +1,7 @@
 #include "GameOver.h"
 #include "GamePlay.h"
+#include "FacebookAgent.h"
+
 
 USING_NS_CC;
 
@@ -28,6 +30,9 @@ bool GameOver::init()
         return false;
     }
     Size visibleSize = Director::getInstance()->getVisibleSize();
+    
+    //Initialize the facebook SDK
+    auto facebook = cocos2d::plugin::FacebookAgent::getInstance();
     
     UserDefault *def = UserDefault::getInstance();
     auto score = def->getIntegerForKey("score");
@@ -89,8 +94,8 @@ bool GameOver::init()
     auto w = home->getContentSize().width;
     home->setPosition(Vec2(visibleSize.width / 2 - (w * 2), visibleSize.height * 0.215));
     
-    auto facebook = MenuItemImage::create("facebook.png", "facebook.png", CC_CALLBACK_1(GameOver::Share, this));
-    facebook->setPosition(Vec2(visibleSize.width / 2 - (w * 0.65), visibleSize.height * 0.215));
+    auto facebookitem = MenuItemImage::create("facebook.png", "facebook.png", CC_CALLBACK_1(GameOver::Share, this));
+    facebookitem->setPosition(Vec2(visibleSize.width / 2 - (w * 0.65), visibleSize.height * 0.215));
     
     auto rate = MenuItemImage::create("rate.png", "rate.png", CC_CALLBACK_1(GameOver::Rate, this));
     rate->setPosition(Vec2(visibleSize.width / 2 + (w * 0.65), visibleSize.height * 0.215));
@@ -98,7 +103,7 @@ bool GameOver::init()
     auto replay = MenuItemImage::create("replay.png", "replay.png", CC_CALLBACK_1(GameOver::Replay, this));
     replay->setPosition(Vec2(visibleSize.width / 2 + (w * 2), visibleSize.height * 0.215));
     
-    auto menu2 = Menu::create(home,facebook,rate,replay, NULL);
+    auto menu2 = Menu::create(home,facebookitem,rate,replay, NULL);
     menu2->setPosition(Point::ZERO);
     
     popover->addChild(menu2);
@@ -120,14 +125,97 @@ void GameOver::Replay( cocos2d::Ref *sender )
     Director::getInstance()->replaceScene(scene);
 }
 
-void GameOver::Share( cocos2d::Ref *sender )
+//Screenshot
+std::string GameOver::sceenshot(std::string& filename)
 {
-
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    Point origin = Director::getInstance()->getVisibleOrigin();
+    auto tex = RenderTexture::create(visibleSize.width, visibleSize.height, Texture2D::PixelFormat::RGBA8888);
+    tex->setPosition((origin.x + visibleSize.width) / 2, (origin.y + visibleSize.height) / 2);
+    tex->begin();
+    Director::getInstance()->getRunningScene()->visit();
+    tex->end();
+    
+    std::string imgPath = FileUtils::getInstance()->getWritablePath();
+    if (imgPath.length() == 0) {
+        return "";
+    }
+    
+    bool ret = tex->saveToFile(filename, Image::Format::PNG);
+    if (ret) {
+        imgPath += filename;
+        CCLOG("save image to %s", imgPath.c_str());
+        return imgPath;
+    }
+    return "";
 }
 
+
+void GameOver::Share( cocos2d::Ref *sender )
+{
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+//
+//    std::string fileName = "CaptureScreenTest.png";
+//    
+//    std::string imgPath = sceenshot(fileName);
+//    
+//    auto delay = DelayTime::create(1.0);
+//    auto share = CallFunc::create([=](){
+//        cocos2d::plugin::FacebookAgent::FBInfo params;
+//        params.insert(std::make_pair("dialog", "sharePhoto"));
+//        params.insert(std::make_pair("photo", imgPath));
+//        
+//        if (cocos2d::plugin::FacebookAgent::getInstance()->canPresentDialogWithParams(params))
+//        {
+//            cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret, std::string& msg){
+//                CCLOG("%s", msg.c_str());
+//            });
+//        }
+//        else
+//        {
+//            cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret, std::string& msg){
+//                CCLOG("%s", msg.c_str());
+//            });
+//            
+//        }
+//    });
+//    
+//    auto seq = Sequence::create(delay, share, nullptr);
+//    runAction(seq);
+    
+    cocos2d::plugin::FacebookAgent::FBInfo params;
+    params.insert(std::make_pair("dialog", "share_link"));
+    params.insert(std::make_pair("name", "Cocos2d-x web site"));
+    params.insert(std::make_pair("caption", "Cocos2d-x caption"));
+    params.insert(std::make_pair("description", "Cocos2d-x description"));
+    params.insert(std::make_pair("to", "100006738453912")); // android only web view support
+    params.insert(std::make_pair("picture", "http://files.cocos2d-x.org/images/orgsite/logo.png"));
+    params.insert(std::make_pair("link", "http://www.cocos2d-x.org"));
+    
+    if (cocos2d::plugin::FacebookAgent::getInstance()->canPresentDialogWithParams(params))
+    {
+        cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret ,std::string& msg){
+            CCLOG("%s", msg.c_str());
+        });
+    }
+    else
+    {
+        cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret ,std::string& msg){
+            CCLOG("%s", msg.c_str());
+        });
+    }
+
+}
+#endif
 void GameOver::Rate( cocos2d::Ref *sender )
 {
-
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+    Application::getInstance()->openURL("market://details?id=com.cubeactive.qnotelistfree");
+#endif
+    
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    Application::getInstance()->openURL("http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=353372460&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8");
+#endif
 }
 
 

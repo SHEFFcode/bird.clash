@@ -28,9 +28,15 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import "BannerViewController.h"
+#import "FacebookSDK.h"
 
 @implementation AppController {
     BannerViewController *_bannerViewController;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [FBSession.activeSession handleOpenURL:url];
 }
 
 #pragma mark -
@@ -102,6 +108,8 @@ static AppDelegate s_sharedApplication;
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+            [FBAppCall handleDidBecomeActive];
+        cocos2d::Director::getInstance()->resume();
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */

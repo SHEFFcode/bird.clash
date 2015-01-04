@@ -30,6 +30,7 @@
 #include <SLES/OpenSLES_Android.h>
 #include <string>
 #include <unordered_map>
+#include "base/CCRef.h"
 #include "base/ccUtils.h"
 
 #define MAX_AUDIOINSTANCES 24
@@ -48,10 +49,11 @@ public:
 
     bool init(SLEngineItf engineEngine, SLObjectItf outputMixObject,const std::string& fileFullPath, float volume, bool loop);
 
-private:
-
-    SLObjectItf _fdPlayerObject;
+    bool _playOver;
+    bool _loop;
     SLPlayItf _fdPlayerPlay;
+private:
+    SLObjectItf _fdPlayerObject;
     SLSeekItf _fdPlayerSeek;
     SLVolumeItf _fdPlayerVolume;
 
@@ -63,7 +65,7 @@ private:
     friend class AudioEngineImpl;
 };
 
-class AudioEngineImpl
+class AudioEngineImpl : public cocos2d::Ref
 {
 public:
     AudioEngineImpl();
@@ -82,10 +84,10 @@ public:
     bool setCurrentTime(int audioID, float time);
     void setFinishCallback(int audioID, const std::function<void (int, const std::string &)> &callback);
 
-    void playerFinishCallback(SLPlayItf caller, SLuint32 playEvent);
-
     void uncache(const std::string& filePath){}
     void uncacheAll(){}
+    
+    void update(float dt);
 private:
 
     // engine interfaces
@@ -99,6 +101,8 @@ private:
     std::unordered_map<int, AudioPlayer>  _audioPlayers;
 
     int currentAudioID;
+    
+    bool _lazyInitLoop;
 };
 
 #endif // __AUDIO_ENGINE_INL_H_
