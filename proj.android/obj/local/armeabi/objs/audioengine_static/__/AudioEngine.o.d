@@ -1,44 +1,29 @@
 ./obj/local/armeabi/objs/audioengine_static/__/AudioEngine.o: \
   jni/../../cocos2d/cocos/audio/android/../AudioEngine.cpp \
+  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h \
   jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/string.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/malloc.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/limits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/limits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/internal_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/limits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/utility \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple \
@@ -48,21 +33,57 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdio.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/string.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/malloc.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/ctype.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
-  jni/../../cocos2d/cocos/audio/android/../../2d/CCNode.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
+  jni/../../cocos2d/cocos/audio/android/../include/Export.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/CCFileUtils.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
+  jni/../../cocos2d/cocos/audio/android/../../base/ccTypes.h \
+  jni/../../cocos2d/cocos/audio/android/../../math/CCGeometry.h \
   jni/../../cocos2d/cocos/audio/android/../../base/ccMacros.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCConsole.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h \
@@ -88,30 +109,13 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/time.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/time.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ratio \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__mutex_base \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/pthread.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sched.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/ctype.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex \
   jni/../../cocos2d/cocos/audio/android/../../base/CCRef.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/CCStdC.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
@@ -134,10 +138,6 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
-  jni/../../cocos2d/cocos/audio/android/../../base/CCVector.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/CCProtocols.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/ccTypes.h \
-  jni/../../cocos2d/cocos/audio/android/../../math/CCGeometry.h \
   jni/../../cocos2d/cocos/audio/android/../../math/CCMath.h \
   jni/../../cocos2d/cocos/audio/android/../../math/Vec2.h \
   jni/../../cocos2d/cocos/audio/android/../../math/CCMathBase.h \
@@ -156,6 +156,12 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/CCValue.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/CCData.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h \
+  jni/../../cocos2d/cocos/audio/android/../../2d/CCNode.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/CCVector.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/CCProtocols.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCTexture2D.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCScriptSupport.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/CCCommon.h \
@@ -163,13 +169,7 @@
   jni/../../cocos2d/cocos/audio/android/../../base/CCEventTouch.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCEvent.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCEventKeyboard.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list \
   jni/../../cocos2d/cocos/audio/android/../../math/CCAffineTransform.h \
-  jni/../../cocos2d/cocos/audio/android/../include/Export.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/CCFileUtils.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/CCValue.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/CCData.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h \
   jni/../../cocos2d/cocos/audio/android/../android/AudioEngine-inl.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_Platform.h \
@@ -177,23 +177,25 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_AndroidConfiguration.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/SLES/OpenSLES_AndroidMetadata.h
 
+jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h:
+
 jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/string.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/malloc.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
 
@@ -204,6 +206,12 @@ jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/limits.h:
 
@@ -216,44 +224,6 @@ jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/syslimits.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new:
 
@@ -273,13 +243,43 @@ jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdio.h:
 
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
+
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstring:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/string.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/malloc.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
 
@@ -289,7 +289,29 @@ jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max:
 
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list:
+
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/ctype.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
 
@@ -297,11 +319,31 @@ jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
+jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
+jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h:
 
-jni/../../cocos2d/cocos/audio/android/../../2d/CCNode.h:
+jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h:
+
+jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
+
+jni/../../cocos2d/cocos/audio/android/../include/Export.h:
+
+jni/../../cocos2d/cocos/audio/android/../../platform/CCFileUtils.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
+
+jni/../../cocos2d/cocos/audio/android/../../base/ccTypes.h:
+
+jni/../../cocos2d/cocos/audio/android/../../math/CCGeometry.h:
 
 jni/../../cocos2d/cocos/audio/android/../../base/ccMacros.h:
 
@@ -353,53 +395,19 @@ jni/../../cocos2d/cocos/audio/android/../../base/CCConsole.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ratio:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
-
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__mutex_base:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/pthread.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sched.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
-
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/ctype.h:
-
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex:
 
 jni/../../cocos2d/cocos/audio/android/../../base/CCRef.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h:
-
-jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
 
 jni/../../cocos2d/cocos/audio/android/../../platform/CCStdC.h:
 
@@ -445,14 +453,6 @@ jni/../../cocos2d/cocos/audio/android/../../base/ccRandom.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset:
 
-jni/../../cocos2d/cocos/audio/android/../../base/CCVector.h:
-
-jni/../../cocos2d/cocos/audio/android/../../base/CCProtocols.h:
-
-jni/../../cocos2d/cocos/audio/android/../../base/ccTypes.h:
-
-jni/../../cocos2d/cocos/audio/android/../../math/CCGeometry.h:
-
 jni/../../cocos2d/cocos/audio/android/../../math/CCMath.h:
 
 jni/../../cocos2d/cocos/audio/android/../../math/Vec2.h:
@@ -489,6 +489,18 @@ jni/../../cocos2d/cocos/audio/android/../../platform/android/CCGL-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
 
+jni/../../cocos2d/cocos/audio/android/../../base/CCValue.h:
+
+jni/../../cocos2d/cocos/audio/android/../../base/CCData.h:
+
+jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h:
+
+jni/../../cocos2d/cocos/audio/android/../../2d/CCNode.h:
+
+jni/../../cocos2d/cocos/audio/android/../../base/CCVector.h:
+
+jni/../../cocos2d/cocos/audio/android/../../base/CCProtocols.h:
+
 jni/../../cocos2d/cocos/audio/android/../../renderer/CCTexture2D.h:
 
 jni/../../cocos2d/cocos/audio/android/../../base/CCScriptSupport.h:
@@ -503,19 +515,7 @@ jni/../../cocos2d/cocos/audio/android/../../base/CCEvent.h:
 
 jni/../../cocos2d/cocos/audio/android/../../base/CCEventKeyboard.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list:
-
 jni/../../cocos2d/cocos/audio/android/../../math/CCAffineTransform.h:
-
-jni/../../cocos2d/cocos/audio/android/../include/Export.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/CCFileUtils.h:
-
-jni/../../cocos2d/cocos/audio/android/../../base/CCValue.h:
-
-jni/../../cocos2d/cocos/audio/android/../../base/CCData.h:
-
-jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h:
 
 jni/../../cocos2d/cocos/audio/android/../android/AudioEngine-inl.h:
 

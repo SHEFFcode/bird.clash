@@ -74,6 +74,13 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
+  jni/../../cocos2d/cocos/audio/android/../../base/CCRef.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
   jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
@@ -111,13 +118,6 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex \
-  jni/../../cocos2d/cocos/audio/android/../../base/CCRef.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/CCStdC.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
@@ -174,6 +174,7 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/asset_manager.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/asset_manager_jni.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/jni.h \
+  jni/../../cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h \
   jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h \
   jni/../../cocos2d/cocos/audio/android/../include/Export.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCDirector.h \
@@ -181,11 +182,15 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCScene.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/CCGLView.h \
+  jni/../../cocos2d/cocos/audio/android/../../base/CCScheduler.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set \
+  jni/../../cocos2d/cocos/audio/android/../../base/uthash.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/android/CCFileUtils-android.h \
   jni/../../cocos2d/cocos/audio/android/../../platform/CCFileUtils.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCValue.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/CCData.h \
-  jni/../../cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h
+  jni/../../cocos2d/cocos/audio/android/../../base/CCData.h
 
 jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.h:
 
@@ -335,6 +340,20 @@ jni/../../cocos2d/cocos/audio/android/AudioEngine-inl.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
 
+jni/../../cocos2d/cocos/audio/android/../../base/CCRef.h:
+
+jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h:
+
+jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h:
+
+jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h:
+
+jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h:
+
+jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
+
 jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
@@ -408,20 +427,6 @@ jni/../../cocos2d/cocos/audio/android/../../base/CCConsole.h:
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex:
-
-jni/../../cocos2d/cocos/audio/android/../../base/CCRef.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h:
-
-jni/../../cocos2d/cocos/audio/android/../../base/ccConfig.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
 
 jni/../../cocos2d/cocos/audio/android/../../platform/CCStdC.h:
 
@@ -535,6 +540,8 @@ jni/../../cocos2d/cocos/audio/android/../../math/CCAffineTransform.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/jni.h:
 
+jni/../../cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h:
+
 jni/../../cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
 
 jni/../../cocos2d/cocos/audio/android/../include/Export.h:
@@ -549,6 +556,16 @@ jni/../../cocos2d/cocos/audio/android/../../2d/CCScene.h:
 
 jni/../../cocos2d/cocos/audio/android/../../platform/CCGLView.h:
 
+jni/../../cocos2d/cocos/audio/android/../../base/CCScheduler.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set:
+
+jni/../../cocos2d/cocos/audio/android/../../base/uthash.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h:
+
 jni/../../cocos2d/cocos/audio/android/../../platform/android/CCFileUtils-android.h:
 
 jni/../../cocos2d/cocos/audio/android/../../platform/CCFileUtils.h:
@@ -556,5 +573,3 @@ jni/../../cocos2d/cocos/audio/android/../../platform/CCFileUtils.h:
 jni/../../cocos2d/cocos/audio/android/../../base/CCValue.h:
 
 jni/../../cocos2d/cocos/audio/android/../../base/CCData.h:
-
-jni/../../cocos2d/cocos/audio/android/../../platform/android/jni/JniHelper.h:

@@ -15,9 +15,9 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/limits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/document.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/reader.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/rapidjson.h \
+  jni/../../cocos2d/external/flatbuffers/../json/document.h \
+  jni/../../cocos2d/external/flatbuffers/../json/reader.h \
+  jni/../../cocos2d/external/flatbuffers/../json/rapidjson.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
@@ -48,12 +48,12 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/pow10.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/stack.h \
+  jni/../../cocos2d/external/flatbuffers/../json/internal/pow10.h \
+  jni/../../cocos2d/external/flatbuffers/../json/internal/stack.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/setjmp.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/strfunc.h \
+  jni/../../cocos2d/external/flatbuffers/../json/internal/strfunc.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
@@ -92,11 +92,11 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/CocoLoader.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/document.h:
+jni/../../cocos2d/external/flatbuffers/../json/document.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/reader.h:
+jni/../../cocos2d/external/flatbuffers/../json/reader.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/rapidjson.h:
+jni/../../cocos2d/external/flatbuffers/../json/rapidjson.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib:
 
@@ -158,9 +158,9 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/rapidjs
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/pow10.h:
+jni/../../cocos2d/external/flatbuffers/../json/internal/pow10.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/stack.h:
+jni/../../cocos2d/external/flatbuffers/../json/internal/stack.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp:
 
@@ -168,7 +168,7 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/interna
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/strfunc.h:
+jni/../../cocos2d/external/flatbuffers/../json/internal/strfunc.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new:
 

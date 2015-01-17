@@ -195,7 +195,6 @@
   jni/../../cocos2d/cocos/audio/android/../../base/CCIMEDelegate.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCIMEDispatcher.h \
   jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h \
-  jni/../../cocos2d/cocos/audio/android/../../base/CCCamera.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCEventType.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCEventDispatcher.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCEventListener.h \
@@ -210,7 +209,6 @@
   jni/../../cocos2d/cocos/audio/android/../../base/CCEventFocus.h \
   jni/../../cocos2d/cocos/audio/android/../../base/CCEventListenerFocus.h \
   jni/../../cocos2d/cocos/audio/android/../../math/MathUtil.h \
-  jni/../../cocos2d/cocos/audio/android/../../math/MathUtil.inl \
   jni/../../cocos2d/cocos/audio/android/../../math/CCVertex.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCAction.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCActionInterval.h \
@@ -233,7 +231,6 @@
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCQuadCommand.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCRenderCommand.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCGLProgramState.h \
-  jni/../../cocos2d/cocos/audio/android/../../renderer/CCTrianglesCommand.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCDrawingPrimitives.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCDrawNode.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCCustomCommand.h \
@@ -255,6 +252,7 @@
   jni/../../cocos2d/cocos/audio/android/../../2d/CCMenuItem.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCClippingNode.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCGroupCommand.h \
+  jni/../../cocos2d/cocos/audio/android/../../2d/CCClippingRectangleNode.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCMotionStreak.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCProgressTimer.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCRenderTexture.h \
@@ -267,6 +265,8 @@
   jni/../../cocos2d/cocos/audio/android/../../2d/CCParticleSystemQuad.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCGrabber.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCGrid.h \
+  jni/../../cocos2d/cocos/audio/android/../../2d/CCCamera.h \
+  jni/../../cocos2d/cocos/audio/android/../../2d/CCLight.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCRenderCommandPool.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCRenderer.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCGLProgram.h \
@@ -280,6 +280,7 @@
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCVertexIndexData.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCPrimitive.h \
   jni/../../cocos2d/cocos/audio/android/../../renderer/CCPrimitiveCommand.h \
+  jni/../../cocos2d/cocos/audio/android/../../renderer/CCTrianglesCommand.h \
   jni/../../cocos2d/cocos/audio/android/../../physics/CCPhysicsBody.h \
   jni/../../cocos2d/cocos/audio/android/../../physics/CCPhysicsShape.h \
   jni/../../cocos2d/cocos/audio/android/../../physics/CCPhysicsContact.h \
@@ -306,7 +307,6 @@
   jni/../../cocos2d/cocos/audio/android/../../2d/CCComponent.h \
   jni/../../cocos2d/cocos/audio/android/../../2d/CCComponentContainer.h \
   jni/../../cocos2d/cocos/audio/android/../../3d/CCAABB.h \
-  jni/../../cocos2d/cocos/audio/android/../../3d/3dExport.h \
   jni/../../cocos2d/cocos/audio/android/../../3d/CCOBB.h \
   jni/../../cocos2d/cocos/audio/android/../../3d/CCRay.h \
   jni/../../cocos2d/cocos/audio/android/../../3d/CCSprite3D.h \
@@ -727,8 +727,6 @@ jni/../../cocos2d/cocos/audio/android/../../base/CCIMEDispatcher.h:
 
 jni/../../cocos2d/cocos/audio/android/../../base/ccUtils.h:
 
-jni/../../cocos2d/cocos/audio/android/../../base/CCCamera.h:
-
 jni/../../cocos2d/cocos/audio/android/../../base/CCEventType.h:
 
 jni/../../cocos2d/cocos/audio/android/../../base/CCEventDispatcher.h:
@@ -756,8 +754,6 @@ jni/../../cocos2d/cocos/audio/android/../../base/CCEventFocus.h:
 jni/../../cocos2d/cocos/audio/android/../../base/CCEventListenerFocus.h:
 
 jni/../../cocos2d/cocos/audio/android/../../math/MathUtil.h:
-
-jni/../../cocos2d/cocos/audio/android/../../math/MathUtil.inl:
 
 jni/../../cocos2d/cocos/audio/android/../../math/CCVertex.h:
 
@@ -803,8 +799,6 @@ jni/../../cocos2d/cocos/audio/android/../../renderer/CCRenderCommand.h:
 
 jni/../../cocos2d/cocos/audio/android/../../renderer/CCGLProgramState.h:
 
-jni/../../cocos2d/cocos/audio/android/../../renderer/CCTrianglesCommand.h:
-
 jni/../../cocos2d/cocos/audio/android/../../2d/CCDrawingPrimitives.h:
 
 jni/../../cocos2d/cocos/audio/android/../../2d/CCDrawNode.h:
@@ -847,6 +841,8 @@ jni/../../cocos2d/cocos/audio/android/../../2d/CCClippingNode.h:
 
 jni/../../cocos2d/cocos/audio/android/../../renderer/CCGroupCommand.h:
 
+jni/../../cocos2d/cocos/audio/android/../../2d/CCClippingRectangleNode.h:
+
 jni/../../cocos2d/cocos/audio/android/../../2d/CCMotionStreak.h:
 
 jni/../../cocos2d/cocos/audio/android/../../2d/CCProgressTimer.h:
@@ -870,6 +866,10 @@ jni/../../cocos2d/cocos/audio/android/../../2d/CCParticleSystemQuad.h:
 jni/../../cocos2d/cocos/audio/android/../../2d/CCGrabber.h:
 
 jni/../../cocos2d/cocos/audio/android/../../2d/CCGrid.h:
+
+jni/../../cocos2d/cocos/audio/android/../../2d/CCCamera.h:
+
+jni/../../cocos2d/cocos/audio/android/../../2d/CCLight.h:
 
 jni/../../cocos2d/cocos/audio/android/../../renderer/CCRenderCommandPool.h:
 
@@ -896,6 +896,8 @@ jni/../../cocos2d/cocos/audio/android/../../renderer/CCVertexIndexData.h:
 jni/../../cocos2d/cocos/audio/android/../../renderer/CCPrimitive.h:
 
 jni/../../cocos2d/cocos/audio/android/../../renderer/CCPrimitiveCommand.h:
+
+jni/../../cocos2d/cocos/audio/android/../../renderer/CCTrianglesCommand.h:
 
 jni/../../cocos2d/cocos/audio/android/../../physics/CCPhysicsBody.h:
 
@@ -948,8 +950,6 @@ jni/../../cocos2d/cocos/audio/android/../../2d/CCComponent.h:
 jni/../../cocos2d/cocos/audio/android/../../2d/CCComponentContainer.h:
 
 jni/../../cocos2d/cocos/audio/android/../../3d/CCAABB.h:
-
-jni/../../cocos2d/cocos/audio/android/../../3d/3dExport.h:
 
 jni/../../cocos2d/cocos/audio/android/../../3d/CCOBB.h:
 

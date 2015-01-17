@@ -13,6 +13,7 @@ Cherry::Cherry( cocos2d::Layer *layer, cocos2d::Label *cherryScore)
     def->flush();
 
     auto cherry = Sprite::create("cherry.png");
+    cherry->setScale(1.25);
     cherry->setTag(999);
     unsigned int widthStart = visibleSize.width * 0.2;
     unsigned int widthEnd = visibleSize.width * 0.6;
@@ -50,10 +51,10 @@ bool Cherry::onTouchBegan( cocos2d::Touch *touch, cocos2d::Event *event, cocos2d
         def->flush();
         auto cherryAnimation = Sprite::create("cherry_animation.png");
         cherryAnimation->setPosition(Vec2(target->getPositionX(), target->getPositionY()));
-        cherryAnimation->setScale(0.25);
+        cherryAnimation->setScale(0.35);
         layer->addChild(cherryAnimation,49);
         layer->removeChild(target);
-        auto animation = ScaleTo::create(0.1, 0.5);
+        auto animation = ScaleTo::create(0.1, .75);
         cherryAnimation->runAction(animation);
         Sequence *seq = Sequence::create(DelayTime::create(0.1), CallFunc::create(std::bind(&Cherry::RemoveCherry, this, cherryAnimation, layer)), NULL);
         layer->runAction(seq);

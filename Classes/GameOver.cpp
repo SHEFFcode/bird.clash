@@ -32,7 +32,7 @@ bool GameOver::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
     //Initialize the facebook SDK
-    auto facebook = cocos2d::plugin::FacebookAgent::getInstance();
+    cocos2d::plugin::FacebookAgent::getInstance();
     
     UserDefault *def = UserDefault::getInstance();
     auto score = def->getIntegerForKey("score");
@@ -125,30 +125,30 @@ void GameOver::Replay( cocos2d::Ref *sender )
     Director::getInstance()->replaceScene(scene);
 }
 
-//Screenshot
-std::string GameOver::sceenshot(std::string& filename)
-{
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    Point origin = Director::getInstance()->getVisibleOrigin();
-    auto tex = RenderTexture::create(visibleSize.width, visibleSize.height, Texture2D::PixelFormat::RGBA8888);
-    tex->setPosition((origin.x + visibleSize.width) / 2, (origin.y + visibleSize.height) / 2);
-    tex->begin();
-    Director::getInstance()->getRunningScene()->visit();
-    tex->end();
-    
-    std::string imgPath = FileUtils::getInstance()->getWritablePath();
-    if (imgPath.length() == 0) {
-        return "";
-    }
-    
-    bool ret = tex->saveToFile(filename, Image::Format::PNG);
-    if (ret) {
-        imgPath += filename;
-        CCLOG("save image to %s", imgPath.c_str());
-        return imgPath;
-    }
-    return "";
-}
+////Screenshot
+//std::string GameOver::sceenshot(std::string& filename)
+//{
+//    Size visibleSize = Director::getInstance()->getVisibleSize();
+//    Point origin = Director::getInstance()->getVisibleOrigin();
+//    auto tex = RenderTexture::create(visibleSize.width, visibleSize.height, Texture2D::PixelFormat::RGBA8888);
+//    tex->setPosition((origin.x + visibleSize.width) / 2, (origin.y + visibleSize.height) / 2);
+//    tex->begin();
+//    Director::getInstance()->getRunningScene()->visit();
+//    tex->end();
+//    
+//    std::string imgPath = FileUtils::getInstance()->getWritablePath();
+//    if (imgPath.length() == 0) {
+//        return "";
+//    }
+//    
+//    bool ret = tex->saveToFile(filename, Image::Format::PNG);
+//    if (ret) {
+//        imgPath += filename;
+//        CCLOG("save image to %s", imgPath.c_str());
+//        return imgPath;
+//    }
+//    return "";
+//}
 
 
 void GameOver::Share( cocos2d::Ref *sender )
@@ -182,31 +182,82 @@ void GameOver::Share( cocos2d::Ref *sender )
 //    
 //    auto seq = Sequence::create(delay, share, nullptr);
 //    runAction(seq);
+//    
+//    cocos2d::plugin::FacebookAgent::FBInfo params;
+//    params.insert(std::make_pair("dialog", "Link"));
+//    params.insert(std::make_pair("name", "Cocos2d-x web site"));
+//    params.insert(std::make_pair("caption", "Cocos2d-x caption"));
+//    params.insert(std::make_pair("description", "Cocos2d-x description"));
+//    params.insert(std::make_pair("to", "100006738453912")); // android only web view support
+//    params.insert(std::make_pair("picture", "http://files.cocos2d-x.org/images/orgsite/logo.png"));
+//    params.insert(std::make_pair("link", "http://www.cocos2d-x.org"));
+//    
+//    if (cocos2d::plugin::FacebookAgent::getInstance()->canPresentDialogWithParams(params))
+//    {
+//        cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret ,std::string& msg){
+//            CCLOG("%s", msg.c_str());
+//        });
+//    }
+//    else
+//    {
+//        cocos2d::plugin::FacebookAgent::getInstance()->share(params, [=](int ret ,std::string& msg){
+//            CCLOG("%s", msg.c_str());
+//        });
+//    }
     
+    
+    
+    //************ WORKS ****************//
+    
+//    cocos2d::plugin::FacebookAgent::FBInfo params;
+//    params.insert(std::make_pair("dialog", "share_link"));
+//    params.insert(std::make_pair("name", "Check out Bird Clash!"));
+//    params.insert(std::make_pair("caption", "Bird Clash is the best game ever."));
+//    params.insert(std::make_pair("description", "Bird Clash is the best game ever."));
+//    params.insert(std::make_pair("link", "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=353372460&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"));
+//    
+//    if (cocos2d::plugin::FacebookAgent::getInstance()->canPresentDialogWithParams(params))
+//    {
+//        cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret ,std::string& msg){
+//            CCLOG("%s", msg.c_str());
+//        });
+//    }
+//    else
+//    {
+//        cocos2d::plugin::FacebookAgent::getInstance()->share(params, [=](int ret ,std::string& msg)
+//                                                             {
+//                                                                 CCLOG("%s", msg.c_str());
+//                                                             });
+//    }
+    
+    //*****************************************
     cocos2d::plugin::FacebookAgent::FBInfo params;
-    params.insert(std::make_pair("dialog", "share_link"));
-    params.insert(std::make_pair("name", "Cocos2d-x web site"));
-    params.insert(std::make_pair("caption", "Cocos2d-x caption"));
-    params.insert(std::make_pair("description", "Cocos2d-x description"));
-    params.insert(std::make_pair("to", "100006738453912")); // android only web view support
-    params.insert(std::make_pair("picture", "http://files.cocos2d-x.org/images/orgsite/logo.png"));
-    params.insert(std::make_pair("link", "http://www.cocos2d-x.org"));
+    params.insert(std::make_pair("dialog", "message_link"));
+    params.insert(std::make_pair("description", "Cocos2d-x is a great game engine"));
+    params.insert(std::make_pair("title", "Cocos2d-x"));
+    params. insert(std::make_pair("link", "http://www.cocos2d-x.org"));
+    params.insert(std::make_pair("imageUrl", "http://files.cocos2d-x.org/images/orgsite/logo.png"));
     
     if (cocos2d::plugin::FacebookAgent::getInstance()->canPresentDialogWithParams(params))
     {
-        cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret ,std::string& msg){
+        cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret, std::string& msg){
             CCLOG("%s", msg.c_str());
         });
     }
     else
     {
-        cocos2d::plugin::FacebookAgent::getInstance()->dialog(params, [=](int ret ,std::string& msg){
-            CCLOG("%s", msg.c_str());
-        });
+        cocos2d::plugin::FacebookAgent::getInstance()->share(params, [=](int ret ,std::string& msg)
+                                                             {
+                                                                 CCLOG("%s", msg.c_str());
+                                                             });
+        
     }
 
-}
+    
+    
 #endif
+}
+
 void GameOver::Rate( cocos2d::Ref *sender )
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)

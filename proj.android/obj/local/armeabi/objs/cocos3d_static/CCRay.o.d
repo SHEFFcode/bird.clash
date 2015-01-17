@@ -71,12 +71,6 @@
   jni/../../cocos2d/cocos/3d/../math/Vec3.h \
   jni/../../cocos2d/cocos/3d/../math/Vec3.inl \
   jni/../../cocos2d/cocos/3d/../math/Mat4.h \
-  jni/../../cocos2d/cocos/3d/../math/Vec4.h \
-  jni/../../cocos2d/cocos/3d/../math/Vec4.inl \
-  jni/../../cocos2d/cocos/3d/../math/Mat4.inl \
-  jni/../../cocos2d/cocos/3d/../math/Quaternion.h \
-  jni/../../cocos2d/cocos/3d/../math/Quaternion.inl \
-  jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
   jni/../../cocos2d/cocos/3d/../base/ccMacros.h \
   jni/../../cocos2d/cocos/3d/../base/CCConsole.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h \
@@ -144,7 +138,12 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h \
+  jni/../../cocos2d/cocos/3d/../math/Vec4.h \
+  jni/../../cocos2d/cocos/3d/../math/Vec4.inl \
+  jni/../../cocos2d/cocos/3d/../math/Mat4.inl \
+  jni/../../cocos2d/cocos/3d/../math/Quaternion.h \
+  jni/../../cocos2d/cocos/3d/../math/Quaternion.inl \
+  jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
   jni/../../cocos2d/cocos/3d/../3d/CCOBB.h
 
 jni/../../cocos2d/cocos/3d/../3d/CCRay.h:
@@ -289,18 +288,6 @@ jni/../../cocos2d/cocos/3d/../math/Vec3.inl:
 
 jni/../../cocos2d/cocos/3d/../math/Mat4.h:
 
-jni/../../cocos2d/cocos/3d/../math/Vec4.h:
-
-jni/../../cocos2d/cocos/3d/../math/Vec4.inl:
-
-jni/../../cocos2d/cocos/3d/../math/Mat4.inl:
-
-jni/../../cocos2d/cocos/3d/../math/Quaternion.h:
-
-jni/../../cocos2d/cocos/3d/../math/Quaternion.inl:
-
-jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
-
 jni/../../cocos2d/cocos/3d/../base/ccMacros.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCConsole.h:
@@ -435,6 +422,16 @@ jni/../../cocos2d/cocos/3d/../base/ccRandom.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
 
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
+jni/../../cocos2d/cocos/3d/../math/Vec4.h:
+
+jni/../../cocos2d/cocos/3d/../math/Vec4.inl:
+
+jni/../../cocos2d/cocos/3d/../math/Mat4.inl:
+
+jni/../../cocos2d/cocos/3d/../math/Quaternion.h:
+
+jni/../../cocos2d/cocos/3d/../math/Quaternion.inl:
+
+jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
 
 jni/../../cocos2d/cocos/3d/../3d/CCOBB.h:

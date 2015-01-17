@@ -22,25 +22,31 @@ Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
     soundOn = def->getIntegerForKey("sound");
     
     menuSprite = Sprite::create("powerups/minus2.png");
+    menuSprite->setScale(1.5);
     auto plusMinus = MenuItemSprite::create(menuSprite, menuSprite, CC_CALLBACK_1(Powerups::HideShowMenu, this));
-    plusMinus->setPosition(Vec2(plusMinus->getContentSize().width / 2, plusMinus->getContentSize().height / 2));
+    plusMinus->setPosition(Vec2((menuSprite->getContentSize().width) / 2, plusMinus->getContentSize().height / 2));
     
     menu = Menu::create(plusMinus, NULL);
     menu->setPosition(Point::ZERO);
     layer->addChild(menu,1);
+    
     auto blueSprite = Sprite::create("powerups/blue.png");
     auto blueSelected = blueSprite;
     if(power1 > 0)
         blueSelected = Sprite::create("powerups/blue_selected.png");
+    blueSelected->setScale(1.5);
+    blueSprite->setScale(1.5);
     auto bluebird = MenuItemSprite::create(blueSprite, blueSelected, CC_CALLBACK_1(Powerups::BlueBirds, this, layer, world));
-    auto width = bluebird->getContentSize().width;
-    auto height = bluebird->getContentSize().height / 2;
-    bluebird->setPosition(Vec2(plusMinus->getContentSize().width + (width / 2), height));
+    auto width = blueSprite->getContentSize().width * 1.5;
+    auto height = blueSprite->getContentSize().height / 2;
+    bluebird->setPosition(Vec2(plusMinus->getPositionX() + width, height));
     
     auto lightSprite = Sprite::create("powerups/lightning.png");
     auto lightSelected = lightSprite;
     if(power2 > 0)
         lightSelected = Sprite::create("powerups/lightning_selected.png");
+    lightSprite->setScale(1.5);
+    lightSelected->setScale(1.5);
     auto light = MenuItemSprite::create(lightSprite, lightSelected, CC_CALLBACK_1(Powerups::Lightning, this, layer, world));
     light->setPosition(Vec2(bluebird->getPositionX() + width, height));
     
@@ -48,6 +54,8 @@ Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
     growSelected = growSprite;
     if(power3 > 0)
         growSelected = Sprite::create("powerups/grow_selected.png");
+    growSprite->setScale(1.5);
+    growSelected->setScale(1.5);
     auto grow = MenuItemSprite::create(growSprite, growSelected, CC_CALLBACK_1(Powerups::Grow, this, layer, world));
     grow->setPosition(Vec2(light->getPositionX() + width, height));
     
@@ -55,18 +63,20 @@ Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
     __String *pText2 = __String::createWithFormat("%i",power2);
     __String *pText3 = __String::createWithFormat("%i",power3);
     
-    power1Text = Label::createWithTTF( pText1->getCString(), "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
+    auto wSet = (bluebird->getContentSize().width * 1.5) * 0.4;
+    
+    power1Text = Label::createWithTTF( pText1->getCString(), "Arial_Regular.ttf", wSet);
     power1Text->setColor(Color3B::BLACK);
-    auto textHeight = width + ((bluebird->getContentSize().height - width - power1Text->getContentSize().height / 2) / 2);
-    power1Text->setPosition(Point(bluebird->getPositionX() + (bluebird->getContentSize().width * 0.04), textHeight));
+    auto textHeight = width + (((bluebird->getContentSize().height * 1.5) - width - power1Text->getContentSize().height / 2) / 2);
+    power1Text->setPosition(Vec2(width * 1.5 + (power1Text->getContentSize().width * 0.15), textHeight));
     
-    power2Text = Label::createWithTTF( pText2->getCString(), "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
+    power2Text = Label::createWithTTF( pText2->getCString(), "Arial_Regular.ttf", wSet);
     power2Text->setColor(Color3B::BLACK);
-    power2Text->setPosition(Point(light->getPositionX() + (bluebird->getContentSize().width * 0.04), textHeight));
+    power2Text->setPosition(Point(power1Text->getPositionX() + width, textHeight));
     
-    power3Text = Label::createWithTTF( pText3->getCString(), "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
+    power3Text = Label::createWithTTF( pText3->getCString(), "Arial_Regular.ttf", wSet);
     power3Text->setColor(Color3B::BLACK);
-    power3Text->setPosition(Point(grow->getPositionX() + (bluebird->getContentSize().width * 0.04), textHeight));
+    power3Text->setPosition(Point(power2Text->getPositionX() + width, textHeight));
     
     layer->addChild(power1Text,2);
     layer->addChild(power2Text,2);
@@ -90,19 +100,22 @@ Powerups::Powerups( cocos2d::Layer *layer, b2World *world )
     if(power1 > 99) {
         power1Text->setOpacity(0);
         power1_infinity = Sprite::create("powerups/infinity.png");
-        power1_infinity->setPosition(Vec2(bluebird->getPositionX() + (bluebird->getContentSize().width * 0.04), power1Text->getPositionY()));
+        power1_infinity->setScale(1.5);
+        power1_infinity->setPosition(Vec2(power1Text->getPositionX(), power1Text->getPositionY()));
         layer->addChild(power1_infinity,2);
     }
     if(power2 > 99) {
         power2Text->setOpacity(0);
         power2_infinity = Sprite::create("powerups/infinity.png");
-        power2_infinity->setPosition(Vec2(light->getPositionX() + (bluebird->getContentSize().width * 0.04), power2Text->getPositionY()));
+        power2_infinity->setScale(1.5);
+        power2_infinity->setPosition(Vec2(power2Text->getPositionX(), power2Text->getPositionY()));
         layer->addChild(power2_infinity,2);
     }
     if(power3 > 99) {
         power3Text->setOpacity(0);
         power3_infinity = Sprite::create("powerups/infinity.png");
-        power3_infinity->setPosition(Vec2(grow->getPositionX() + (bluebird->getContentSize().width * 0.04), power3Text->getPositionY()));
+        power3_infinity->setScale(1.5);
+        power3_infinity->setPosition(Vec2(power3Text->getPositionX(), power3Text->getPositionY()));
         layer->addChild(power3_infinity,2);
     }
     if(!menuShow){

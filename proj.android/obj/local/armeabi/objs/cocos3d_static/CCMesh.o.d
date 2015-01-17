@@ -153,7 +153,6 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
   jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCMeshCommand.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
@@ -495,8 +494,6 @@ jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
 
 jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
-
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCMeshCommand.h:
 

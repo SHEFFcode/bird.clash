@@ -164,15 +164,14 @@
   jni/../../cocos2d/cocos/3d/../base/CCEventKeyboard.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list \
   jni/../../cocos2d/cocos/3d/../math/CCAffineTransform.h \
+  jni/../../cocos2d/cocos/3d/../2d/CCDrawNode.h \
+  jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h \
+  jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCTextureAtlas.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCQuadCommand.h \
-  jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCGLProgramState.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
-  jni/../../cocos2d/cocos/3d/../renderer/CCTrianglesCommand.h \
-  jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h \
   jni/../../cocos2d/cocos/3d/../2d/CCSpriteFrameCache.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set \
   jni/../../cocos2d/cocos/3d/../2d/CCSpriteFrame.h \
@@ -183,7 +182,7 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque \
   jni/../../cocos2d/cocos/3d/../2d/CCScene.h \
   jni/../../cocos2d/cocos/3d/../platform/CCGLView.h \
-  jni/../../cocos2d/cocos/3d/../base/CCCamera.h \
+  jni/../../cocos2d/cocos/3d/../2d/CCCamera.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCRenderer.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCGLProgram.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCGLProgramCache.h
@@ -516,23 +515,21 @@ jni/../../cocos2d/cocos/3d/../base/CCEventKeyboard.h:
 
 jni/../../cocos2d/cocos/3d/../math/CCAffineTransform.h:
 
+jni/../../cocos2d/cocos/3d/../2d/CCDrawNode.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h:
+
 jni/../../cocos2d/cocos/3d/../renderer/CCTextureAtlas.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCQuadCommand.h:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCGLProgramState.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCTrianglesCommand.h:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h:
-
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCSpriteFrameCache.h:
 
@@ -554,7 +551,7 @@ jni/../../cocos2d/cocos/3d/../2d/CCScene.h:
 
 jni/../../cocos2d/cocos/3d/../platform/CCGLView.h:
 
-jni/../../cocos2d/cocos/3d/../base/CCCamera.h:
+jni/../../cocos2d/cocos/3d/../2d/CCCamera.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCRenderer.h:
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1EB6C9FE1A59F4CE00E70A15 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */; };
 		1EB740CA1A4C644E00C15380 /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB740C81A4C644E00C15380 /* GameOver.cpp */; };
 		1EB740CB1A4C644E00C15380 /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB740C81A4C644E00C15380 /* GameOver.cpp */; };
 		1EB7920F1A49CEF20074A0EE /* Tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */; };
@@ -68,7 +69,6 @@
 		2BE40EAF1A59D71B00BEF3AF /* libPluginAdmob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EAE1A59D71400BEF3AF /* libPluginAdmob.a */; };
 		2BE40EB61A59D74500BEF3AF /* libPluginProtocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EB51A59D73F00BEF3AF /* libPluginProtocol.a */; };
 		2BE40EC01A59D7E400BEF3AF /* libPluginFacebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EBF1A59D7CF00BEF3AF /* libPluginFacebook.a */; };
-		2BE40EC21A59D81C00BEF3AF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
@@ -295,7 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE40EC21A59D81C00BEF3AF /* FacebookSDK.framework in Frameworks */,
+				1EB6C9FE1A59F4CE00E70A15 /* FacebookSDK.framework in Frameworks */,
 				2BE40EC01A59D7E400BEF3AF /* libPluginFacebook.a in Frameworks */,
 				2BE40EB61A59D74500BEF3AF /* libPluginProtocol.a in Frameworks */,
 				2BE40EAF1A59D71B00BEF3AF /* libPluginAdmob.a in Frameworks */,
@@ -394,8 +394,8 @@
 				2BE40EBA1A59D7CF00BEF3AF /* PluginFacebook.xcodeproj */,
 				2BE40EB01A59D73F00BEF3AF /* PluginProtocol.xcodeproj */,
 				2BE40EA91A59D71400BEF3AF /* PluginAdmob.xcodeproj */,
-				46880B8319C43A87006E1F66 /* Classes */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
+				46880B8319C43A87006E1F66 /* Classes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
 				503AE10617EB990700D1A890 /* mac */,
@@ -647,7 +647,7 @@
 				LastUpgradeCheck = 0610;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = T6E7R2ZW57;
+						DevelopmentTeam = 3KDMTP3843;
 					};
 					5087E73D17EB910900C73F5D = {
 						DevelopmentTeam = 3KDMTP3843;
@@ -854,6 +854,7 @@
 					/Users/sheffne/Desktop/cocosFiles/Useless,
 					Crap/BirdClash,
 					copy/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/seanrochlen/Desktop/BirdCrush/birdcrush/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -903,6 +904,7 @@
 					/Users/sheffne/Desktop/cocosFiles/Useless,
 					Crap/BirdClash,
 					copy/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/seanrochlen/Desktop/BirdCrush/birdcrush/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
 				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -80,12 +80,6 @@
   jni/../../cocos2d/cocos/3d/../math/Vec3.h \
   jni/../../cocos2d/cocos/3d/../math/Vec3.inl \
   jni/../../cocos2d/cocos/3d/../math/Mat4.h \
-  jni/../../cocos2d/cocos/3d/../math/Vec4.h \
-  jni/../../cocos2d/cocos/3d/../math/Vec4.inl \
-  jni/../../cocos2d/cocos/3d/../math/Mat4.inl \
-  jni/../../cocos2d/cocos/3d/../math/Quaternion.h \
-  jni/../../cocos2d/cocos/3d/../math/Quaternion.inl \
-  jni/../../cocos2d/cocos/3d/CCAnimationCurve.inl \
   jni/../../cocos2d/cocos/3d/../base/ccMacros.h \
   jni/../../cocos2d/cocos/3d/../base/CCConsole.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h \
@@ -148,6 +142,12 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
+  jni/../../cocos2d/cocos/3d/../math/Vec4.h \
+  jni/../../cocos2d/cocos/3d/../math/Vec4.inl \
+  jni/../../cocos2d/cocos/3d/../math/Mat4.inl \
+  jni/../../cocos2d/cocos/3d/../math/Quaternion.h \
+  jni/../../cocos2d/cocos/3d/../math/Quaternion.inl \
+  jni/../../cocos2d/cocos/3d/CCAnimationCurve.inl \
   jni/../../cocos2d/cocos/3d/../3d/CCBundle3DData.h \
   jni/../../cocos2d/cocos/3d/../base/ccTypes.h \
   jni/../../cocos2d/cocos/3d/../math/CCGeometry.h \
@@ -157,7 +157,7 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h \
+  jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
   jni/../../cocos2d/cocos/3d/../2d/CCActionInterval.h \
   jni/../../cocos2d/cocos/3d/../2d/CCAction.h \
   jni/../../cocos2d/cocos/3d/../2d/CCAnimation.h \
@@ -181,7 +181,6 @@
   jni/../../cocos2d/cocos/3d/../renderer/CCGLProgram.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCGLProgramState.h \
   jni/../../cocos2d/cocos/3d/../3d/CCSkeleton3D.h \
-  jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
   jni/../../cocos2d/cocos/3d/../3d/CCMeshVertexIndexData.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCVertexIndexData.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCVertexIndexBuffer.h \
@@ -348,18 +347,6 @@ jni/../../cocos2d/cocos/3d/../math/Vec3.inl:
 
 jni/../../cocos2d/cocos/3d/../math/Mat4.h:
 
-jni/../../cocos2d/cocos/3d/../math/Vec4.h:
-
-jni/../../cocos2d/cocos/3d/../math/Vec4.inl:
-
-jni/../../cocos2d/cocos/3d/../math/Mat4.inl:
-
-jni/../../cocos2d/cocos/3d/../math/Quaternion.h:
-
-jni/../../cocos2d/cocos/3d/../math/Quaternion.inl:
-
-jni/../../cocos2d/cocos/3d/CCAnimationCurve.inl:
-
 jni/../../cocos2d/cocos/3d/../base/ccMacros.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCConsole.h:
@@ -484,6 +471,18 @@ jni/../../cocos2d/cocos/3d/../base/ccRandom.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset:
 
+jni/../../cocos2d/cocos/3d/../math/Vec4.h:
+
+jni/../../cocos2d/cocos/3d/../math/Vec4.inl:
+
+jni/../../cocos2d/cocos/3d/../math/Mat4.inl:
+
+jni/../../cocos2d/cocos/3d/../math/Quaternion.h:
+
+jni/../../cocos2d/cocos/3d/../math/Quaternion.inl:
+
+jni/../../cocos2d/cocos/3d/CCAnimationCurve.inl:
+
 jni/../../cocos2d/cocos/3d/../3d/CCBundle3DData.h:
 
 jni/../../cocos2d/cocos/3d/../base/ccTypes.h:
@@ -502,7 +501,7 @@ jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
 
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
+jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCActionInterval.h:
 
@@ -549,8 +548,6 @@ jni/../../cocos2d/cocos/3d/../renderer/CCGLProgram.h:
 jni/../../cocos2d/cocos/3d/../renderer/CCGLProgramState.h:
 
 jni/../../cocos2d/cocos/3d/../3d/CCSkeleton3D.h:
-
-jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
 
 jni/../../cocos2d/cocos/3d/../3d/CCMeshVertexIndexData.h:
 

@@ -156,7 +156,6 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
   jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h \
   jni/../../cocos2d/cocos/3d/../base/CCVector.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCGLProgram.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
@@ -168,6 +167,19 @@
   jni/../../cocos2d/cocos/3d/../3d/CCMesh.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCMeshCommand.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h \
+  jni/../../cocos2d/cocos/3d/../3d/CCBundle3D.h \
+  jni/../../cocos2d/cocos/3d/../3d/CCBundleReader.h \
+  jni/../../cocos2d/cocos/./../external/json/document.h \
+  jni/../../cocos2d/cocos/./../external/json/reader.h \
+  jni/../../cocos2d/cocos/./../external/json/rapidjson.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/pow10.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/stack.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/setjmp.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/strfunc.h \
   jni/../../cocos2d/cocos/3d/../base/CCEventCustom.h \
   jni/../../cocos2d/cocos/3d/../base/CCEvent.h \
   jni/../../cocos2d/cocos/3d/../base/CCEventListenerCustom.h \
@@ -503,8 +515,6 @@ jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
 
 jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
 
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
-
 jni/../../cocos2d/cocos/3d/../base/CCVector.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCGLProgram.h:
@@ -526,6 +536,32 @@ jni/../../cocos2d/cocos/3d/../3d/CCMesh.h:
 jni/../../cocos2d/cocos/3d/../renderer/CCMeshCommand.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h:
+
+jni/../../cocos2d/cocos/3d/../3d/CCBundle3D.h:
+
+jni/../../cocos2d/cocos/3d/../3d/CCBundleReader.h:
+
+jni/../../cocos2d/cocos/./../external/json/document.h:
+
+jni/../../cocos2d/cocos/./../external/json/reader.h:
+
+jni/../../cocos2d/cocos/./../external/json/rapidjson.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h:
+
+jni/../../cocos2d/cocos/./../external/json/internal/pow10.h:
+
+jni/../../cocos2d/cocos/./../external/json/internal/stack.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/setjmp.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h:
+
+jni/../../cocos2d/cocos/./../external/json/internal/strfunc.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCEventCustom.h:
 

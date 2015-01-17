@@ -152,22 +152,22 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h \
+  jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
   jni/../../cocos2d/cocos/3d/../base/CCVector.h \
   jni/../../cocos2d/cocos/3d/../3d/CCSkeleton3D.h \
   jni/../../cocos2d/cocos/3d/../3d/CCBundle3D.h \
   jni/../../cocos2d/cocos/3d/../3d/CCBundleReader.h \
-  jni/../../cocos2d/cocos/3d/../../external/json/document.h \
-  jni/../../cocos2d/cocos/3d/../../external/json/reader.h \
-  jni/../../cocos2d/cocos/3d/../../external/json/rapidjson.h \
+  jni/../../cocos2d/cocos/./../external/json/document.h \
+  jni/../../cocos2d/cocos/./../external/json/reader.h \
+  jni/../../cocos2d/cocos/./../external/json/rapidjson.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h \
-  jni/../../cocos2d/cocos/3d/../../external/json/internal/pow10.h \
-  jni/../../cocos2d/cocos/3d/../../external/json/internal/stack.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/pow10.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/stack.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/setjmp.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h \
-  jni/../../cocos2d/cocos/3d/../../external/json/internal/strfunc.h
+  jni/../../cocos2d/cocos/./../external/json/internal/strfunc.h
 
 jni/../../cocos2d/cocos/3d/../3d/CCMeshSkin.h:
 
@@ -473,7 +473,7 @@ jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
 
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
+jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCVector.h:
 
@@ -483,19 +483,19 @@ jni/../../cocos2d/cocos/3d/../3d/CCBundle3D.h:
 
 jni/../../cocos2d/cocos/3d/../3d/CCBundleReader.h:
 
-jni/../../cocos2d/cocos/3d/../../external/json/document.h:
+jni/../../cocos2d/cocos/./../external/json/document.h:
 
-jni/../../cocos2d/cocos/3d/../../external/json/reader.h:
+jni/../../cocos2d/cocos/./../external/json/reader.h:
 
-jni/../../cocos2d/cocos/3d/../../external/json/rapidjson.h:
+jni/../../cocos2d/cocos/./../external/json/rapidjson.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h:
 
-jni/../../cocos2d/cocos/3d/../../external/json/internal/pow10.h:
+jni/../../cocos2d/cocos/./../external/json/internal/pow10.h:
 
-jni/../../cocos2d/cocos/3d/../../external/json/internal/stack.h:
+jni/../../cocos2d/cocos/./../external/json/internal/stack.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp:
 
@@ -503,4 +503,4 @@ jni/../../cocos2d/cocos/3d/../../external/json/internal/stack.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h:
 
-jni/../../cocos2d/cocos/3d/../../external/json/internal/strfunc.h:
+jni/../../cocos2d/cocos/./../external/json/internal/strfunc.h:

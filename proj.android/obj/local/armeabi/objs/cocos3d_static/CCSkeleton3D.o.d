@@ -152,7 +152,7 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h \
+  jni/../../cocos2d/cocos/3d/../3d/CCAABB.h \
   jni/../../cocos2d/cocos/3d/../base/CCVector.h
 
 jni/../../cocos2d/cocos/3d/../3d/CCSkeleton3D.h:
@@ -459,6 +459,6 @@ jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
 
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
+jni/../../cocos2d/cocos/3d/../3d/CCAABB.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCVector.h:

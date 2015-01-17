@@ -22,7 +22,7 @@
 		<key>5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C</key>
 		<string>../../..</string>
 		<key>8FB68EB1A385E01C4DED8D22DBDB215553900830</key>
-		<string>../../../../../cocos2d-x-3.3</string>
+		<string>../../../../cocos2d-x-3.3</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:SHEFFcode/BirdClash.git</string>

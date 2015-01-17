@@ -1,21 +1,21 @@
 ./obj/local/armeabi/objs/cocostudio_static/WidgetReader/ListViewReader/ListViewReader.o: \
   jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp \
   jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/../ScrollViewReader/ScrollViewReader.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/../ScrollViewReader/../LayoutReader/LayoutReader.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/../ScrollViewReader/../LayoutReader/../WidgetReader.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/LayoutReader/LayoutReader.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/WidgetReader.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/WidgetReaderProtocol.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../cocos2d.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccConfig.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCPlatformConfig.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCRef.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCPlatformMacros.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCPlatformDefine.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCPlatformDefine-android.h \
+  jni/../../cocos2d/cocos/./cocos2d.h \
+  jni/../../cocos2d/cocos/./base/ccConfig.h \
+  jni/../../cocos2d/cocos/./platform/CCPlatformConfig.h \
+  jni/../../cocos2d/cocos/./base/CCRef.h \
+  jni/../../cocos2d/cocos/./platform/CCPlatformMacros.h \
+  jni/../../cocos2d/cocos/./platform/CCPlatformDefine.h \
+  jni/../../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCRefPtr.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccMacros.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCConsole.h \
+  jni/../../cocos2d/cocos/./base/CCRefPtr.h \
+  jni/../../cocos2d/cocos/./base/ccMacros.h \
+  jni/../../cocos2d/cocos/./base/CCConsole.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -110,8 +110,8 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/ctype.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCStdC.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCStdC-android.h \
+  jni/../../cocos2d/cocos/./platform/CCStdC.h \
+  jni/../../cocos2d/cocos/./platform/android/CCStdC-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
@@ -121,7 +121,7 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/memory.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccRandom.h \
+  jni/../../cocos2d/cocos/./base/ccRandom.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/numeric \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/istream \
@@ -137,261 +137,268 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCVector.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCMap.h \
+  jni/../../cocos2d/cocos/./base/CCVector.h \
+  jni/../../cocos2d/cocos/./base/CCMap.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCAutoreleasePool.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCNS.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCGeometry.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCMath.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec2.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCMathBase.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec2.inl \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec3.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec3.inl \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Mat4.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec4.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec4.inl \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Mat4.inl \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Quaternion.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Quaternion.inl \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCData.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCValue.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccTypes.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCGL.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCGL-android.h \
+  jni/../../cocos2d/cocos/./base/CCAutoreleasePool.h \
+  jni/../../cocos2d/cocos/./base/CCNS.h \
+  jni/../../cocos2d/cocos/./math/CCGeometry.h \
+  jni/../../cocos2d/cocos/./math/CCMath.h \
+  jni/../../cocos2d/cocos/./math/Vec2.h \
+  jni/../../cocos2d/cocos/./math/CCMathBase.h \
+  jni/../../cocos2d/cocos/./math/Vec2.inl \
+  jni/../../cocos2d/cocos/./math/Vec3.h \
+  jni/../../cocos2d/cocos/./math/Vec3.inl \
+  jni/../../cocos2d/cocos/./math/Mat4.h \
+  jni/../../cocos2d/cocos/./math/Vec4.h \
+  jni/../../cocos2d/cocos/./math/Vec4.inl \
+  jni/../../cocos2d/cocos/./math/Mat4.inl \
+  jni/../../cocos2d/cocos/./math/Quaternion.h \
+  jni/../../cocos2d/cocos/./math/Quaternion.inl \
+  jni/../../cocos2d/cocos/./base/CCData.h \
+  jni/../../cocos2d/cocos/./base/CCValue.h \
+  jni/../../cocos2d/cocos/./base/ccTypes.h \
+  jni/../../cocos2d/cocos/./platform/CCGL.h \
+  jni/../../cocos2d/cocos/./platform/android/CCGL-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCConfiguration.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCDirector.h \
+  jni/../../cocos2d/cocos/./base/CCConfiguration.h \
+  jni/../../cocos2d/cocos/./base/CCDirector.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stack \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCScene.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCProtocols.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTexture2D.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCScriptSupport.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCCommon.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCTouch.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventTouch.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEvent.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventKeyboard.h \
+  jni/../../cocos2d/cocos/./2d/CCScene.h \
+  jni/../../cocos2d/cocos/./2d/CCNode.h \
+  jni/../../cocos2d/cocos/./base/CCProtocols.h \
+  jni/../../cocos2d/cocos/./renderer/CCTexture2D.h \
+  jni/../../cocos2d/cocos/./base/CCScriptSupport.h \
+  jni/../../cocos2d/cocos/./platform/CCCommon.h \
+  jni/../../cocos2d/cocos/./base/CCTouch.h \
+  jni/../../cocos2d/cocos/./base/CCEventTouch.h \
+  jni/../../cocos2d/cocos/./base/CCEvent.h \
+  jni/../../cocos2d/cocos/./base/CCEventKeyboard.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCAffineTransform.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCGLView.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCScheduler.h \
+  jni/../../cocos2d/cocos/./math/CCAffineTransform.h \
+  jni/../../cocos2d/cocos/./platform/CCGLView.h \
+  jni/../../cocos2d/cocos/./base/CCScheduler.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/uthash.h \
+  jni/../../cocos2d/cocos/./base/uthash.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/base64.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ZipUtils.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCFileUtils-android.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCFileUtils.h \
+  jni/../../cocos2d/cocos/./base/base64.h \
+  jni/../../cocos2d/cocos/./base/ZipUtils.h \
+  jni/../../cocos2d/cocos/./platform/android/CCFileUtils-android.h \
+  jni/../../cocos2d/cocos/./platform/CCFileUtils.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/jni.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/asset_manager.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCProfiling.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccUTF8.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCUserDefault.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCIMEDelegate.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCIMEDispatcher.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccUtils.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCCamera.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventType.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventDispatcher.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListener.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerTouch.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerKeyboard.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerMouse.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventMouse.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventAcceleration.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerAcceleration.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventCustom.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerCustom.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventFocus.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerFocus.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/MathUtil.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/MathUtil.inl \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCVertex.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAction.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionInterval.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAnimation.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSpriteFrame.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionCamera.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionManager.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionEase.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionPageTurn3D.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionGrid3D.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionGrid.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionInstant.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionProgressTimer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionTiledGrid.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionTween.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionCatmullRom.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTweenFunction.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCProtectedNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAtlasNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCQuadCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCRenderCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGLProgramState.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTrianglesCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCDrawingPrimitives.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCDrawNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCCustomCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabelAtlas.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabelTTF.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabelBMFont.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabel.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSpriteBatchNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTextureAtlas.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCBatchCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFontAtlas.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFontFNT.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFont.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLayer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTransition.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTransitionPageTurn.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTransitionProgress.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCMenu.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCMenuItem.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCClippingNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGroupCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCMotionStreak.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCProgressTimer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCRenderTexture.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSprite.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCImage.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCNodeGrid.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleBatchNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleSystem.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleExamples.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleSystemQuad.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCGrabber.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCGrid.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCRenderCommandPool.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCRenderer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGLProgram.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGLProgramCache.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/ccGLStateCache.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/ccShaders.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTextureCache.h \
+  jni/../../cocos2d/cocos/./base/CCProfiling.h \
+  jni/../../cocos2d/cocos/./base/ccUTF8.h \
+  jni/../../cocos2d/cocos/./base/CCUserDefault.h \
+  jni/../../cocos2d/cocos/./base/CCIMEDelegate.h \
+  jni/../../cocos2d/cocos/./base/CCIMEDispatcher.h \
+  jni/../../cocos2d/cocos/./base/ccUtils.h \
+  jni/../../cocos2d/cocos/./base/CCEventType.h \
+  jni/../../cocos2d/cocos/./base/CCEventDispatcher.h \
+  jni/../../cocos2d/cocos/./base/CCEventListener.h \
+  jni/../../cocos2d/cocos/./base/CCEventListenerTouch.h \
+  jni/../../cocos2d/cocos/./base/CCEventListenerKeyboard.h \
+  jni/../../cocos2d/cocos/./base/CCEventListenerMouse.h \
+  jni/../../cocos2d/cocos/./base/CCEventMouse.h \
+  jni/../../cocos2d/cocos/./base/CCEventAcceleration.h \
+  jni/../../cocos2d/cocos/./base/CCEventListenerAcceleration.h \
+  jni/../../cocos2d/cocos/./base/CCEventCustom.h \
+  jni/../../cocos2d/cocos/./base/CCEventListenerCustom.h \
+  jni/../../cocos2d/cocos/./base/CCEventFocus.h \
+  jni/../../cocos2d/cocos/./base/CCEventListenerFocus.h \
+  jni/../../cocos2d/cocos/./math/MathUtil.h \
+  jni/../../cocos2d/cocos/./math/CCVertex.h \
+  jni/../../cocos2d/cocos/./2d/CCAction.h \
+  jni/../../cocos2d/cocos/./2d/CCActionInterval.h \
+  jni/../../cocos2d/cocos/./2d/CCAnimation.h \
+  jni/../../cocos2d/cocos/./2d/CCSpriteFrame.h \
+  jni/../../cocos2d/cocos/./2d/CCActionCamera.h \
+  jni/../../cocos2d/cocos/./2d/CCActionManager.h \
+  jni/../../cocos2d/cocos/./2d/CCActionEase.h \
+  jni/../../cocos2d/cocos/./2d/CCActionPageTurn3D.h \
+  jni/../../cocos2d/cocos/./2d/CCActionGrid3D.h \
+  jni/../../cocos2d/cocos/./2d/CCActionGrid.h \
+  jni/../../cocos2d/cocos/./2d/CCActionInstant.h \
+  jni/../../cocos2d/cocos/./2d/CCActionProgressTimer.h \
+  jni/../../cocos2d/cocos/./2d/CCActionTiledGrid.h \
+  jni/../../cocos2d/cocos/./2d/CCActionTween.h \
+  jni/../../cocos2d/cocos/./2d/CCActionCatmullRom.h \
+  jni/../../cocos2d/cocos/./2d/CCTweenFunction.h \
+  jni/../../cocos2d/cocos/./2d/CCProtectedNode.h \
+  jni/../../cocos2d/cocos/./2d/CCAtlasNode.h \
+  jni/../../cocos2d/cocos/./renderer/CCQuadCommand.h \
+  jni/../../cocos2d/cocos/./renderer/CCRenderCommand.h \
+  jni/../../cocos2d/cocos/./renderer/CCGLProgramState.h \
+  jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h \
+  jni/../../cocos2d/cocos/./2d/CCDrawNode.h \
+  jni/../../cocos2d/cocos/./renderer/CCCustomCommand.h \
+  jni/../../cocos2d/cocos/./2d/CCLabelAtlas.h \
+  jni/../../cocos2d/cocos/./2d/CCLabelTTF.h \
+  jni/../../cocos2d/cocos/./2d/CCLabelBMFont.h \
+  jni/../../cocos2d/cocos/./2d/CCLabel.h \
+  jni/../../cocos2d/cocos/./2d/CCSpriteBatchNode.h \
+  jni/../../cocos2d/cocos/./renderer/CCTextureAtlas.h \
+  jni/../../cocos2d/cocos/./renderer/CCBatchCommand.h \
+  jni/../../cocos2d/cocos/./2d/CCFontAtlas.h \
+  jni/../../cocos2d/cocos/./2d/CCFontFNT.h \
+  jni/../../cocos2d/cocos/./2d/CCFont.h \
+  jni/../../cocos2d/cocos/./2d/CCLayer.h \
+  jni/../../cocos2d/cocos/./2d/CCTransition.h \
+  jni/../../cocos2d/cocos/./2d/CCTransitionPageTurn.h \
+  jni/../../cocos2d/cocos/./2d/CCTransitionProgress.h \
+  jni/../../cocos2d/cocos/./2d/CCMenu.h \
+  jni/../../cocos2d/cocos/./2d/CCMenuItem.h \
+  jni/../../cocos2d/cocos/./2d/CCClippingNode.h \
+  jni/../../cocos2d/cocos/./renderer/CCGroupCommand.h \
+  jni/../../cocos2d/cocos/./2d/CCClippingRectangleNode.h \
+  jni/../../cocos2d/cocos/./2d/CCMotionStreak.h \
+  jni/../../cocos2d/cocos/./2d/CCProgressTimer.h \
+  jni/../../cocos2d/cocos/./2d/CCRenderTexture.h \
+  jni/../../cocos2d/cocos/./2d/CCSprite.h \
+  jni/../../cocos2d/cocos/./platform/CCImage.h \
+  jni/../../cocos2d/cocos/./2d/CCNodeGrid.h \
+  jni/../../cocos2d/cocos/./2d/CCParticleBatchNode.h \
+  jni/../../cocos2d/cocos/./2d/CCParticleSystem.h \
+  jni/../../cocos2d/cocos/./2d/CCParticleExamples.h \
+  jni/../../cocos2d/cocos/./2d/CCParticleSystemQuad.h \
+  jni/../../cocos2d/cocos/./2d/CCGrabber.h \
+  jni/../../cocos2d/cocos/./2d/CCGrid.h \
+  jni/../../cocos2d/cocos/./2d/CCCamera.h \
+  jni/../../cocos2d/cocos/./2d/CCLight.h \
+  jni/../../cocos2d/cocos/./renderer/CCRenderCommandPool.h \
+  jni/../../cocos2d/cocos/./renderer/CCRenderer.h \
+  jni/../../cocos2d/cocos/./renderer/CCGLProgram.h \
+  jni/../../cocos2d/cocos/./renderer/CCGLProgramCache.h \
+  jni/../../cocos2d/cocos/./renderer/ccGLStateCache.h \
+  jni/../../cocos2d/cocos/./renderer/ccShaders.h \
+  jni/../../cocos2d/cocos/./renderer/CCTextureCache.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/condition_variable \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/queue \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCVertexIndexBuffer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCVertexIndexData.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCPrimitive.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCPrimitiveCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsBody.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsShape.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsContact.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsJoint.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsWorld.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCDevice.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCSAXParser.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCThread.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCApplication-android.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCApplicationProtocol.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCGLViewImpl-android.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAnimationCache.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSpriteFrameCache.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTextFieldTTF.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParallaxNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXLayer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXXMLParser.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXObjectGroup.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccCArray.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXTiledMap.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTileMapAtlas.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFastTMXTiledMap.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFastTMXLayer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCComponent.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCComponentContainer.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAABB.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/3dExport.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCOBB.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCRay.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCSprite3D.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCMeshCommand.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCSkeleton3D.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCBundle3DData.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCMeshVertexIndexData.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCMesh.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCMeshSkin.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimate3D.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimation3D.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimationCurve.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimationCurve.inl \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCSprite3DMaterial.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAttachNode.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCBillBoard.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCDictionary.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCArray.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCDataVisitor.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCString.h \
+  jni/../../cocos2d/cocos/./renderer/CCVertexIndexBuffer.h \
+  jni/../../cocos2d/cocos/./renderer/CCVertexIndexData.h \
+  jni/../../cocos2d/cocos/./renderer/CCPrimitive.h \
+  jni/../../cocos2d/cocos/./renderer/CCPrimitiveCommand.h \
+  jni/../../cocos2d/cocos/./renderer/CCTrianglesCommand.h \
+  jni/../../cocos2d/cocos/./physics/CCPhysicsBody.h \
+  jni/../../cocos2d/cocos/./physics/CCPhysicsShape.h \
+  jni/../../cocos2d/cocos/./physics/CCPhysicsContact.h \
+  jni/../../cocos2d/cocos/./physics/CCPhysicsJoint.h \
+  jni/../../cocos2d/cocos/./physics/CCPhysicsWorld.h \
+  jni/../../cocos2d/cocos/./platform/CCDevice.h \
+  jni/../../cocos2d/cocos/./platform/CCSAXParser.h \
+  jni/../../cocos2d/cocos/./platform/CCThread.h \
+  jni/../../cocos2d/cocos/./platform/android/CCApplication-android.h \
+  jni/../../cocos2d/cocos/./platform/CCApplicationProtocol.h \
+  jni/../../cocos2d/cocos/./platform/android/CCGLViewImpl-android.h \
+  jni/../../cocos2d/cocos/./2d/CCAnimationCache.h \
+  jni/../../cocos2d/cocos/./2d/CCSpriteFrameCache.h \
+  jni/../../cocos2d/cocos/./2d/CCTextFieldTTF.h \
+  jni/../../cocos2d/cocos/./2d/CCParallaxNode.h \
+  jni/../../cocos2d/cocos/./2d/CCTMXLayer.h \
+  jni/../../cocos2d/cocos/./2d/CCTMXXMLParser.h \
+  jni/../../cocos2d/cocos/./2d/CCTMXObjectGroup.h \
+  jni/../../cocos2d/cocos/./base/ccCArray.h \
+  jni/../../cocos2d/cocos/./2d/CCTMXTiledMap.h \
+  jni/../../cocos2d/cocos/./2d/CCTileMapAtlas.h \
+  jni/../../cocos2d/cocos/./2d/CCFastTMXTiledMap.h \
+  jni/../../cocos2d/cocos/./2d/CCFastTMXLayer.h \
+  jni/../../cocos2d/cocos/./2d/CCComponent.h \
+  jni/../../cocos2d/cocos/./2d/CCComponentContainer.h \
+  jni/../../cocos2d/cocos/./3d/CCAABB.h \
+  jni/../../cocos2d/cocos/./3d/CCOBB.h \
+  jni/../../cocos2d/cocos/./3d/CCRay.h \
+  jni/../../cocos2d/cocos/./3d/CCSprite3D.h \
+  jni/../../cocos2d/cocos/./renderer/CCMeshCommand.h \
+  jni/../../cocos2d/cocos/./3d/CCSkeleton3D.h \
+  jni/../../cocos2d/cocos/./3d/CCBundle3DData.h \
+  jni/../../cocos2d/cocos/./3d/CCMeshVertexIndexData.h \
+  jni/../../cocos2d/cocos/./3d/CCMesh.h \
+  jni/../../cocos2d/cocos/./3d/CCMeshSkin.h \
+  jni/../../cocos2d/cocos/./3d/CCAnimate3D.h \
+  jni/../../cocos2d/cocos/./3d/CCAnimation3D.h \
+  jni/../../cocos2d/cocos/./3d/CCAnimationCurve.h \
+  jni/../../cocos2d/cocos/./3d/CCAnimationCurve.inl \
+  jni/../../cocos2d/cocos/./3d/CCSprite3DMaterial.h \
+  jni/../../cocos2d/cocos/./3d/CCAttachNode.h \
+  jni/../../cocos2d/cocos/./3d/CCBillBoard.h \
+  jni/../../cocos2d/cocos/./deprecated/CCDictionary.h \
+  jni/../../cocos2d/cocos/./deprecated/CCArray.h \
+  jni/../../cocos2d/cocos/./base/CCDataVisitor.h \
+  jni/../../cocos2d/cocos/./deprecated/CCString.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/sstream \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCSet.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCInteger.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCFloat.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCDouble.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCBool.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCNotificationCenter.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCDeprecated.h \
+  jni/../../cocos2d/cocos/./deprecated/CCSet.h \
+  jni/../../cocos2d/cocos/./deprecated/CCInteger.h \
+  jni/../../cocos2d/cocos/./deprecated/CCFloat.h \
+  jni/../../cocos2d/cocos/./deprecated/CCDouble.h \
+  jni/../../cocos2d/cocos/./deprecated/CCBool.h \
+  jni/../../cocos2d/cocos/./deprecated/CCNotificationCenter.h \
+  jni/../../cocos2d/cocos/./deprecated/CCDeprecated.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/DictionaryHelper.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/document.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/reader.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/rapidjson.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/pow10.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/stack.h \
+  jni/../../cocos2d/external/flatbuffers/../json/document.h \
+  jni/../../cocos2d/external/flatbuffers/../json/reader.h \
+  jni/../../cocos2d/external/flatbuffers/../json/rapidjson.h \
+  jni/../../cocos2d/external/flatbuffers/../json/internal/pow10.h \
+  jni/../../cocos2d/external/flatbuffers/../json/internal/stack.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/setjmp.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/strfunc.h \
+  jni/../../cocos2d/external/flatbuffers/../json/internal/strfunc.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CocosStudioExport.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CCSGUIReader.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UILayout.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UIWidget.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UILayoutParameter.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/GUIExport.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/GUIDefine.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ObjectFactory.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UIListView.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UIScrollView.h \
-  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CocoLoader.h
+  jni/../../cocos2d/cocos/./ui/UILayout.h \
+  jni/../../cocos2d/cocos/./ui/UIWidget.h \
+  jni/../../cocos2d/cocos/./ui/UILayoutParameter.h \
+  jni/../../cocos2d/cocos/./ui/GUIExport.h \
+  jni/../../cocos2d/cocos/./ui/GUIDefine.h \
+  jni/../../cocos2d/cocos/./base/ObjectFactory.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/NodeReaderProtocol.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/NodeReaderDefine.h \
+  jni/../../cocos2d/cocos/./ui/UIListView.h \
+  jni/../../cocos2d/cocos/./ui/UIScrollView.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CocoLoader.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CSParseBinary_generated.h \
+  jni/../../cocos2d/external/flatbuffers/../flatbuffers/flatbuffers.h \
+  jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/FlatBuffersSerialize.h \
+  jni/../../cocos2d/extensions/./ExtensionMacros.h \
+  jni/../../cocos2d/external/flatbuffers/../tinyxml2/tinyxml2.h
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/../ScrollViewReader/ScrollViewReader.h:
+jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/../ScrollViewReader/../LayoutReader/LayoutReader.h:
+jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/LayoutReader/LayoutReader.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/../ScrollViewReader/../LayoutReader/../WidgetReader.h:
+jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/WidgetReader.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/WidgetReader/WidgetReaderProtocol.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../cocos2d.h:
+jni/../../cocos2d/cocos/./cocos2d.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccConfig.h:
+jni/../../cocos2d/cocos/./base/ccConfig.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCPlatformConfig.h:
+jni/../../cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCRef.h:
+jni/../../cocos2d/cocos/./base/CCRef.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCPlatformMacros.h:
+jni/../../cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCPlatformDefine.h:
+jni/../../cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCPlatformDefine-android.h:
+jni/../../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCRefPtr.h:
+jni/../../cocos2d/cocos/./base/CCRefPtr.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccMacros.h:
+jni/../../cocos2d/cocos/./base/ccMacros.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCConsole.h:
+jni/../../cocos2d/cocos/./base/CCConsole.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h:
 
@@ -581,9 +588,9 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCConsole.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCStdC.h:
+jni/../../cocos2d/cocos/./platform/CCStdC.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCStdC-android.h:
+jni/../../cocos2d/cocos/./platform/android/CCStdC-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h:
 
@@ -603,7 +610,7 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCStdC-
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccRandom.h:
+jni/../../cocos2d/cocos/./base/ccRandom.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random:
 
@@ -635,53 +642,53 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccRandom.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCVector.h:
+jni/../../cocos2d/cocos/./base/CCVector.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCMap.h:
+jni/../../cocos2d/cocos/./base/CCMap.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCAutoreleasePool.h:
+jni/../../cocos2d/cocos/./base/CCAutoreleasePool.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCNS.h:
+jni/../../cocos2d/cocos/./base/CCNS.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCGeometry.h:
+jni/../../cocos2d/cocos/./math/CCGeometry.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCMath.h:
+jni/../../cocos2d/cocos/./math/CCMath.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec2.h:
+jni/../../cocos2d/cocos/./math/Vec2.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCMathBase.h:
+jni/../../cocos2d/cocos/./math/CCMathBase.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec2.inl:
+jni/../../cocos2d/cocos/./math/Vec2.inl:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec3.h:
+jni/../../cocos2d/cocos/./math/Vec3.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec3.inl:
+jni/../../cocos2d/cocos/./math/Vec3.inl:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Mat4.h:
+jni/../../cocos2d/cocos/./math/Mat4.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec4.h:
+jni/../../cocos2d/cocos/./math/Vec4.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Vec4.inl:
+jni/../../cocos2d/cocos/./math/Vec4.inl:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Mat4.inl:
+jni/../../cocos2d/cocos/./math/Mat4.inl:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Quaternion.h:
+jni/../../cocos2d/cocos/./math/Quaternion.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/Quaternion.inl:
+jni/../../cocos2d/cocos/./math/Quaternion.inl:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCData.h:
+jni/../../cocos2d/cocos/./base/CCData.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCValue.h:
+jni/../../cocos2d/cocos/./base/CCValue.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccTypes.h:
+jni/../../cocos2d/cocos/./base/ccTypes.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCGL.h:
+jni/../../cocos2d/cocos/./platform/CCGL.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCGL-android.h:
+jni/../../cocos2d/cocos/./platform/android/CCGL-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h:
 
@@ -691,365 +698,365 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCGL-an
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCConfiguration.h:
+jni/../../cocos2d/cocos/./base/CCConfiguration.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCDirector.h:
+jni/../../cocos2d/cocos/./base/CCDirector.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stack:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCScene.h:
+jni/../../cocos2d/cocos/./2d/CCScene.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCNode.h:
+jni/../../cocos2d/cocos/./2d/CCNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCProtocols.h:
+jni/../../cocos2d/cocos/./base/CCProtocols.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTexture2D.h:
+jni/../../cocos2d/cocos/./renderer/CCTexture2D.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCScriptSupport.h:
+jni/../../cocos2d/cocos/./base/CCScriptSupport.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCCommon.h:
+jni/../../cocos2d/cocos/./platform/CCCommon.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCTouch.h:
+jni/../../cocos2d/cocos/./base/CCTouch.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventTouch.h:
+jni/../../cocos2d/cocos/./base/CCEventTouch.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEvent.h:
+jni/../../cocos2d/cocos/./base/CCEvent.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventKeyboard.h:
+jni/../../cocos2d/cocos/./base/CCEventKeyboard.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCAffineTransform.h:
+jni/../../cocos2d/cocos/./math/CCAffineTransform.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCGLView.h:
+jni/../../cocos2d/cocos/./platform/CCGLView.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCScheduler.h:
+jni/../../cocos2d/cocos/./base/CCScheduler.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/uthash.h:
+jni/../../cocos2d/cocos/./base/uthash.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/inttypes.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/base64.h:
+jni/../../cocos2d/cocos/./base/base64.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ZipUtils.h:
+jni/../../cocos2d/cocos/./base/ZipUtils.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCFileUtils-android.h:
+jni/../../cocos2d/cocos/./platform/android/CCFileUtils-android.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCFileUtils.h:
+jni/../../cocos2d/cocos/./platform/CCFileUtils.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/jni.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/asset_manager.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCProfiling.h:
+jni/../../cocos2d/cocos/./base/CCProfiling.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccUTF8.h:
+jni/../../cocos2d/cocos/./base/ccUTF8.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCUserDefault.h:
+jni/../../cocos2d/cocos/./base/CCUserDefault.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCIMEDelegate.h:
+jni/../../cocos2d/cocos/./base/CCIMEDelegate.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCIMEDispatcher.h:
+jni/../../cocos2d/cocos/./base/CCIMEDispatcher.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccUtils.h:
+jni/../../cocos2d/cocos/./base/ccUtils.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCCamera.h:
+jni/../../cocos2d/cocos/./base/CCEventType.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventType.h:
+jni/../../cocos2d/cocos/./base/CCEventDispatcher.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventDispatcher.h:
+jni/../../cocos2d/cocos/./base/CCEventListener.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListener.h:
+jni/../../cocos2d/cocos/./base/CCEventListenerTouch.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerTouch.h:
+jni/../../cocos2d/cocos/./base/CCEventListenerKeyboard.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerKeyboard.h:
+jni/../../cocos2d/cocos/./base/CCEventListenerMouse.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerMouse.h:
+jni/../../cocos2d/cocos/./base/CCEventMouse.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventMouse.h:
+jni/../../cocos2d/cocos/./base/CCEventAcceleration.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventAcceleration.h:
+jni/../../cocos2d/cocos/./base/CCEventListenerAcceleration.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerAcceleration.h:
+jni/../../cocos2d/cocos/./base/CCEventCustom.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventCustom.h:
+jni/../../cocos2d/cocos/./base/CCEventListenerCustom.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerCustom.h:
+jni/../../cocos2d/cocos/./base/CCEventFocus.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventFocus.h:
+jni/../../cocos2d/cocos/./base/CCEventListenerFocus.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCEventListenerFocus.h:
+jni/../../cocos2d/cocos/./math/MathUtil.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/MathUtil.h:
+jni/../../cocos2d/cocos/./math/CCVertex.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/MathUtil.inl:
+jni/../../cocos2d/cocos/./2d/CCAction.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../math/CCVertex.h:
+jni/../../cocos2d/cocos/./2d/CCActionInterval.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAction.h:
+jni/../../cocos2d/cocos/./2d/CCAnimation.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionInterval.h:
+jni/../../cocos2d/cocos/./2d/CCSpriteFrame.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAnimation.h:
+jni/../../cocos2d/cocos/./2d/CCActionCamera.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSpriteFrame.h:
+jni/../../cocos2d/cocos/./2d/CCActionManager.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionCamera.h:
+jni/../../cocos2d/cocos/./2d/CCActionEase.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionManager.h:
+jni/../../cocos2d/cocos/./2d/CCActionPageTurn3D.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionEase.h:
+jni/../../cocos2d/cocos/./2d/CCActionGrid3D.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionPageTurn3D.h:
+jni/../../cocos2d/cocos/./2d/CCActionGrid.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionGrid3D.h:
+jni/../../cocos2d/cocos/./2d/CCActionInstant.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionGrid.h:
+jni/../../cocos2d/cocos/./2d/CCActionProgressTimer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionInstant.h:
+jni/../../cocos2d/cocos/./2d/CCActionTiledGrid.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionProgressTimer.h:
+jni/../../cocos2d/cocos/./2d/CCActionTween.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionTiledGrid.h:
+jni/../../cocos2d/cocos/./2d/CCActionCatmullRom.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionTween.h:
+jni/../../cocos2d/cocos/./2d/CCTweenFunction.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCActionCatmullRom.h:
+jni/../../cocos2d/cocos/./2d/CCProtectedNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTweenFunction.h:
+jni/../../cocos2d/cocos/./2d/CCAtlasNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCProtectedNode.h:
+jni/../../cocos2d/cocos/./renderer/CCQuadCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAtlasNode.h:
+jni/../../cocos2d/cocos/./renderer/CCRenderCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCQuadCommand.h:
+jni/../../cocos2d/cocos/./renderer/CCGLProgramState.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCRenderCommand.h:
+jni/../../cocos2d/cocos/./2d/CCDrawingPrimitives.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGLProgramState.h:
+jni/../../cocos2d/cocos/./2d/CCDrawNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTrianglesCommand.h:
+jni/../../cocos2d/cocos/./renderer/CCCustomCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCDrawingPrimitives.h:
+jni/../../cocos2d/cocos/./2d/CCLabelAtlas.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCDrawNode.h:
+jni/../../cocos2d/cocos/./2d/CCLabelTTF.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCCustomCommand.h:
+jni/../../cocos2d/cocos/./2d/CCLabelBMFont.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabelAtlas.h:
+jni/../../cocos2d/cocos/./2d/CCLabel.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabelTTF.h:
+jni/../../cocos2d/cocos/./2d/CCSpriteBatchNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabelBMFont.h:
+jni/../../cocos2d/cocos/./renderer/CCTextureAtlas.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLabel.h:
+jni/../../cocos2d/cocos/./renderer/CCBatchCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSpriteBatchNode.h:
+jni/../../cocos2d/cocos/./2d/CCFontAtlas.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTextureAtlas.h:
+jni/../../cocos2d/cocos/./2d/CCFontFNT.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCBatchCommand.h:
+jni/../../cocos2d/cocos/./2d/CCFont.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFontAtlas.h:
+jni/../../cocos2d/cocos/./2d/CCLayer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFontFNT.h:
+jni/../../cocos2d/cocos/./2d/CCTransition.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFont.h:
+jni/../../cocos2d/cocos/./2d/CCTransitionPageTurn.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCLayer.h:
+jni/../../cocos2d/cocos/./2d/CCTransitionProgress.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTransition.h:
+jni/../../cocos2d/cocos/./2d/CCMenu.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTransitionPageTurn.h:
+jni/../../cocos2d/cocos/./2d/CCMenuItem.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTransitionProgress.h:
+jni/../../cocos2d/cocos/./2d/CCClippingNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCMenu.h:
+jni/../../cocos2d/cocos/./renderer/CCGroupCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCMenuItem.h:
+jni/../../cocos2d/cocos/./2d/CCClippingRectangleNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCClippingNode.h:
+jni/../../cocos2d/cocos/./2d/CCMotionStreak.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGroupCommand.h:
+jni/../../cocos2d/cocos/./2d/CCProgressTimer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCMotionStreak.h:
+jni/../../cocos2d/cocos/./2d/CCRenderTexture.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCProgressTimer.h:
+jni/../../cocos2d/cocos/./2d/CCSprite.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCRenderTexture.h:
+jni/../../cocos2d/cocos/./platform/CCImage.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSprite.h:
+jni/../../cocos2d/cocos/./2d/CCNodeGrid.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCImage.h:
+jni/../../cocos2d/cocos/./2d/CCParticleBatchNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCNodeGrid.h:
+jni/../../cocos2d/cocos/./2d/CCParticleSystem.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleBatchNode.h:
+jni/../../cocos2d/cocos/./2d/CCParticleExamples.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleSystem.h:
+jni/../../cocos2d/cocos/./2d/CCParticleSystemQuad.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleExamples.h:
+jni/../../cocos2d/cocos/./2d/CCGrabber.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParticleSystemQuad.h:
+jni/../../cocos2d/cocos/./2d/CCGrid.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCGrabber.h:
+jni/../../cocos2d/cocos/./2d/CCCamera.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCGrid.h:
+jni/../../cocos2d/cocos/./2d/CCLight.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCRenderCommandPool.h:
+jni/../../cocos2d/cocos/./renderer/CCRenderCommandPool.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCRenderer.h:
+jni/../../cocos2d/cocos/./renderer/CCRenderer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGLProgram.h:
+jni/../../cocos2d/cocos/./renderer/CCGLProgram.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCGLProgramCache.h:
+jni/../../cocos2d/cocos/./renderer/CCGLProgramCache.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/ccGLStateCache.h:
+jni/../../cocos2d/cocos/./renderer/ccGLStateCache.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/ccShaders.h:
+jni/../../cocos2d/cocos/./renderer/ccShaders.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCTextureCache.h:
+jni/../../cocos2d/cocos/./renderer/CCTextureCache.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/condition_variable:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/queue:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCVertexIndexBuffer.h:
+jni/../../cocos2d/cocos/./renderer/CCVertexIndexBuffer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCVertexIndexData.h:
+jni/../../cocos2d/cocos/./renderer/CCVertexIndexData.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCPrimitive.h:
+jni/../../cocos2d/cocos/./renderer/CCPrimitive.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCPrimitiveCommand.h:
+jni/../../cocos2d/cocos/./renderer/CCPrimitiveCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsBody.h:
+jni/../../cocos2d/cocos/./renderer/CCTrianglesCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsShape.h:
+jni/../../cocos2d/cocos/./physics/CCPhysicsBody.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsContact.h:
+jni/../../cocos2d/cocos/./physics/CCPhysicsShape.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsJoint.h:
+jni/../../cocos2d/cocos/./physics/CCPhysicsContact.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../physics/CCPhysicsWorld.h:
+jni/../../cocos2d/cocos/./physics/CCPhysicsJoint.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCDevice.h:
+jni/../../cocos2d/cocos/./physics/CCPhysicsWorld.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCSAXParser.h:
+jni/../../cocos2d/cocos/./platform/CCDevice.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCThread.h:
+jni/../../cocos2d/cocos/./platform/CCSAXParser.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCApplication-android.h:
+jni/../../cocos2d/cocos/./platform/CCThread.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/CCApplicationProtocol.h:
+jni/../../cocos2d/cocos/./platform/android/CCApplication-android.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../platform/android/CCGLViewImpl-android.h:
+jni/../../cocos2d/cocos/./platform/CCApplicationProtocol.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCAnimationCache.h:
+jni/../../cocos2d/cocos/./platform/android/CCGLViewImpl-android.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCSpriteFrameCache.h:
+jni/../../cocos2d/cocos/./2d/CCAnimationCache.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTextFieldTTF.h:
+jni/../../cocos2d/cocos/./2d/CCSpriteFrameCache.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCParallaxNode.h:
+jni/../../cocos2d/cocos/./2d/CCTextFieldTTF.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXLayer.h:
+jni/../../cocos2d/cocos/./2d/CCParallaxNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXXMLParser.h:
+jni/../../cocos2d/cocos/./2d/CCTMXLayer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXObjectGroup.h:
+jni/../../cocos2d/cocos/./2d/CCTMXXMLParser.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccCArray.h:
+jni/../../cocos2d/cocos/./2d/CCTMXObjectGroup.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTMXTiledMap.h:
+jni/../../cocos2d/cocos/./base/ccCArray.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCTileMapAtlas.h:
+jni/../../cocos2d/cocos/./2d/CCTMXTiledMap.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFastTMXTiledMap.h:
+jni/../../cocos2d/cocos/./2d/CCTileMapAtlas.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCFastTMXLayer.h:
+jni/../../cocos2d/cocos/./2d/CCFastTMXTiledMap.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCComponent.h:
+jni/../../cocos2d/cocos/./2d/CCFastTMXLayer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../2d/CCComponentContainer.h:
+jni/../../cocos2d/cocos/./2d/CCComponent.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAABB.h:
+jni/../../cocos2d/cocos/./2d/CCComponentContainer.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/3dExport.h:
+jni/../../cocos2d/cocos/./3d/CCAABB.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCOBB.h:
+jni/../../cocos2d/cocos/./3d/CCOBB.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCRay.h:
+jni/../../cocos2d/cocos/./3d/CCRay.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCSprite3D.h:
+jni/../../cocos2d/cocos/./3d/CCSprite3D.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../renderer/CCMeshCommand.h:
+jni/../../cocos2d/cocos/./renderer/CCMeshCommand.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCSkeleton3D.h:
+jni/../../cocos2d/cocos/./3d/CCSkeleton3D.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCBundle3DData.h:
+jni/../../cocos2d/cocos/./3d/CCBundle3DData.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCMeshVertexIndexData.h:
+jni/../../cocos2d/cocos/./3d/CCMeshVertexIndexData.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCMesh.h:
+jni/../../cocos2d/cocos/./3d/CCMesh.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCMeshSkin.h:
+jni/../../cocos2d/cocos/./3d/CCMeshSkin.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimate3D.h:
+jni/../../cocos2d/cocos/./3d/CCAnimate3D.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimation3D.h:
+jni/../../cocos2d/cocos/./3d/CCAnimation3D.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimationCurve.h:
+jni/../../cocos2d/cocos/./3d/CCAnimationCurve.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAnimationCurve.inl:
+jni/../../cocos2d/cocos/./3d/CCAnimationCurve.inl:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCSprite3DMaterial.h:
+jni/../../cocos2d/cocos/./3d/CCSprite3DMaterial.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCAttachNode.h:
+jni/../../cocos2d/cocos/./3d/CCAttachNode.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../3d/CCBillBoard.h:
+jni/../../cocos2d/cocos/./3d/CCBillBoard.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCDictionary.h:
+jni/../../cocos2d/cocos/./deprecated/CCDictionary.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCArray.h:
+jni/../../cocos2d/cocos/./deprecated/CCArray.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCDataVisitor.h:
+jni/../../cocos2d/cocos/./base/CCDataVisitor.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCString.h:
+jni/../../cocos2d/cocos/./deprecated/CCString.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/sstream:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCSet.h:
+jni/../../cocos2d/cocos/./deprecated/CCSet.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCInteger.h:
+jni/../../cocos2d/cocos/./deprecated/CCInteger.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCFloat.h:
+jni/../../cocos2d/cocos/./deprecated/CCFloat.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCDouble.h:
+jni/../../cocos2d/cocos/./deprecated/CCDouble.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCBool.h:
+jni/../../cocos2d/cocos/./deprecated/CCBool.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCNotificationCenter.h:
+jni/../../cocos2d/cocos/./deprecated/CCNotificationCenter.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../deprecated/CCDeprecated.h:
+jni/../../cocos2d/cocos/./deprecated/CCDeprecated.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/DictionaryHelper.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/document.h:
+jni/../../cocos2d/external/flatbuffers/../json/document.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/reader.h:
+jni/../../cocos2d/external/flatbuffers/../json/reader.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/rapidjson.h:
+jni/../../cocos2d/external/flatbuffers/../json/rapidjson.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/pow10.h:
+jni/../../cocos2d/external/flatbuffers/../json/internal/pow10.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/stack.h:
+jni/../../cocos2d/external/flatbuffers/../json/internal/stack.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp:
 
@@ -1057,26 +1064,40 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/interna
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/setjmp.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external/json/internal/strfunc.h:
+jni/../../cocos2d/external/flatbuffers/../json/internal/strfunc.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CocosStudioExport.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CCSGUIReader.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UILayout.h:
+jni/../../cocos2d/cocos/./ui/UILayout.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UIWidget.h:
+jni/../../cocos2d/cocos/./ui/UIWidget.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UILayoutParameter.h:
+jni/../../cocos2d/cocos/./ui/UILayoutParameter.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/GUIExport.h:
+jni/../../cocos2d/cocos/./ui/GUIExport.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/GUIDefine.h:
+jni/../../cocos2d/cocos/./ui/GUIDefine.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ObjectFactory.h:
+jni/../../cocos2d/cocos/./base/ObjectFactory.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UIListView.h:
+jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/NodeReaderProtocol.h:
 
-jni/../../cocos2d/cocos/editor-support/cocostudio/../../ui/UIScrollView.h:
+jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/WidgetReader/NodeReaderDefine.h:
+
+jni/../../cocos2d/cocos/./ui/UIListView.h:
+
+jni/../../cocos2d/cocos/./ui/UIScrollView.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CocoLoader.h:
+
+jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/CSParseBinary_generated.h:
+
+jni/../../cocos2d/external/flatbuffers/../flatbuffers/flatbuffers.h:
+
+jni/../../cocos2d/cocos/editor-support/cocostudio/../cocostudio/FlatBuffersSerialize.h:
+
+jni/../../cocos2d/extensions/./ExtensionMacros.h:
+
+jni/../../cocos2d/external/flatbuffers/../tinyxml2/tinyxml2.h:

@@ -1,5 +1,5 @@
 ./obj/local/armeabi/objs/spine_static/Bone.o: \
-  jni/../../cocos2d/cocos/editor-support/spine/Bone.cpp \
+  jni/../../cocos2d/cocos/editor-support/spine/Bone.c \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/Bone.h \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/BoneData.h \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/extension.h \
@@ -17,6 +17,7 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/limits.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/limits.h \
@@ -46,11 +47,17 @@
   jni/../../cocos2d/cocos/editor-support/spine/../spine/EventData.h \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/Animation.h \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/Event.h \
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/IkConstraintData.h \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/Slot.h \
-  jni/../../cocos2d/cocos/editor-support/spine/../spine/RegionAttachment.h \
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/IkConstraint.h \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/Atlas.h \
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/AttachmentLoader.h \
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/RegionAttachment.h \
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/MeshAttachment.h \
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/SkinnedMeshAttachment.h \
   jni/../../cocos2d/cocos/editor-support/spine/../spine/BoundingBoxAttachment.h \
-  jni/../../cocos2d/cocos/editor-support/spine/../spine/AttachmentLoader.h
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/AnimationState.h \
+  jni/../../cocos2d/cocos/editor-support/spine/../spine/AnimationStateData.h
 
 jni/../../cocos2d/cocos/editor-support/spine/../spine/Bone.h:
 
@@ -85,6 +92,8 @@ jni/../../cocos2d/cocos/editor-support/spine/../spine/extension.h:
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h:
 
@@ -144,12 +153,24 @@ jni/../../cocos2d/cocos/editor-support/spine/../spine/Animation.h:
 
 jni/../../cocos2d/cocos/editor-support/spine/../spine/Event.h:
 
+jni/../../cocos2d/cocos/editor-support/spine/../spine/IkConstraintData.h:
+
 jni/../../cocos2d/cocos/editor-support/spine/../spine/Slot.h:
 
-jni/../../cocos2d/cocos/editor-support/spine/../spine/RegionAttachment.h:
+jni/../../cocos2d/cocos/editor-support/spine/../spine/IkConstraint.h:
 
 jni/../../cocos2d/cocos/editor-support/spine/../spine/Atlas.h:
 
+jni/../../cocos2d/cocos/editor-support/spine/../spine/AttachmentLoader.h:
+
+jni/../../cocos2d/cocos/editor-support/spine/../spine/RegionAttachment.h:
+
+jni/../../cocos2d/cocos/editor-support/spine/../spine/MeshAttachment.h:
+
+jni/../../cocos2d/cocos/editor-support/spine/../spine/SkinnedMeshAttachment.h:
+
 jni/../../cocos2d/cocos/editor-support/spine/../spine/BoundingBoxAttachment.h:
 
-jni/../../cocos2d/cocos/editor-support/spine/../spine/AttachmentLoader.h:
+jni/../../cocos2d/cocos/editor-support/spine/../spine/AnimationState.h:
+
+jni/../../cocos2d/cocos/editor-support/spine/../spine/AnimationStateData.h:

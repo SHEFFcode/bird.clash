@@ -3,7 +3,7 @@
   jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlStepper.h \
   jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControl.h \
   jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlUtils.h \
-  jni/../../cocos2d/extensions/../cocos/2d/CCSprite.h \
+  jni/../../cocos2d/cocos/./2d/CCSprite.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
@@ -61,14 +61,12 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
-  jni/../../cocos2d/extensions/../cocos/2d/CCNode.h \
-  jni/../../cocos2d/extensions/../cocos/base/ccMacros.h \
-  jni/../../cocos2d/extensions/../cocos/base/CCConsole.h \
+  jni/../../cocos2d/cocos/./2d/CCNode.h \
+  jni/../../cocos2d/cocos/./base/ccMacros.h \
+  jni/../../cocos2d/cocos/./base/CCConsole.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/time.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/time.h \
@@ -103,15 +101,15 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex \
-  jni/../../cocos2d/extensions/../cocos/base/CCRef.h \
-  jni/../../cocos2d/extensions/../cocos/platform/CCPlatformMacros.h \
-  jni/../../cocos2d/extensions/../cocos/base/ccConfig.h \
-  jni/../../cocos2d/extensions/../cocos/platform/CCPlatformConfig.h \
-  jni/../../cocos2d/extensions/../cocos/platform/CCPlatformDefine.h \
-  jni/../../cocos2d/extensions/../cocos/platform/android/CCPlatformDefine-android.h \
+  jni/../../cocos2d/cocos/./base/CCRef.h \
+  jni/../../cocos2d/cocos/./platform/CCPlatformMacros.h \
+  jni/../../cocos2d/cocos/./base/ccConfig.h \
+  jni/../../cocos2d/cocos/./platform/CCPlatformConfig.h \
+  jni/../../cocos2d/cocos/./platform/CCPlatformDefine.h \
+  jni/../../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
-  jni/../../cocos2d/extensions/../cocos/platform/CCStdC.h \
-  jni/../../cocos2d/extensions/../cocos/platform/android/CCStdC-android.h \
+  jni/../../cocos2d/cocos/./platform/CCStdC.h \
+  jni/../../cocos2d/cocos/./platform/android/CCStdC-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
@@ -119,7 +117,9 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/alloca.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/strings.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/memory.h \
-  jni/../../cocos2d/extensions/../cocos/base/ccRandom.h \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
+  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h \
+  jni/../../cocos2d/cocos/./base/ccRandom.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/numeric \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/istream \
@@ -135,52 +135,52 @@
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
-  jni/../../cocos2d/extensions/../cocos/base/CCVector.h \
-  jni/../../cocos2d/extensions/../cocos/base/CCProtocols.h \
-  jni/../../cocos2d/extensions/../cocos/base/ccTypes.h \
-  jni/../../cocos2d/extensions/../cocos/math/CCGeometry.h \
-  jni/../../cocos2d/extensions/../cocos/math/CCMath.h \
-  jni/../../cocos2d/extensions/../cocos/math/Vec2.h \
-  jni/../../cocos2d/extensions/../cocos/math/CCMathBase.h \
-  jni/../../cocos2d/extensions/../cocos/math/Vec2.inl \
-  jni/../../cocos2d/extensions/../cocos/math/Vec3.h \
-  jni/../../cocos2d/extensions/../cocos/math/Vec3.inl \
-  jni/../../cocos2d/extensions/../cocos/math/Mat4.h \
-  jni/../../cocos2d/extensions/../cocos/math/Vec4.h \
-  jni/../../cocos2d/extensions/../cocos/math/Vec4.inl \
-  jni/../../cocos2d/extensions/../cocos/math/Mat4.inl \
-  jni/../../cocos2d/extensions/../cocos/math/Quaternion.h \
-  jni/../../cocos2d/extensions/../cocos/math/Quaternion.inl \
-  jni/../../cocos2d/extensions/../cocos/platform/CCGL.h \
-  jni/../../cocos2d/extensions/../cocos/platform/android/CCGL-android.h \
+  jni/../../cocos2d/cocos/./base/CCVector.h \
+  jni/../../cocos2d/cocos/./base/CCProtocols.h \
+  jni/../../cocos2d/cocos/./base/ccTypes.h \
+  jni/../../cocos2d/cocos/./math/CCGeometry.h \
+  jni/../../cocos2d/cocos/./math/CCMath.h \
+  jni/../../cocos2d/cocos/./math/Vec2.h \
+  jni/../../cocos2d/cocos/./math/CCMathBase.h \
+  jni/../../cocos2d/cocos/./math/Vec2.inl \
+  jni/../../cocos2d/cocos/./math/Vec3.h \
+  jni/../../cocos2d/cocos/./math/Vec3.inl \
+  jni/../../cocos2d/cocos/./math/Mat4.h \
+  jni/../../cocos2d/cocos/./math/Vec4.h \
+  jni/../../cocos2d/cocos/./math/Vec4.inl \
+  jni/../../cocos2d/cocos/./math/Mat4.inl \
+  jni/../../cocos2d/cocos/./math/Quaternion.h \
+  jni/../../cocos2d/cocos/./math/Quaternion.inl \
+  jni/../../cocos2d/cocos/./platform/CCGL.h \
+  jni/../../cocos2d/cocos/./platform/android/CCGL-android.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCTexture2D.h \
-  jni/../../cocos2d/extensions/../cocos/base/CCScriptSupport.h \
-  jni/../../cocos2d/extensions/../cocos/platform/CCCommon.h \
-  jni/../../cocos2d/extensions/../cocos/base/CCTouch.h \
-  jni/../../cocos2d/extensions/../cocos/base/CCEventTouch.h \
-  jni/../../cocos2d/extensions/../cocos/base/CCEvent.h \
-  jni/../../cocos2d/extensions/../cocos/base/CCEventKeyboard.h \
+  jni/../../cocos2d/cocos/./renderer/CCTexture2D.h \
+  jni/../../cocos2d/cocos/./base/CCScriptSupport.h \
+  jni/../../cocos2d/cocos/./platform/CCCommon.h \
+  jni/../../cocos2d/cocos/./base/CCTouch.h \
+  jni/../../cocos2d/cocos/./base/CCEventTouch.h \
+  jni/../../cocos2d/cocos/./base/CCEvent.h \
+  jni/../../cocos2d/cocos/./base/CCEventKeyboard.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list \
-  jni/../../cocos2d/extensions/../cocos/math/CCAffineTransform.h \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCTextureAtlas.h \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCQuadCommand.h \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCRenderCommand.h \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCGLProgramState.h \
+  jni/../../cocos2d/cocos/./math/CCAffineTransform.h \
+  jni/../../cocos2d/cocos/./2d/CCDrawNode.h \
+  jni/../../cocos2d/cocos/./renderer/CCCustomCommand.h \
+  jni/../../cocos2d/cocos/./renderer/CCRenderCommand.h \
+  jni/../../cocos2d/cocos/./renderer/CCTextureAtlas.h \
+  jni/../../cocos2d/cocos/./renderer/CCQuadCommand.h \
+  jni/../../cocos2d/cocos/./renderer/CCGLProgramState.h \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
   /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCTrianglesCommand.h \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCCustomCommand.h \
   jni/../../cocos2d/extensions/GUI/CCControlExtension/../../ExtensionMacros.h \
-  jni/../../cocos2d/extensions/../extensions/ExtensionExport.h \
-  jni/../../cocos2d/extensions/../cocos/2d/CCLayer.h \
-  jni/../../cocos2d/extensions/../cocos/2d/CCLabel.h \
-  jni/../../cocos2d/extensions/../cocos/2d/CCSpriteBatchNode.h \
-  jni/../../cocos2d/extensions/../cocos/renderer/CCBatchCommand.h \
-  jni/../../cocos2d/extensions/../cocos/2d/CCFontAtlas.h
+  jni/../../cocos2d/cocos/./../extensions/ExtensionExport.h \
+  jni/../../cocos2d/cocos/./2d/CCLayer.h \
+  jni/../../cocos2d/cocos/./2d/CCLabel.h \
+  jni/../../cocos2d/cocos/./2d/CCSpriteBatchNode.h \
+  jni/../../cocos2d/cocos/./renderer/CCBatchCommand.h \
+  jni/../../cocos2d/cocos/./2d/CCFontAtlas.h
 
 jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlStepper.h:
 
@@ -188,7 +188,7 @@ jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControl.h:
 
 jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlUtils.h:
 
-jni/../../cocos2d/extensions/../cocos/2d/CCSprite.h:
+jni/../../cocos2d/cocos/./2d/CCSprite.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string:
 
@@ -304,21 +304,17 @@ jni/../../cocos2d/extensions/../cocos/2d/CCSprite.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
-
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h:
-
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/atomic:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
 
-jni/../../cocos2d/extensions/../cocos/2d/CCNode.h:
+jni/../../cocos2d/cocos/./2d/CCNode.h:
 
-jni/../../cocos2d/extensions/../cocos/base/ccMacros.h:
+jni/../../cocos2d/cocos/./base/ccMacros.h:
 
-jni/../../cocos2d/extensions/../cocos/base/CCConsole.h:
+jni/../../cocos2d/cocos/./base/CCConsole.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h:
 
@@ -388,23 +384,23 @@ jni/../../cocos2d/extensions/../cocos/base/CCConsole.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex:
 
-jni/../../cocos2d/extensions/../cocos/base/CCRef.h:
+jni/../../cocos2d/cocos/./base/CCRef.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/CCPlatformMacros.h:
+jni/../../cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-jni/../../cocos2d/extensions/../cocos/base/ccConfig.h:
+jni/../../cocos2d/cocos/./base/ccConfig.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/CCPlatformConfig.h:
+jni/../../cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/CCPlatformDefine.h:
+jni/../../cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/android/CCPlatformDefine-android.h:
+jni/../../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/CCStdC.h:
+jni/../../cocos2d/cocos/./platform/CCStdC.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/android/CCStdC-android.h:
+jni/../../cocos2d/cocos/./platform/android/CCStdC-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h:
 
@@ -420,7 +416,11 @@ jni/../../cocos2d/extensions/../cocos/platform/android/CCStdC-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/memory.h:
 
-jni/../../cocos2d/extensions/../cocos/base/ccRandom.h:
+/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
+
+/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h:
+
+jni/../../cocos2d/cocos/./base/ccRandom.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random:
 
@@ -452,41 +452,41 @@ jni/../../cocos2d/extensions/../cocos/base/ccRandom.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
 
-jni/../../cocos2d/extensions/../cocos/base/CCVector.h:
+jni/../../cocos2d/cocos/./base/CCVector.h:
 
-jni/../../cocos2d/extensions/../cocos/base/CCProtocols.h:
+jni/../../cocos2d/cocos/./base/CCProtocols.h:
 
-jni/../../cocos2d/extensions/../cocos/base/ccTypes.h:
+jni/../../cocos2d/cocos/./base/ccTypes.h:
 
-jni/../../cocos2d/extensions/../cocos/math/CCGeometry.h:
+jni/../../cocos2d/cocos/./math/CCGeometry.h:
 
-jni/../../cocos2d/extensions/../cocos/math/CCMath.h:
+jni/../../cocos2d/cocos/./math/CCMath.h:
 
-jni/../../cocos2d/extensions/../cocos/math/Vec2.h:
+jni/../../cocos2d/cocos/./math/Vec2.h:
 
-jni/../../cocos2d/extensions/../cocos/math/CCMathBase.h:
+jni/../../cocos2d/cocos/./math/CCMathBase.h:
 
-jni/../../cocos2d/extensions/../cocos/math/Vec2.inl:
+jni/../../cocos2d/cocos/./math/Vec2.inl:
 
-jni/../../cocos2d/extensions/../cocos/math/Vec3.h:
+jni/../../cocos2d/cocos/./math/Vec3.h:
 
-jni/../../cocos2d/extensions/../cocos/math/Vec3.inl:
+jni/../../cocos2d/cocos/./math/Vec3.inl:
 
-jni/../../cocos2d/extensions/../cocos/math/Mat4.h:
+jni/../../cocos2d/cocos/./math/Mat4.h:
 
-jni/../../cocos2d/extensions/../cocos/math/Vec4.h:
+jni/../../cocos2d/cocos/./math/Vec4.h:
 
-jni/../../cocos2d/extensions/../cocos/math/Vec4.inl:
+jni/../../cocos2d/cocos/./math/Vec4.inl:
 
-jni/../../cocos2d/extensions/../cocos/math/Mat4.inl:
+jni/../../cocos2d/cocos/./math/Mat4.inl:
 
-jni/../../cocos2d/extensions/../cocos/math/Quaternion.h:
+jni/../../cocos2d/cocos/./math/Quaternion.h:
 
-jni/../../cocos2d/extensions/../cocos/math/Quaternion.inl:
+jni/../../cocos2d/cocos/./math/Quaternion.inl:
 
-jni/../../cocos2d/extensions/../cocos/platform/CCGL.h:
+jni/../../cocos2d/cocos/./platform/CCGL.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/android/CCGL-android.h:
+jni/../../cocos2d/cocos/./platform/android/CCGL-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h:
 
@@ -496,50 +496,50 @@ jni/../../cocos2d/extensions/../cocos/platform/android/CCGL-android.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
 
-jni/../../cocos2d/extensions/../cocos/renderer/CCTexture2D.h:
+jni/../../cocos2d/cocos/./renderer/CCTexture2D.h:
 
-jni/../../cocos2d/extensions/../cocos/base/CCScriptSupport.h:
+jni/../../cocos2d/cocos/./base/CCScriptSupport.h:
 
-jni/../../cocos2d/extensions/../cocos/platform/CCCommon.h:
+jni/../../cocos2d/cocos/./platform/CCCommon.h:
 
-jni/../../cocos2d/extensions/../cocos/base/CCTouch.h:
+jni/../../cocos2d/cocos/./base/CCTouch.h:
 
-jni/../../cocos2d/extensions/../cocos/base/CCEventTouch.h:
+jni/../../cocos2d/cocos/./base/CCEventTouch.h:
 
-jni/../../cocos2d/extensions/../cocos/base/CCEvent.h:
+jni/../../cocos2d/cocos/./base/CCEvent.h:
 
-jni/../../cocos2d/extensions/../cocos/base/CCEventKeyboard.h:
+jni/../../cocos2d/cocos/./base/CCEventKeyboard.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list:
 
-jni/../../cocos2d/extensions/../cocos/math/CCAffineTransform.h:
+jni/../../cocos2d/cocos/./math/CCAffineTransform.h:
 
-jni/../../cocos2d/extensions/../cocos/renderer/CCTextureAtlas.h:
+jni/../../cocos2d/cocos/./2d/CCDrawNode.h:
 
-jni/../../cocos2d/extensions/../cocos/renderer/CCQuadCommand.h:
+jni/../../cocos2d/cocos/./renderer/CCCustomCommand.h:
 
-jni/../../cocos2d/extensions/../cocos/renderer/CCRenderCommand.h:
+jni/../../cocos2d/cocos/./renderer/CCRenderCommand.h:
 
-jni/../../cocos2d/extensions/../cocos/renderer/CCGLProgramState.h:
+jni/../../cocos2d/cocos/./renderer/CCTextureAtlas.h:
+
+jni/../../cocos2d/cocos/./renderer/CCQuadCommand.h:
+
+jni/../../cocos2d/cocos/./renderer/CCGLProgramState.h:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map:
 
 /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table:
 
-jni/../../cocos2d/extensions/../cocos/renderer/CCTrianglesCommand.h:
-
-jni/../../cocos2d/extensions/../cocos/renderer/CCCustomCommand.h:
-
 jni/../../cocos2d/extensions/GUI/CCControlExtension/../../ExtensionMacros.h:
 
-jni/../../cocos2d/extensions/../extensions/ExtensionExport.h:
+jni/../../cocos2d/cocos/./../extensions/ExtensionExport.h:
 
-jni/../../cocos2d/extensions/../cocos/2d/CCLayer.h:
+jni/../../cocos2d/cocos/./2d/CCLayer.h:
 
-jni/../../cocos2d/extensions/../cocos/2d/CCLabel.h:
+jni/../../cocos2d/cocos/./2d/CCLabel.h:
 
-jni/../../cocos2d/extensions/../cocos/2d/CCSpriteBatchNode.h:
+jni/../../cocos2d/cocos/./2d/CCSpriteBatchNode.h:
 
-jni/../../cocos2d/extensions/../cocos/renderer/CCBatchCommand.h:
+jni/../../cocos2d/cocos/./renderer/CCBatchCommand.h:
 
-jni/../../cocos2d/extensions/../cocos/2d/CCFontAtlas.h:
+jni/../../cocos2d/cocos/./2d/CCFontAtlas.h:

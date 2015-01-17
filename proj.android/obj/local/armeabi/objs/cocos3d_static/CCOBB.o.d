@@ -143,8 +143,7 @@
   jni/../../cocos2d/cocos/3d/../math/Vec4.inl \
   jni/../../cocos2d/cocos/3d/../math/Mat4.inl \
   jni/../../cocos2d/cocos/3d/../math/Quaternion.h \
-  jni/../../cocos2d/cocos/3d/../math/Quaternion.inl \
-  jni/../../cocos2d/cocos/3d/../3d/3dExport.h
+  jni/../../cocos2d/cocos/3d/../math/Quaternion.inl
 
 jni/../../cocos2d/cocos/3d/../3d/CCOBB.h:
 
@@ -433,5 +432,3 @@ jni/../../cocos2d/cocos/3d/../math/Mat4.inl:
 jni/../../cocos2d/cocos/3d/../math/Quaternion.h:
 
 jni/../../cocos2d/cocos/3d/../math/Quaternion.inl:
-
-jni/../../cocos2d/cocos/3d/../3d/3dExport.h:
