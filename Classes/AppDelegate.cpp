@@ -1,6 +1,10 @@
 #include "AppDelegate.h"
 #include "GamePlay.h"
 #include "SplashScreen.h"
+#include "CCServiceManager.h"
+#include "CCStoreService.h"
+#include "Cocos2dxStore.h"
+#include "cherryAssets.h"
 
 USING_NS_CC;
 
@@ -24,6 +28,17 @@ void AppDelegate::initGLContextAttrs()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
+    //Initialize SoomLa
+    cherryAssets *assets = cherryAssets::create();
+    __Dictionary *commonParams = __Dictionary::create();
+    commonParams->setObject(__String::create("ExampleCustomSecret"), "customSecret");
+    soomla::CCServiceManager::getInstance()->setCommonParams(commonParams);
+    __Dictionary *storeParams = __Dictionary::create();
+    storeParams->setObject(__String::create("ExamplePublicKey"), "androidPublicKey");
+    
+    soomla::CCStoreService::initShared(assets, storeParams);
+    
+    
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();

@@ -1,5 +1,10 @@
 #include "Store.h"
 #include "GamePlay.h"
+#include "CCStoreInventory.h"
+#include "CCStoreService.h"
+#include "CCSoomlaUtils.h"
+#include "CCError.h"
+#include "cherryAssets.h"
 
 USING_NS_CC;
 
@@ -273,7 +278,14 @@ void Store::GoToGamePlay( cocos2d::Ref *sender )
 
 void Store::Sale1( cocos2d::Ref *sender )
 {
+    soomla::CCError *soomlaError = NULL;
+    soomla::CCStoreInventory::sharedStoreInventory()->buyItem("cherries_400", &soomlaError);
+    if (soomlaError) {
+        soomla::CCSoomlaUtils::logException("StoreScreen::Onclicked", soomlaError);
+    }
     
+    CCLOG("clicked");
+
 }
 
 void Store::Sale2( cocos2d::Ref *sender )
