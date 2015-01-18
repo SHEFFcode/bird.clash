@@ -26,11 +26,11 @@
 		<key>5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C</key>
 		<string>../../..</string>
 		<key>7F41E3A86218147E742AB88280559E2C4A837E7E</key>
-		<string>../../..extensions/cocos2dx-store/</string>
+		<string>../../..extensions/cocos2dx-store</string>
 		<key>BAD866C9FDD19D65B7E9CC9A77F606F8843B9079</key>
-		<string>../../..extensions/soomla-cocos2dx-core/</string>
+		<string>../../..extensions/soomla-cocos2dx-core</string>
 		<key>E1C6A175F69FE775E12FC4745DF7A1DEA941144C</key>
-		<string>../../..external/jansson/</string>
+		<string>../../..external/jansson</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:SHEFFcode/BirdClash.git</string>

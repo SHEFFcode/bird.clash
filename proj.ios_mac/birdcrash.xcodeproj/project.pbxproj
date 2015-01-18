@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1E70DE0D1A6AF8D2006D14C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */; };
+		1E70DE0F1A6B096F006D14C3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E70DE0E1A6B096F006D14C3 /* StoreKit.framework */; };
+		1E70DE161A6C20DA006D14C3 /* ExampleEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E70DE141A6C20DA006D14C3 /* ExampleEventHandler.cpp */; };
+		1E70DE171A6C20DA006D14C3 /* ExampleEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E70DE141A6C20DA006D14C3 /* ExampleEventHandler.cpp */; };
 		1EB740CA1A4C644E00C15380 /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB740C81A4C644E00C15380 /* GameOver.cpp */; };
 		1EB740CB1A4C644E00C15380 /* GameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB740C81A4C644E00C15380 /* GameOver.cpp */; };
 		1EB7920F1A49CEF20074A0EE /* Tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */; };
@@ -35,7 +39,6 @@
 		1EDC26431A33AF210071F94F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26421A33AF210071F94F /* MediaPlayer.framework */; };
 		1EDC26451A33AF490071F94F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26441A33AF490071F94F /* MessageUI.framework */; };
 		1EDC26471A33AF650071F94F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26461A33AF650071F94F /* Security.framework */; };
-		1EDC26491A33AF780071F94F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26481A33AF780071F94F /* StoreKit.framework */; };
 		1EDC264B1A33AF9D0071F94F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC264A1A33AF9D0071F94F /* SystemConfiguration.framework */; };
 		1EDC264F1A33AFC00071F94F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC264E1A33AFC00071F94F /* libxml2.dylib */; };
 		1EDC26511A33AFCA0071F94F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDC26501A33AFCA0071F94F /* libz.dylib */; };
@@ -63,7 +66,6 @@
 		1EDC26B71A3CB92F0071F94F /* Powerups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC26B51A3CB92F0071F94F /* Powerups.cpp */; };
 		1EDC26B81A3CB92F0071F94F /* Powerups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC26B51A3CB92F0071F94F /* Powerups.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2B0F17431A6AD36700387BCA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */; };
 		2B0F175A1A6AD74700387BCA /* jansson in Resources */ = {isa = PBXBuildFile; fileRef = 2B0F17591A6AD74700387BCA /* jansson */; };
 		2B0F175B1A6AD74700387BCA /* jansson in Resources */ = {isa = PBXBuildFile; fileRef = 2B0F17591A6AD74700387BCA /* jansson */; };
 		2B0F17601A6AD79C00387BCA /* libCocos2dXCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0F17561A6AD70900387BCA /* libCocos2dXCore.a */; };
@@ -220,6 +222,9 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* birdcrush iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "birdcrush iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E70DE0E1A6B096F006D14C3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		1E70DE141A6C20DA006D14C3 /* ExampleEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleEventHandler.cpp; sourceTree = "<group>"; };
+		1E70DE151A6C20DA006D14C3 /* ExampleEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleEventHandler.h; sourceTree = "<group>"; };
 		1EB740C81A4C644E00C15380 /* GameOver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOver.cpp; sourceTree = "<group>"; };
 		1EB740C91A4C644E00C15380 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tutorial.cpp; sourceTree = "<group>"; };
@@ -248,7 +253,6 @@
 		1EDC26421A33AF210071F94F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		1EDC26441A33AF490071F94F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		1EDC26461A33AF650071F94F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		1EDC26481A33AF780071F94F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		1EDC264A1A33AF9D0071F94F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		1EDC264C1A33AFAC0071F94F /* libPluginProtocol.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPluginProtocol.a; path = "../cocos2d/external/plugin/protocols/proj.ios/build/Debug-iphoneos/libPluginProtocol.a"; sourceTree = "<group>"; };
 		1EDC264E1A33AFC00071F94F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
@@ -352,15 +356,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E70DE0D1A6AF8D2006D14C3 /* FacebookSDK.framework in Frameworks */,
 				1EDC263F1A33AF050071F94F /* GameController.framework in Frameworks */,
 				1EDC26431A33AF210071F94F /* MediaPlayer.framework in Frameworks */,
 				2B0F17651A6AD7EC00387BCA /* CoreVideo.framework in Frameworks */,
 				2B0F17631A6AD7E100387BCA /* libsqlite3.0.dylib in Frameworks */,
-				1EDC26491A33AF780071F94F /* StoreKit.framework in Frameworks */,
 				1EDC26471A33AF650071F94F /* Security.framework in Frameworks */,
 				2B0F17601A6AD79C00387BCA /* libCocos2dXCore.a in Frameworks */,
 				2B0F17611A6AD79C00387BCA /* libCocos2dXStore.a in Frameworks */,
-				2B0F17431A6AD36700387BCA /* FacebookSDK.framework in Frameworks */,
 				2BE40EC01A59D7E400BEF3AF /* libPluginFacebook.a in Frameworks */,
 				2BE40EB61A59D74500BEF3AF /* libPluginProtocol.a in Frameworks */,
 				2BE40EAF1A59D71B00BEF3AF /* libPluginAdmob.a in Frameworks */,
@@ -375,6 +378,7 @@
 				1EDC26451A33AF490071F94F /* MessageUI.framework in Frameworks */,
 				1EDC26411A33AF140071F94F /* OpenGLES.framework in Frameworks */,
 				1EDC263D1A33AEF30071F94F /* CoreTelephony.framework in Frameworks */,
+				1E70DE0F1A6B096F006D14C3 /* StoreKit.framework in Frameworks */,
 				1EDC263B1A33AE8C0071F94F /* AVFoundation.framework in Frameworks */,
 				1EDC26391A33AE7B0071F94F /* AudioToolbox.framework in Frameworks */,
 				1EDC26371A33AE6B0071F94F /* AdSupport.framework in Frameworks */,
@@ -472,6 +476,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E70DE0E1A6B096F006D14C3 /* StoreKit.framework */,
 				2B0F17641A6AD7EC00387BCA /* CoreVideo.framework */,
 				2B0F17621A6AD7E100387BCA /* libsqlite3.0.dylib */,
 				2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */,
@@ -501,7 +506,6 @@
 				1EDC264E1A33AFC00071F94F /* libxml2.dylib */,
 				1EDC264C1A33AFAC0071F94F /* libPluginProtocol.a */,
 				1EDC264A1A33AF9D0071F94F /* SystemConfiguration.framework */,
-				1EDC26481A33AF780071F94F /* StoreKit.framework */,
 				1EDC26461A33AF650071F94F /* Security.framework */,
 				1EDC26441A33AF490071F94F /* MessageUI.framework */,
 				1EDC26421A33AF210071F94F /* MediaPlayer.framework */,
@@ -616,11 +620,15 @@
 				1EC94DEB1A1C2DA00007B8BF /* Bird.h */,
 				1EDC26A51A3904820071F94F /* Cherry.cpp */,
 				1EDC26A61A3904820071F94F /* Cherry.h */,
+				2B0F17661A6AD93900387BCA /* cherryAssets.cpp */,
+				2B0F17671A6AD93900387BCA /* cherryAssets.h */,
 				1EDC26B11A3BE8730071F94F /* CherryStore.cpp */,
 				1EDC26B21A3BE8730071F94F /* CherryStore.h */,
+				1EC94DF21A1C2EE40007B8BF /* Definitions.h */,
+				1E70DE141A6C20DA006D14C3 /* ExampleEventHandler.cpp */,
+				1E70DE151A6C20DA006D14C3 /* ExampleEventHandler.h */,
 				1EB740C81A4C644E00C15380 /* GameOver.cpp */,
 				1EB740C91A4C644E00C15380 /* GameOver.h */,
-				1EC94DF21A1C2EE40007B8BF /* Definitions.h */,
 				1EC94DE31A1BD05A0007B8BF /* GamePlay.cpp */,
 				1EC94DE41A1BD05A0007B8BF /* GamePlay.h */,
 				1EC94DF51A1E53550007B8BF /* MyContactListener.cpp */,
@@ -633,8 +641,6 @@
 				1EDC26AE1A3A83170071F94F /* Store.h */,
 				1EB7920D1A49CEF20074A0EE /* Tutorial.cpp */,
 				1EB7920E1A49CEF20074A0EE /* Tutorial.h */,
-				2B0F17661A6AD93900387BCA /* cherryAssets.cpp */,
-				2B0F17671A6AD93900387BCA /* cherryAssets.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -735,7 +741,12 @@
 				LastUpgradeCheck = 0610;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = T6E7R2ZW57;
+						DevelopmentTeam = 3KDMTP3843;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					5087E73D17EB910900C73F5D = {
 						DevelopmentTeam = 3KDMTP3843;
@@ -920,6 +931,7 @@
 				1EB740CA1A4C644E00C15380 /* GameOver.cpp in Sources */,
 				1EC94DE51A1BD05A0007B8BF /* GamePlay.cpp in Sources */,
 				1EC94DF71A1E53550007B8BF /* MyContactListener.cpp in Sources */,
+				1E70DE161A6C20DA006D14C3 /* ExampleEventHandler.cpp in Sources */,
 				1EDC26A01A3639590071F94F /* SplashScreen.cpp in Sources */,
 				1EB7920F1A49CEF20074A0EE /* Tutorial.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
@@ -946,6 +958,7 @@
 				1EC94DED1A1C2DA00007B8BF /* Bird.cpp in Sources */,
 				1EDC26B41A3BE8730071F94F /* CherryStore.cpp in Sources */,
 				1EB740CB1A4C644E00C15380 /* GameOver.cpp in Sources */,
+				1E70DE171A6C20DA006D14C3 /* ExampleEventHandler.cpp in Sources */,
 				1EDC26A81A3904820071F94F /* Cherry.cpp in Sources */,
 				2B0F17691A6AD93900387BCA /* cherryAssets.cpp in Sources */,
 				1EDC26B81A3CB92F0071F94F /* Powerups.cpp in Sources */,
@@ -990,6 +1003,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/sheffne/Desktop/cocosFiles/BirdClash/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/seanrochlen/Desktop/BirdClash/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1037,6 +1051,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/sheffne/Desktop/cocosFiles/BirdClash/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
+					/Users/seanrochlen/Desktop/BirdClash/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
 				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

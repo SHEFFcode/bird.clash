@@ -5,6 +5,7 @@
 #include "CCSoomlaUtils.h"
 #include "CCError.h"
 #include "cherryAssets.h"
+#include "ExampleEventHandler.h"
 
 USING_NS_CC;
 
@@ -37,7 +38,7 @@ bool Store::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
     UserDefault *def = UserDefault::getInstance();
-    auto cherries = def->getIntegerForKey("cherry_currency", 0);
+    cherries = def->getIntegerForKey("cherry_currency", 0);
     __String *temp = __String::createWithFormat("%i", cherries);
     def->flush();
     
@@ -73,7 +74,7 @@ bool Store::init()
     cherry->setPosition(Point(startWidth + (backgroundWidth * 0.95), startHeight + (backgroundHeight * 0.935)));
     cherry->setScale(0.75);
     
-    auto cherryText = Label::createWithTTF(temp->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.075);
+    cherryText = Label::createWithTTF(temp->getCString(), "Arial_Regular.ttf", visibleSize.height * 0.075);
     cherryText->setColor(Color3B::BLACK);
     cherryText->setPosition(Vec2(cherry->getPositionX() - (cherry->getContentSize().width / 2), storeText->getPositionY()));
     cherryText->setAnchorPoint(Vec2(1.0, 0.5));  // Align right
@@ -279,26 +280,66 @@ void Store::GoToGamePlay( cocos2d::Ref *sender )
 void Store::Sale1( cocos2d::Ref *sender )
 {
     soomla::CCError *soomlaError = NULL;
-    soomla::CCStoreInventory::sharedStoreInventory()->buyItem("cherries_400", &soomlaError);
+    soomla::CCStoreInventory::sharedStoreInventory()->buyItem("001", &soomlaError);
     if (soomlaError) {
         soomla::CCSoomlaUtils::logException("StoreScreen::Onclicked", soomlaError);
     }
-    
-    CCLOG("clicked");
-
 }
 
 void Store::Sale2( cocos2d::Ref *sender )
 {
-    
+    soomla::CCError *soomlaError = NULL;
+    soomla::CCStoreInventory::sharedStoreInventory()->buyItem("002", &soomlaError);
+    if (soomlaError) {
+        soomla::CCSoomlaUtils::logException("StoreScreen::Onclicked", soomlaError);
+    }
 }
 
 void Store::Sale3( cocos2d::Ref *sender )
 {
-    
+    soomla::CCError *soomlaError = NULL;
+    soomla::CCStoreInventory::sharedStoreInventory()->buyItem("003", &soomlaError);
+    if (soomlaError) {
+        soomla::CCSoomlaUtils::logException("StoreScreen::Onclicked", soomlaError);
+    }
 }
 
 void Store::Sale4( cocos2d::Ref *sender )
 {
-    
+    soomla::CCError *soomlaError = NULL;
+    soomla::CCStoreInventory::sharedStoreInventory()->buyItem("003", &soomlaError);
+    if (soomlaError) {
+        soomla::CCSoomlaUtils::logException("StoreScreen::Onclicked", soomlaError);
+    }
 }
+
+void Store::onEnter() {
+    CCLayer::onEnter();
+    __NotificationCenter::getInstance()->addObserver(this,
+                                                     callfuncO_selector(Store::updateCurrencyBalance),
+                                                     EVENT_ON_CURRENCY_BALANCE_CHANGED, NULL);
+}
+
+void Store::onExit() {
+    __NotificationCenter::getInstance()->removeObserver(this, EVENT_ON_CURRENCY_BALANCE_CHANGED);
+    Layer::onExit();
+}
+
+void Store::updateCurrencyBalance(Ref *pBalance) {
+    UserDefault *def = UserDefault::getInstance();
+    cherries = cherries + ((__Integer*)pBalance)->getValue();
+    __String *temp = __String::createWithFormat("%i", cherries);
+    cherryText->setString(temp->getCString());
+    def->setIntegerForKey("cherry_currency", cherries);
+    def->flush();
+}
+
+
+
+
+
+
+
+
+
+

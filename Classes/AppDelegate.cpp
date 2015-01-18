@@ -5,15 +5,17 @@
 #include "CCStoreService.h"
 #include "Cocos2dxStore.h"
 #include "cherryAssets.h"
+#include "ExampleEventHandler.h"
 
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
-    
+    handler = new ExampleEventHandler();
 }
 
 AppDelegate::~AppDelegate()
 {
+    soomla::CCStoreEventDispatcher::getInstance()->removeEventHandler(handler);
 }
 
 //if you want a different context,just modify the value of glContextAttrs
@@ -38,6 +40,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     soomla::CCStoreService::initShared(assets, storeParams);
     
+    soomla::CCStoreEventDispatcher::getInstance()->addEventHandler(handler);
     
     // initialize director
     auto director = Director::getInstance();

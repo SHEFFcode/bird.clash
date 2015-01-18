@@ -37,36 +37,36 @@ bool cherryAssets::init() {
     /** Virtual Currency Packs **/
     
     CCVirtualCurrencyPack *fourHundredCherryPack = CCVirtualCurrencyPack::create(
-                                                                       CCString::create("400 Cherries"),                                   // name
+                                                                       CCString::create("cherry_400"),                                   // name
                                                                        CCString::create("Adds 400 Cherries to use for Powerups in Bird Clash."),                       // description
-                                                                       CCString::create("cherries_400"),                                   // item id
+                                                                       CCString::create("001"),                                   // item id
                                                                        CCInteger::create(400),												// number of currencies in the pack
                                                                        CCString::create(CHERRY_CURRENCY_ITEM_ID),                        // the currency associated with this pack
                                                                        CCPurchaseWithMarket::create(CCString::create(FOURHUNDRED_PACK_PRODUCT_ID), CCDouble::create(0.99))
                                                                        );
     
     CCVirtualCurrencyPack *oneThousandCherryPack = CCVirtualCurrencyPack::create(
-                                                                         CCString::create("1000 Cherries"),                                   // name
+                                                                         CCString::create("cherry_1000"),                                   // name
                                                                          CCString::create("Adds 1000 Cherries to use for Powerups in Bird Clash."),                 // description
-                                                                         CCString::create("cherries_1000"),                                   // item id
+                                                                         CCString::create("002"),                                   // item id
                                                                          CCInteger::create(1000),												// number of currencies in the pack
                                                                          CCString::create(CHERRY_CURRENCY_ITEM_ID),                        // the currency associated with this pack
                                                                          CCPurchaseWithMarket::create(CCString::create(ONETHOUSAND_PACK_PRODUCT_ID), CCDouble::create(1.99))
                                                                          );
     
     CCVirtualCurrencyPack *threeThousandCherryPack = CCVirtualCurrencyPack::create(
-                                                                            CCString::create("3000 Cherries"),                                   // name
+                                                                            CCString::create("cherry_3000"),                                   // name
                                                                             CCString::create("Adds 3000 Cherries to use for Powerups in Bird Clash."),                 // description
-                                                                            CCString::create("cherries_3000"),                                   // item id
+                                                                            CCString::create("003"),                                   // item id
                                                                             CCInteger::create(3000),												// number of currencies in the pack
                                                                             CCString::create(CHERRY_CURRENCY_ITEM_ID),                        // the currency associated with this pack
                                                                             CCPurchaseWithMarket::create(CCString::create(THREETHOUSAND_PACK_PRODUCT_ID), CCDouble::create(4.99))
                                                                             );
     
     CCVirtualCurrencyPack *eightThousandCherryPack = CCVirtualCurrencyPack::create(
-                                                                            CCString::create("8000 Cherries"),                                   // name
+                                                                            CCString::create("cherry_8000"),                                   // name
                                                                             CCString::create("Adds 8000 Cherries to use for Powerups in Bird Clash."),                 // description
-                                                                            CCString::create("cherries_8000"),                                   // item id
+                                                                            CCString::create("004"),                                   // item id
                                                                             CCInteger::create(8000),												// number of currencies in the pack
                                                                             CCString::create(CHERRY_CURRENCY_ITEM_ID),                        // the currency associated with this pack
                                                                             CCPurchaseWithMarket::create(CCString::create(EIGHTTHOUSAND_PACK_PRODUCT_ID), CCDouble::create(9.99))

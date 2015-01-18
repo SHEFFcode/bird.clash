@@ -35,7 +35,7 @@
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
             BuildableName = "birdcrush iOS.app"
             BlueprintName = "birdcrush iOS"
-            ReferencedContainer = "container:birdcrush.xcodeproj">
+            ReferencedContainer = "container:birdcrash.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,7 +54,7 @@
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
             BuildableName = "birdcrush iOS.app"
             BlueprintName = "birdcrush iOS"
-            ReferencedContainer = "container:birdcrush.xcodeproj">
+            ReferencedContainer = "container:birdcrash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

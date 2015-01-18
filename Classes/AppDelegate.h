@@ -3,6 +3,7 @@
 
 #define COCOS2D_DEBUG 1
 #include "cocos2d.h"
+#include "Cocos2dxStore.h"
 
 /**
 @brief    The cocos2d Application.
@@ -35,6 +36,8 @@ public:
     @param  the pointer of the application
     */
     virtual void applicationWillEnterForeground();
+    
+    soomla::CCStoreEventHandler *handler;
 };
 
 #endif // _APP_DELEGATE_H_

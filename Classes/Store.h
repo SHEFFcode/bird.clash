@@ -5,8 +5,13 @@
 
 class Store : public cocos2d::Layer
 {
+protected:
+    virtual void onEnter();
+    virtual void onExit();
 public:
+    unsigned int cherries;
     cocos2d::Sprite *background;
+    cocos2d::Label *cherryText;
     
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -18,6 +23,7 @@ public:
     CREATE_FUNC(Store);
     
 private:
+    virtual void updateCurrencyBalance(Ref *pBalance);
     void GoToGamePlay( cocos2d::Ref *sender );
     void Sale1( cocos2d::Ref *sender );
     void Sale2( cocos2d::Ref *sender );
