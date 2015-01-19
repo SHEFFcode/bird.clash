@@ -159,7 +159,12 @@ bool GamePlay::init()
         if(whichBird == 3)
             def->setIntegerForKey("blue3", 1);
     }
-    auto calculatedVelocity = (640 / visibleSize.height) * 0.002;
+    auto calculatedVelocity = 0.0;
+    if(visibleSize.width >= 1024) {
+        calculatedVelocity = (500 / visibleSize.height) * 0.01;
+    } else {
+        calculatedVelocity = (640 / visibleSize.height) * 0.005;
+    }
     def->setFloatForKey("velocity", calculatedVelocity);
     auto soundOn = def->getIntegerForKey("sound");
     def->flush();

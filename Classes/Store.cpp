@@ -81,19 +81,19 @@ bool Store::init()
     
     auto cherrySale1 = Sprite::create("cherry.png");
     cherrySale1->setPosition(Point(startWidth + (backgroundWidth * 0.17), startHeight + (backgroundHeight * 0.68)));
-    cherrySale1->setScale(0.75);
+    cherrySale1->setScale(0.7);
     
     auto cherrySale2 = Sprite::create("menu_purchase/cherry2.png");
     cherrySale2->setPosition(Point(startWidth + (backgroundWidth * 0.615), startHeight + (backgroundHeight * 0.68)));
-    cherrySale2->setScale(0.75);
+    cherrySale2->setScale(0.7);
     
     auto cherrySale3 = Sprite::create("menu_purchase/cherry3.png");
     cherrySale3->setPosition(Point(startWidth + (backgroundWidth * 0.155), startHeight + (backgroundHeight * 0.3)));
-    cherrySale3->setScale(0.75);
+    cherrySale3->setScale(0.7);
     
     auto cherrySale4 = Sprite::create("menu_purchase/cherry4.png");
     cherrySale4->setPosition(Point(startWidth + (backgroundWidth * 0.61), startHeight + (backgroundHeight * 0.3)));
-    cherrySale4->setScale(0.75);
+    cherrySale4->setScale(0.7);
     
     // Purchase Buttons
     auto item1 = MenuItemImage::create("menu_purchase/sale.png", "menu_purchase/sale.png", CC_CALLBACK_1(Store::Sale1, this));
@@ -108,13 +108,13 @@ bool Store::init()
     auto item4 = MenuItemImage::create("menu_purchase/sale2.png", "menu_purchase/sale2.png", CC_CALLBACK_1(Store::Sale4, this));
     item4->setPosition(Point(startWidth + (backgroundWidth * 0.73), startHeight + (backgroundHeight * 0.3)));
     
-#if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    item1->setScaleX(1.2);
-    item2->setScaleX(1.2);
-    item3->setScaleX(1.2);
-    item4->setScaleX(1.2);
-#endif
-    
+//#if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+    auto itemScale = (backgroundWidth * 0.44) / item1->getContentSize().width;
+    item1->setScaleX(itemScale);
+    item2->setScaleX(itemScale);
+    item3->setScaleX(itemScale);
+    item4->setScaleX(itemScale);
+//#endif
     
     auto buy1 = Sprite::create("menu_purchase/buy.png");
     buy1->setPosition(Point(startWidth + (backgroundWidth * 0.35), startHeight + (backgroundHeight * 0.56)));
