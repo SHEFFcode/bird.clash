@@ -42,16 +42,6 @@ USING_NS_CC;
 unsigned int gameStarted;
 
 GamePlay::~GamePlay() {
-    soundSprite->release();
-    cherrySprite->release();
-    cherryScore->release();
-    redX->release();
-    redX2->release();
-    redX3->release();
-    menu->release();
-    gameText->release();
-    playText->release();
-    
     CC_SAFE_DELETE(world);
     
     bottom = NULL;
@@ -66,15 +56,15 @@ GamePlay::~GamePlay() {
     delete bird3;
     delete cherry;
     
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    _caseItem->release();
-    _posItem->release();
-    
-    delete _flurryAds;
-    delete _admob;
-    delete _listener;
-    delete _ads;
-#endif
+//#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+//    _caseItem->release();
+//    _posItem->release();
+//    
+//    delete _flurryAds;
+//    delete _admob;
+//    delete _listener;
+//    delete _ads;
+//#endif
     
 }
 
@@ -165,9 +155,7 @@ bool GamePlay::init()
     def->setIntegerForKey("bird3_collisions", 0);
     def->setIntegerForKey("bird1_region", 0);
     def->setIntegerForKey("bird2_region", 0);
-    def->setIntegerForKey("bird1_miss", 0);
-    def->setIntegerForKey("bird2_miss", 0);
-    def->setIntegerForKey("bird3_miss", 0);
+    def->setIntegerForKey("misses", 0);
     def->setIntegerForKey("bird_count", 0);
     def->setIntegerForKey("score", 0);
     def->setIntegerForKey("power3_activated", 0);
@@ -199,7 +187,7 @@ bool GamePlay::init()
             def->setIntegerForKey("blue3", 1);
     }
     
-    auto calculatedVelocity = (640 / visibleSize.height) * 0.001;
+    auto calculatedVelocity = (640 / visibleSize.height) * 0.1;
     if((visibleSize.width == 1024 && visibleSize.height == 768) || (visibleSize.width == 2048 && visibleSize.height == 1536)) {
         calculatedVelocity = (500 / visibleSize.height) * 0.01;
     }
@@ -464,9 +452,7 @@ void GamePlay::update( float dt )
     int32 velocityIterations = 8;
     int32 positionIterations = 1;
     auto bird_count = def->getIntegerForKey("bird_count", 0);
-    auto missed1 = def->getIntegerForKey("bird1_miss", 0);
-    auto missed2 = def->getIntegerForKey("bird2_miss", 0);
-    auto missed3 = def->getIntegerForKey("bird3_miss", 0);
+    auto misses = def->getIntegerForKey("misses", 0);
     auto blue1 = def->getIntegerForKey("blue1");
     auto blue2 = def->getIntegerForKey("blue2");
     auto blue3 = def->getIntegerForKey("blue3");
@@ -486,7 +472,7 @@ void GamePlay::update( float dt )
                 sprite->setPosition( Vec2( b->GetPosition().x * PTM_RATIO, b->GetPosition().y * PTM_RATIO) );
                 
                 // Remove touchlisteners from all birdSprites if gameover
-                if((missed1 + missed2 + missed3) >= 3) {
+                if( misses >= 3) {
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(sprite);
                 }
                 if(sprite->getTag() == 0) {
@@ -558,7 +544,7 @@ void GamePlay::update( float dt )
             }
         }
     }
-    if(((missed1 + missed2 + missed3) == 1) && redCheck3 == 0) {
+    if( misses == 1 && redCheck3 == 0) {
         redCheck3 = 1;
         if(soundOn)
             CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/flyAway.mp3");
@@ -568,7 +554,7 @@ void GamePlay::update( float dt )
         auto scale = ScaleTo::create(0.5, 1.5);
         redX3->runAction(scale);
     }
-    if(((missed1 + missed2 + missed3) == 2) && redCheck2 == 0) {
+    if( misses == 2 && redCheck2 == 0) {
         redCheck2 = 1;
         if(soundOn)
             CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/flyAway.mp3");
@@ -578,7 +564,7 @@ void GamePlay::update( float dt )
         auto scale = ScaleTo::create(0.5, 1.5);
         redX2->runAction(scale);
     }
-    if(((missed1 + missed2 + missed3) == 3) && redCheck == 0) {
+    if(misses == 3 && redCheck == 0) {
         redCheck = 1;
         if(soundOn)
             CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("sounds/flyAway.mp3");
@@ -589,19 +575,17 @@ void GamePlay::update( float dt )
         redX->runAction(scale);
     }
     
-    if(bird_count >= 3 && (missed1 + missed2 + missed3 < 3))
+    if(bird_count >= 3 && misses < 3)
     {
         def->setIntegerForKey("bird_count", 0);
         this->scheduleOnce(schedule_selector(GamePlay::ResetBirds), 0.5);
     }
     
-    if(missed1 + missed2 + missed3 >= 3) {
+    if(misses >= 3) {
         def->setIntegerForKey("bird1_collisions", 3);
         def->setIntegerForKey("bird2_collisions", 3);
         def->setIntegerForKey("bird3_collisions", 3);
-        def->setIntegerForKey("bird1_miss", 0);
-        def->setIntegerForKey("bird2_miss", 0);
-        def->setIntegerForKey("bird3_miss", 0);
+        def->setIntegerForKey("misses", 0);
         def->setIntegerForKey("bird_count", 0);
         this->scheduleOnce(schedule_selector(GamePlay::GameOver), 0.5);
     }

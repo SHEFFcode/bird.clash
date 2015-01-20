@@ -4,23 +4,23 @@
 USING_NS_CC;
 
 Tutorial::~Tutorial(){
-    menu->release();
-    menu2->release();
-    menuSprite->release();
-    power1Text->release();
-    power2Text->release();
-    power3Text->release();
-    bird->release();
-    finger->release();
-    target->release();
-    arrow_left->release();
-    arrow_right->release();
-    playText->release();
-    instructions->release();
-    cherryScore->release();
-    redX3->release();
-    cherry->release();
-    cherryAnimation->release();
+//    menu->release();
+//    menu2->release();
+//    menuSprite->release();
+//    power1Text->release();
+//    power2Text->release();
+//    power3Text->release();
+//    bird->release();
+//    finger->release();
+//    target->release();
+//    arrow_left->release();
+//    arrow_right->release();
+//    playText->release();
+//    instructions->release();
+//    cherryScore->release();
+//    redX3->release();
+//    cherry->release();
+//    cherryAnimation->release();
 }
 
 Scene* Tutorial::createScene()

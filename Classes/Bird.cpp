@@ -7,7 +7,7 @@
 USING_NS_CC;
 
 Bird::~Bird(){
-    bird->release();
+//    bird->release();
 }
 
 Bird::Bird( cocos2d::Layer *layer, b2World *world )

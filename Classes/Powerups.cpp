@@ -5,17 +5,17 @@
 USING_NS_CC;
 
 Powerups::~Powerups(){
-    menu->release();
-    menu2->release();
-    menuSprite->release();
-    power1Text->release();
-    power2Text->release();
-    power3Text->release();
-    power1_infinity->release();
-    power2_infinity->release();
-    power3_infinity->release();
-    growSelected->release();
-    growSprite->release();
+//    menu->release();
+//    menu2->release();
+//    menuSprite->release();
+//    power1Text->release();
+//    power2Text->release();
+//    power3Text->release();
+//    power1_infinity->release();
+//    power2_infinity->release();
+//    power3_infinity->release();
+//    growSelected->release();
+//    growSprite->release();
 }
 
 Powerups::Powerups( cocos2d::Layer *layer, b2World *world )

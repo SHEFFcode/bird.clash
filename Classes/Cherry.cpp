@@ -5,7 +5,7 @@
 USING_NS_CC;
 
 Cherry::~Cherry(){
-    cherry->release();
+//    cherry->release();
 }
 
 Cherry::Cherry( cocos2d::Layer *layer, cocos2d::Label *cherryScore)
