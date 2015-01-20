@@ -6,6 +6,8 @@
 class Cherry
 {
 public:
+    virtual ~Cherry();
+    
     unsigned int soundOn;
     cocos2d::Sprite *cherry;
     

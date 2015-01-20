@@ -6,6 +6,10 @@
 
 USING_NS_CC;
 
+Bird::~Bird(){
+    bird->release();
+}
+
 Bird::Bird( cocos2d::Layer *layer, b2World *world )
 {
     visibleSize = Director::getInstance()->getVisibleSize();

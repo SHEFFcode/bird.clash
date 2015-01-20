@@ -3,6 +3,26 @@
 
 USING_NS_CC;
 
+Tutorial::~Tutorial(){
+    menu->release();
+    menu2->release();
+    menuSprite->release();
+    power1Text->release();
+    power2Text->release();
+    power3Text->release();
+    bird->release();
+    finger->release();
+    target->release();
+    arrow_left->release();
+    arrow_right->release();
+    playText->release();
+    instructions->release();
+    cherryScore->release();
+    redX3->release();
+    cherry->release();
+    cherryAnimation->release();
+}
+
 Scene* Tutorial::createScene()
 {
     // 'scene' is an autorelease object
@@ -40,8 +60,10 @@ bool Tutorial::init()
     // Done Button
     auto done = MenuItemImage::create("menu_purchase/done.png", "menu_purchase/done.png", CC_CALLBACK_1(Tutorial::GoToGamePlay, this));
     done->setPosition(Point(visibleSize.width / 2, visibleSize.height * 0.1));
+    done->setScaleX(1.5);
+    done->setScaleY(1.75);
     
-    auto doneText = Label::createWithTTF( "Done", "Arial_Regular.ttf", visibleSize.height * 0.04);
+    auto doneText = Label::createWithTTF( "Done", "Arial_Regular.ttf", visibleSize.height * 0.085);
     doneText->setColor(Color3B::WHITE);
     doneText->setPosition(Point(done->getPositionX(), done->getPositionY()));
     
@@ -61,63 +83,73 @@ bool Tutorial::init()
     // Add X's
     auto redX = Sprite::create("BlackX.png");
     auto xWidth = redX->getContentSize().width;
-    auto adjust = visibleSize.height - (visibleSize.height - (redX->getContentSize().height * 0.75));
-    redX->setPosition(Point(visibleSize.width - adjust, visibleSize.height - (redX->getContentSize().height * 0.75)));
+    auto adjust = (redX->getContentSize().height * 1.5) * 0.75;
+    redX->setPosition(Point(visibleSize.width - adjust, visibleSize.height - adjust));
     redX->retain();
+    redX->setScale(1.5);
     this->addChild(redX);
     
     auto redX2 = Sprite::create("BlackX.png");
-    redX2->setPosition(Point( redX->getPositionX() - (xWidth * 1.25), redX->getPositionY()));
+    redX2->setPosition(Point( redX->getPositionX() - ((xWidth * 1.5) * 1.25), redX->getPositionY()));
     redX2->retain();
+    redX2->setScale(1.5);
     this->addChild(redX2);
     
     redX3 = Sprite::create("BlackX.png");
-    redX3->setPosition(Point( redX2->getPositionX() - (xWidth * 1.25), redX2->getPositionY()));
+    redX3->setPosition(Point( redX2->getPositionX() - ((xWidth * 1.5) * 1.25), redX2->getPositionY()));
     redX3->retain();
+    redX3->setScale(1.5);
     this->addChild(redX3);
     
     auto cherrySprite = Sprite::create("cherry.png");
-    cherrySprite->setPosition(Vec2((cherrySprite->getContentSize().width * 0.4), redX->getPositionY()));
-    cherrySprite->setScale(0.5);
+    cherrySprite->setPosition(Vec2((cherrySprite->getContentSize().width * 0.65), visibleSize.height - (cherrySprite->getContentSize().width * 0.65)));
+    cherrySprite->setScale(0.85);
     this->addChild(cherrySprite);
 
-    cherryScore = Label::createWithTTF("0", "Arial_Regular.ttf", visibleSize.height * 0.05);
+    cherryScore = Label::createWithTTF("0", "Arial_Regular.ttf", visibleSize.height * 0.085);
     cherryScore->setColor(Color3B::RED);
-    cherryScore->setPosition(Vec2(cherrySprite->getPositionX() + (cherrySprite->getContentSize().width / 2) + (cherryScore->getContentSize().width / 2), cherrySprite->getPositionY() - (cherryScore->getContentSize().height * 0.15)));
+    cherryScore->setPosition(Vec2(cherrySprite->getPositionX() + (cherrySprite->getContentSize().width * 0.75) + (cherryScore->getContentSize().width / 2), cherrySprite->getPositionY() - (cherryScore->getContentSize().height * 0.1)));
     
     this->addChild(cherryScore,1);
     
     menuSprite = Sprite::create("powerups/minus2.png");
     auto plusMinus = MenuItemSprite::create(menuSprite, menuSprite, CC_CALLBACK_1(Tutorial::None, this));
-    plusMinus->setPosition(Vec2(plusMinus->getContentSize().width / 2, plusMinus->getContentSize().height / 2));
+    plusMinus->setPosition(Vec2(plusMinus->getContentSize().width / 2, (plusMinus->getContentSize().height * 1.25) / 2));
+    plusMinus->setScale(1.25);
     
     menu = Menu::create(plusMinus, NULL);
     menu->setPosition(Point::ZERO);
     this->addChild(menu,1);
     
     auto bluebird = MenuItemImage::create("powerups/blue.png", "powerups/blue_selected.png", CC_CALLBACK_1(Tutorial::BlueBirds, this));
-    auto width = bluebird->getContentSize().width;
-    auto height = bluebird->getContentSize().height / 2;
-    bluebird->setPosition(Vec2(plusMinus->getContentSize().width + (width / 2), height));
+    bluebird->setScale(1.25);
+    auto width = bluebird->getContentSize().width * 1.25;
+    auto height = (bluebird->getContentSize().height * 1.25) / 2;
+    bluebird->setPosition(Vec2(plusMinus->getPositionX() + width, height));;
     
     auto light = MenuItemImage::create("powerups/lightning.png", "powerups/lightning_selected.png", CC_CALLBACK_1(Tutorial::Lightning, this));
+    light->setScale(1.25);
     light->setPosition(Vec2(bluebird->getPositionX() + width, height));
     
     auto grow = MenuItemImage::create("powerups/grow.png", "powerups/grow_selected.png", CC_CALLBACK_1(Tutorial::Grow, this));
+    grow->setScale(1.25);
     grow->setPosition(Vec2(light->getPositionX() + width, height));
     
-    power1Text = Label::createWithTTF("1", "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
+    
+    auto wSet = (bluebird->getContentSize().width * 1.25) * 0.4;
+    
+    power1Text = Label::createWithTTF("1", "Arial_Regular.ttf", wSet);
     power1Text->setColor(Color3B::BLACK);
-    auto textHeight = width + ((bluebird->getContentSize().height - width - power1Text->getContentSize().height / 2) / 2);
-    power1Text->setPosition(Point(bluebird->getPositionX() + (power1Text->getContentSize().width * 0.1), textHeight));
+    auto textHeight = width + (((bluebird->getContentSize().height * 1.25) - width - power1Text->getContentSize().height / 2) / 2);
+    power1Text->setPosition(Vec2(bluebird->getPositionX() + (power1Text->getContentSize().width * 0.15), textHeight));
     
-    power2Text = Label::createWithTTF( "1", "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
+    power2Text = Label::createWithTTF( "1", "Arial_Regular.ttf", wSet);
     power2Text->setColor(Color3B::BLACK);
-    power2Text->setPosition(Point(light->getPositionX() + (power2Text->getContentSize().width * 0.1), textHeight));
+    power2Text->setPosition(Point(power1Text->getPositionX() + width, textHeight));
     
-    power3Text = Label::createWithTTF( "1", "Arial_Regular.ttf", bluebird->getContentSize().width * 0.4);
+    power3Text = Label::createWithTTF( "1", "Arial_Regular.ttf", wSet);
     power3Text->setColor(Color3B::BLACK);
-    power3Text->setPosition(Point(grow->getPositionX() + (power3Text->getContentSize().width * 0.1), textHeight));
+    power3Text->setPosition(Point(power2Text->getPositionX() + width, textHeight));
     
     this->addChild(power1Text,2);
     this->addChild(power2Text,2);
@@ -165,7 +197,6 @@ bool Tutorial::init()
     arrow_left->runAction(seq3);
     
     bird = Sprite::create("bird_right.png");
-    bird->setScale(bird->getScale() / 1.5);
     bird->setPosition(Vec2(-bird->getContentSize().width / 2, visibleSize.height * 0.35));
     bird->setRotation(-35);
     bird->setOpacity(0);
@@ -384,12 +415,12 @@ void Tutorial::MissBird(){
 void Tutorial::Missed(){
     bird->setOpacity(0);
     redX3->setTexture("RedX.png");
-    redX3->setScale(1.5);
+    redX3->setScale(2.5);
     redX3->setOpacity(255);
     arrow_right->setPosition(Vec2(redX3->getPositionX() - arrow_right->getContentSize().width, redX3->getPositionY() - arrow_right->getContentSize().height));
     arrow_right->setRotation(-33);
     arrow_right->setOpacity(255);
-    auto scale = ScaleTo::create(0.5, 1);
+    auto scale = ScaleTo::create(0.5, 1.5);
     auto scaleOut = ScaleTo::create(1.25,1.25);
     auto scaleIn = ScaleTo::create(1.25,1);
     Sequence *seq = Sequence::create(scaleOut, scaleIn, scaleOut, scaleIn, NULL);

@@ -9,6 +9,11 @@
 
 USING_NS_CC;
 
+Store::~Store(){
+    background->release();
+    cherryText->release();
+}
+
 Scene* Store::createScene()
 {
     // 'scene' is an autorelease object

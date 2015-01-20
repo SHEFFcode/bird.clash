@@ -6,6 +6,8 @@
 class Tutorial : public cocos2d::Layer
 {
 public:
+    virtual ~Tutorial();
+    
     bool menuShow;
     cocos2d::Menu *menu;
     cocos2d::Menu *menu2;

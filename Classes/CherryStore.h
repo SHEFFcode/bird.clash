@@ -6,6 +6,8 @@
 class CherryStore : public cocos2d::Layer
 {
 public:
+    virtual ~CherryStore();
+    
     float startWidth;
     float startHeight;
     float backgroundWidth;

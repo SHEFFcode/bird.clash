@@ -12,7 +12,7 @@ public:
     void PreSolve(b2Contact* contact, const b2Manifold* oldManifold);
     void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
 private:
-    void Missed();
+    void Missed(int whichBird);
     
 };
 

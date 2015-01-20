@@ -7,6 +7,8 @@
 class Bird
 {
 public:
+    virtual ~Bird();
+    
     cocos2d::Sprite *bird;
     
     Bird( cocos2d::Layer *layer, b2World *world );

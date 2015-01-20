@@ -29,6 +29,7 @@ class cherryAssets: public soomla::CCStoreAssets {
     
 public:
     cherryAssets():
+    
     mCurrencies(NULL),
     mGoods(NULL),
     mCurrencyPacks(NULL),

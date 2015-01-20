@@ -5,6 +5,28 @@ USING_NS_CC;
 
 unsigned int powerup;
 
+CherryStore::~CherryStore(){
+    cover->release();
+    notice->release();
+    background->release();
+    item1->release();
+    item2->release();
+    item3->release();
+    item4->release();
+    cherry1->release();
+    cherry2->release();
+    cherry3->release();
+    cherry4->release();
+    power1_infinity->release();
+    power2_infinity->release();
+    power3_infinity->release();
+    power1Text->release();
+    power2Text->release();
+    power3Text->release();
+    cherryText->release();
+    noticeText->release();
+}
+
 Scene* CherryStore::createScene( unsigned int power )
 {
     powerup = power;

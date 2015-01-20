@@ -14,9 +14,6 @@
 USING_NS_CC;
 using namespace soomla;
 
-
-
-
 cherryAssets *cherryAssets::create() {
     cherryAssets *ret = new cherryAssets();
     ret->autorelease();

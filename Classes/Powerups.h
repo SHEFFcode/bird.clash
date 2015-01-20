@@ -7,6 +7,8 @@
 class Powerups
 {
 public:
+    virtual ~Powerups();
+    
     bool menuShow;
     unsigned int power1;
     unsigned int power2;
@@ -25,8 +27,6 @@ public:
     cocos2d::Label *power3Text;
     
     Powerups( cocos2d::Layer *layer, b2World *world);
-    
-    ~Powerups();
     
 private:
     void BlueBirds(cocos2d::Ref *sender, cocos2d::Layer *layer, b2World *world);

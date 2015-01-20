@@ -74,7 +74,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
                 bird1_collisions++;
                 def->setIntegerForKey("bird1_collisions", bird1_collisions);
                 if(bird1_collisions >= 3) {
-                    this->Missed();
+                    this->Missed(1);
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(birdSprite);
                     return;
                 }
@@ -85,7 +85,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
                 bird2_collisions++;
                 def->setIntegerForKey("bird2_collisions", bird2_collisions);
                 if(bird2_collisions >= 3) {
-                    this->Missed();
+                    this->Missed(2);
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(birdSprite);
                     return;
                 }
@@ -96,7 +96,7 @@ void MyContactListener::BeginContact(b2Contact* contact)
                 bird3_collisions++;
                 def->setIntegerForKey("bird3_collisions", bird3_collisions);
                 if(bird3_collisions >= 3) {
-                    this->Missed();
+                    this->Missed(3);
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(birdSprite);
                     return;
                 }
@@ -319,14 +319,26 @@ void MyContactListener::PostSolve(b2Contact* contact,
 {
 }
 
-void MyContactListener::Missed()
+void MyContactListener::Missed(int whichBird)
 {
     UserDefault *def = UserDefault::getInstance();
-    auto missed_birds = def->getIntegerForKey("missed_birds", 0);
+    if(whichBird == 1){
+        auto missed1 = def->getIntegerForKey("bird1_miss", 0);
+        missed1++;
+        def->setIntegerForKey("bird1_miss", missed1);
+    }
+    if(whichBird == 2){
+        auto missed2 = def->getIntegerForKey("bird2_miss", 0);
+        missed2++;
+        def->setIntegerForKey("bird2_miss", missed2);
+    }
+    if(whichBird == 3){
+        auto missed3 = def->getIntegerForKey("bird3_miss", 0);
+        missed3++;
+        def->setIntegerForKey("bird3_miss", missed3);
+    }
     auto bird_count = def->getIntegerForKey("bird_count", 0);
     bird_count++;
-    missed_birds++;
-    def->setIntegerForKey("missed_birds", missed_birds);
     def->setIntegerForKey("bird_count", bird_count);
     def->flush();
 }

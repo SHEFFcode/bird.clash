@@ -9,6 +9,8 @@ protected:
     virtual void onEnter();
     virtual void onExit();
 public:
+    virtual ~Store();
+    
     unsigned int cherries;
     cocos2d::Sprite *background;
     cocos2d::Label *cherryText;

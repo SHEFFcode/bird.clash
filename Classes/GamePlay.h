@@ -26,9 +26,9 @@ public:
 class GamePlay : public cocos2d::Layer
 {
 public:
+    virtual ~GamePlay();
+    
     b2World* world;
-    b2Body* ballBody;
-    cocos2d::Node* popover;
     cocos2d::Sprite* soundSprite;
     cocos2d::Sprite* cherrySprite;
     cocos2d::Label* cherryScore;
@@ -43,7 +43,6 @@ public:
     Bird *bird3;
     
     Cherry *cherry;
-    Store *store;
     Powerups *powerups;
     
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
@@ -72,6 +71,10 @@ private:
     MyContactListener *_contactListener;
     
     cocos2d::PhysicsWorld *sceneWorld;
+    b2Body *bottom;
+    b2Body *top;
+    b2Body *right;
+    b2Body *left;
     cocos2d::Label* playText;
     cocos2d::Label* gameText;
     cocos2d::Menu* menu;
