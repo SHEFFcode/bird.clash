@@ -187,9 +187,9 @@ bool GamePlay::init()
             def->setIntegerForKey("blue3", 1);
     }
     
-    auto calculatedVelocity = (640 / visibleSize.height) * 0.1;
+    auto calculatedVelocity = (640 / visibleSize.height) * 0.001;
     if((visibleSize.width == 1024 && visibleSize.height == 768) || (visibleSize.width == 2048 && visibleSize.height == 1536)) {
-        calculatedVelocity = (500 / visibleSize.height) * 0.01;
+        calculatedVelocity = (500 / visibleSize.height) * 0.005;
     }
     def->setFloatForKey("velocity", calculatedVelocity);
     auto soundOn = def->getIntegerForKey("sound");
