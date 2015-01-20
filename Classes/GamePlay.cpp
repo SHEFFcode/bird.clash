@@ -134,7 +134,7 @@ bool GamePlay::init()
 #endif
     
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    iOSHelper::showAdmobBanner();
+    iOSHelper::hideAdmobBanner();
 #endif
     
 #if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
@@ -190,6 +190,12 @@ bool GamePlay::init()
     auto calculatedVelocity = (640 / visibleSize.height) * 0.001;
     if((visibleSize.width == 1024 && visibleSize.height == 768) || (visibleSize.width == 2048 && visibleSize.height == 1536)) {
         calculatedVelocity = (500 / visibleSize.height) * 0.005;
+    }
+    if(visibleSize.width == 960 && visibleSize.height == 640) {
+        calculatedVelocity = (500 / visibleSize.height) * 0.0035;
+    }
+    if(visibleSize.width == 1136 && visibleSize.height == 640) {
+        calculatedVelocity = (500 / visibleSize.height) * 0.003;
     }
     def->setFloatForKey("velocity", calculatedVelocity);
     auto soundOn = def->getIntegerForKey("sound");
@@ -596,7 +602,7 @@ void GamePlay::update( float dt )
 void GamePlay::GameOver( float dt )
 {
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    iOSHelper::showAdmobBanner();
+    iOSHelper::hideAdmobBanner();
 #endif
     
 #if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
