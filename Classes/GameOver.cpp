@@ -235,8 +235,8 @@ void GameOver::Share( cocos2d::Ref *sender )
     params.insert(std::make_pair("dialog", "message_link"));
     params.insert(std::make_pair("description", "Check out Bird Clash! The ONLY Epic bird shooter game! Hit birds, score points, and repeat fun!"));
     params.insert(std::make_pair("title", "Bird Clash"));
-    params. insert(std::make_pair("link", "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=353372460&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"));
-    params.insert(std::make_pair("imageUrl", "http://files.cocos2d-x.org/images/orgsite/logo.png"));
+    params. insert(std::make_pair("link", "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=949282668&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"));
+    params.insert(std::make_pair("imageUrl", "http://www.cheapfreegames.com/wp-content/themes/customizr/inc/assets/img/icon.png"));
     
     if (cocos2d::plugin::FacebookAgent::getInstance()->canPresentDialogWithParams(params))
     {

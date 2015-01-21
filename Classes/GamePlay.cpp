@@ -156,6 +156,9 @@ bool GamePlay::init()
     def->setIntegerForKey("bird1_region", 0);
     def->setIntegerForKey("bird2_region", 0);
     def->setIntegerForKey("misses", 0);
+    def->setBoolForKey("bird1_missed", 0);
+    def->setBoolForKey("bird2_missed", 0);
+    def->setBoolForKey("bird3_missed", 0);
     def->setIntegerForKey("bird_count", 0);
     def->setIntegerForKey("score", 0);
     def->setIntegerForKey("power3_activated", 0);
@@ -622,11 +625,9 @@ void GamePlay::ResetBirds( float dt )
 {
     UserDefault *def = UserDefault::getInstance();
     // Failsafe for resetting birds if 3 misses
-    auto missed1 = def->getIntegerForKey("bird1_miss", 0);
-    auto missed2 = def->getIntegerForKey("bird2_miss", 0);
-    auto missed3 = def->getIntegerForKey("bird3_miss", 0);
+    auto misses = def->getIntegerForKey("misses", 0);
     
-    if((missed1 + missed2 + missed3) >= 3) {
+    if(misses >= 3) {
         return;
     }
     
@@ -669,6 +670,9 @@ void GamePlay::ResetBirds( float dt )
     def->setIntegerForKey("bird1_collisions", 0);
     def->setIntegerForKey("bird2_collisions", 0);
     def->setIntegerForKey("bird3_collisions", 0);
+    def->setBoolForKey("bird1_missed", 0);
+    def->setBoolForKey("bird2_missed", 0);
+    def->setBoolForKey("bird3_missed", 0);
     def->setIntegerForKey("bird1_region", 0);
     def->setIntegerForKey("bird2_region", 0);
     def->setIntegerForKey("redCheck", 0);

@@ -70,35 +70,68 @@ void MyContactListener::BeginContact(b2Contact* contact)
         {
             if(whichBird == 1)
             {
+                auto round1_misses = def->getBoolForKey("bird1_missed", 0);
                 int bird1_collisions = def->getIntegerForKey("bird1_collisions", 0);
                 bird1_collisions++;
                 def->setIntegerForKey("bird1_collisions", bird1_collisions);
-                if(bird1_collisions >= 3) {
-                    this->Missed();
+                if(bird1_collisions >= 3 && !round1_misses) {
+                    auto misses = def->getIntegerForKey("misses", 0);
+                    misses++;
+                    def->setIntegerForKey("misses", misses);
+                    auto bird_count = def->getIntegerForKey("bird_count", 0);
+                    bird_count++;
+                    def->setIntegerForKey("bird_count", bird_count);
+                    def->setBoolForKey("bird1_missed", 1);
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(birdSprite);
                     return;
+                } else {
+                    if(bird1_collisions >= 3) {
+                        return;
+                    }
                 }
             }
             if(whichBird == 2)
             {
+                auto round2_misses = def->getBoolForKey("bird2_missed", 0);
                 int bird2_collisions = def->getIntegerForKey("bird2_collisions", 0);
                 bird2_collisions++;
                 def->setIntegerForKey("bird2_collisions", bird2_collisions);
-                if(bird2_collisions >= 3) {
-                    this->Missed();
+                if(bird2_collisions >= 3  && !round2_misses) {
+                    auto misses = def->getIntegerForKey("misses", 0);
+                    misses++;
+                    def->setIntegerForKey("misses", misses);
+                    auto bird_count = def->getIntegerForKey("bird_count", 0);
+                    bird_count++;
+                    def->setIntegerForKey("bird_count", bird_count);
+                    def->setBoolForKey("bird2_missed", 1);
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(birdSprite);
                     return;
+                } else {
+                    if(bird2_collisions >= 3) {
+                        return;
+                    }
                 }
             }
             if(whichBird == 3)
             {
+                auto round3_misses = def->getBoolForKey("bird3_missed", 0);
                 int bird3_collisions = def->getIntegerForKey("bird3_collisions", 0);
                 bird3_collisions++;
                 def->setIntegerForKey("bird3_collisions", bird3_collisions);
-                if(bird3_collisions >= 3) {
-                    this->Missed();
+                if(bird3_collisions >= 3 && !round3_misses) {
+                    auto misses = def->getIntegerForKey("misses", 0);
+                    misses++;
+                    def->setIntegerForKey("misses", misses);
+                    auto bird_count = def->getIntegerForKey("bird_count", 0);
+                    bird_count++;
+                    def->setIntegerForKey("bird_count", bird_count);
+                    def->setBoolForKey("bird3_missed", 1);
                     Director::getInstance()->getEventDispatcher()->removeEventListenersForTarget(birdSprite);
                     return;
+                } else {
+                    if(bird3_collisions >= 3) {
+                        return;
+                    }
                 }
             }
         }
@@ -317,18 +350,6 @@ void MyContactListener::PreSolve(b2Contact* contact,
 void MyContactListener::PostSolve(b2Contact* contact,
                                   const b2ContactImpulse* impulse)
 {
-}
-
-void MyContactListener::Missed()
-{
-    UserDefault *def = UserDefault::getInstance();
-    auto misses = def->getIntegerForKey("misses", 0);
-    misses++;
-    auto bird_count = def->getIntegerForKey("bird_count", 0);
-    bird_count++;
-    def->setIntegerForKey("bird_count", bird_count);
-    def->setIntegerForKey("misses", misses);
-    def->flush();
 }
 
 
