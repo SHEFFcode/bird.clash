@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1E3739D51A701C6B0037241B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3739D41A701C6B0037241B /* Images.xcassets */; };
 		1E70DE0D1A6AF8D2006D14C3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE40EC11A59D81C00BEF3AF /* FacebookSDK.framework */; };
 		1E70DE0F1A6B096F006D14C3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E70DE0E1A6B096F006D14C3 /* StoreKit.framework */; };
 		1E70DE161A6C20DA006D14C3 /* ExampleEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E70DE141A6C20DA006D14C3 /* ExampleEventHandler.cpp */; };
@@ -222,6 +223,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* birdcrush iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "birdcrush iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E3739D41A701C6B0037241B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "birdcrush iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		1E70DE0E1A6B096F006D14C3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		1E70DE141A6C20DA006D14C3 /* ExampleEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleEventHandler.cpp; sourceTree = "<group>"; };
 		1E70DE151A6C20DA006D14C3 /* ExampleEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleEventHandler.h; sourceTree = "<group>"; };
@@ -592,6 +594,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E3739D41A701C6B0037241B /* Images.xcassets */,
 				1EDC26A21A38BA370071F94F /* sounds */,
 				1EC94DE01A1BCFA10007B8BF /* iphone */,
 				46880B7819C43A67006E1F66 /* fonts */,
@@ -896,6 +899,7 @@
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
+				1E3739D51A701C6B0037241B /* Images.xcassets in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				1ECFBA8D1A2FB51400A4F111 /* ShowG.ttf in Resources */,
 				1EC94DE11A1BCFA10007B8BF /* iphone in Resources */,
@@ -997,6 +1001,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
@@ -1022,7 +1028,7 @@
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/Admob,
 					"/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/build/Debug-iphoneos",
@@ -1045,6 +1051,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
@@ -1068,7 +1076,7 @@
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/Admob,
 					"/Users/seanrochlen/Desktop/BirdCrush_newest/birdcrush/cocos2d/external/plugin/plugins/admob/proj.ios/build/Debug-iphoneos",
