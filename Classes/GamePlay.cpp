@@ -198,7 +198,7 @@ bool GamePlay::init()
         calculatedVelocity = (500 / visibleSize.height) * 0.0035;
     }
     if(visibleSize.width == 1136 && visibleSize.height == 640) {
-        calculatedVelocity = (500 / visibleSize.height) * 0.003;
+        calculatedVelocity = (500 / visibleSize.height) * 0.0015;
     }
     def->setFloatForKey("velocity", calculatedVelocity);
     auto soundOn = def->getIntegerForKey("sound");

@@ -265,7 +265,7 @@ void GameOver::Rate( cocos2d::Ref *sender )
 #endif
     
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    Application::getInstance()->openURL("http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=353372460&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8");
+    Application::getInstance()->openURL("https://itunes.apple.com/us/app/id949282668");
 #endif
 }
 
