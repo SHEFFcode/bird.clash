@@ -15,12 +15,16 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/GamePlay.cpp \
                    ../../Classes/MyContactListener.cpp \
                    ../../Classes/Bird.cpp \
-		   ../../Classes/AdmobHelper.cpp \
-../../Classes/Cherry.cpp \
-../../Classes/SplashScreen.cpp \
-../../Classes/Store.cpp \
-../../Classes/CherryStore.cpp \
-../../Classes/Powerups.cpp
+                   ../../Classes/AdmobHelper.cpp \
+                   ../../Classes/Cherry.cpp \
+                   ../../Classes/SplashScreen.cpp \
+                   ../../Classes/Store.cpp \
+                   ../../Classes/CherryStore.cpp \
+                   ../../Classes/Powerups.cpp \
+                   ../../Classes/Tutorial.cpp \
+                   ../../Classes/cherryAssets.cpp \
+                   ../../Classes/ExampleEventHandler.cpp \
+                   ../../Classes/GameOver.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
