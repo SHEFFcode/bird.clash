@@ -1,7 +1,8 @@
 #include "GameOver.h"
 #include "GamePlay.h"
+#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
 #include "FacebookAgent.h"
-
+#endif
 
 USING_NS_CC;
 
@@ -31,9 +32,10 @@ bool GameOver::init()
     }
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
+#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
     //Initialize the facebook SDK
     cocos2d::plugin::FacebookAgent::getInstance();
-    
+#endif
     UserDefault *def = UserDefault::getInstance();
     auto score = def->getIntegerForKey("score");
     auto highScore = def->getIntegerForKey("highScore");
