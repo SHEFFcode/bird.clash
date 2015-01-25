@@ -3,14 +3,20 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="src" path="libcocos2d"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="lib" path="libs/AndroidStore.jar"/>
+	<classpathentry kind="lib" path="libs/AndroidStoreAmazon.jar"/>
 	<classpathentry kind="lib" path="libs/AndroidStoreGooglePlay.jar"/>
 	<classpathentry kind="lib" path="libs/Cocos2dxAndroidCore.jar"/>
 	<classpathentry kind="lib" path="libs/Cocos2dxAndroidStore.jar"/>
 	<classpathentry kind="lib" path="libs/SoomlaAndroidCore.jar"/>
 	<classpathentry kind="lib" path="libs/square-otto-1.3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="cocos2d/plugin/plugins/facebook/proj.android/sdk/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="cocos2d/plugin/plugins/facebook/proj.android/sdk/bolts.jar"/>
+	<classpathentry exported="true" kind="lib" path="cocos2d/plugin/plugins/facebook/proj.android/sdk/facebooksdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="cocos2d/plugin/publish/protocols/android/libPluginProtocol.jar"/>
+	<classpathentry exported="true" kind="lib" path="cocos2d/plugin/publish/plugins/facebook/android/libPluginFacebook.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

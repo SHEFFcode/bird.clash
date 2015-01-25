@@ -28,10 +28,12 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
-LOCAL_STATIC_LIBRARIES := cocos2dx_static
+LOCAL_STATIC_LIBRARIES += cocos2dx_static \
+PluginProtocolStatic
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos2dx_store_static
 
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,.)
 $(call import-module, extensions/cocos2dx-store)
+$(call import-module, plugin/protocols/proj.android/jni)
