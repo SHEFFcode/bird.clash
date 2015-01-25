@@ -6,7 +6,7 @@
   jni/../../cocos2d/cocos/./platform/CCPlatformConfig.h \
   jni/../../cocos2d/cocos/./platform/CCPlatformDefine.h \
   jni/../../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
-  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/log.h
 
 jni/../../cocos2d/cocos/./platform/CCThread.h:
 
@@ -20,4 +20,4 @@ jni/../../cocos2d/cocos/./platform/CCPlatformDefine.h:
 
 jni/../../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/log.h:
