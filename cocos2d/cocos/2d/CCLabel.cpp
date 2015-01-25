@@ -38,6 +38,8 @@
 #include "base/CCEventCustom.h"
 
 #include "deprecated/CCString.h"
+#include <iostream>
+#include <string>
 
 NS_CC_BEGIN
 
@@ -90,7 +92,24 @@ Label* Label::createWithSystemFont(const std::string& text, const std::string& f
 Label* Label::createWithTTF(const std::string& text, const std::string& fontFile, float fontSize, const Size& dimensions /* = Size::ZERO */, TextHAlignment hAlignment /* = TextHAlignment::LEFT */, TextVAlignment vAlignment /* = TextVAlignment::TOP */)
 {
     auto ret = new (std::nothrow) Label(nullptr,hAlignment,vAlignment);
-
+    
+#if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
+    const std::string fontFile2 = "fonts/" + fontFile;
+    
+    if (ret && FileUtils::getInstance()->isFileExist(fontFile2))
+    {
+        TTFConfig ttfConfig(fontFile2.c_str(),fontSize,GlyphCollection::DYNAMIC);
+        if (ret->setTTFConfig(ttfConfig))
+        {
+            ret->setDimensions(dimensions.width,dimensions.height);
+            ret->setString(text);
+            
+            ret->autorelease();
+            
+            return ret;
+        }
+    }
+#else
     if (ret && FileUtils::getInstance()->isFileExist(fontFile))
     {
         TTFConfig ttfConfig(fontFile.c_str(),fontSize,GlyphCollection::DYNAMIC);
@@ -104,6 +123,7 @@ Label* Label::createWithTTF(const std::string& text, const std::string& fontFile
             return ret;
         }
     }
+#endif
 
     delete ret;
     return nullptr;
