@@ -30,7 +30,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
-import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 import org.cocos2dx.plugin.PluginWrapper;
 import org.cocos2dx.plugin.FacebookWrapper;
 import android.content.Intent;
@@ -50,18 +49,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 public class AppActivity extends Cocos2dxActivity {
-	
-	@Override
-    public Cocos2dxGLSurfaceView onCreateView() {
-        Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);
-        // TestCpp should create stencil buffer
-        glSurfaceView.setEGLConfigChooser(5, 6, 5, 0, 16, 8);
-
-        PluginWrapper.init(this);
-        PluginWrapper.setGLSurfaceView(glSurfaceView);
-        FacebookWrapper.onCreate(this);
-        return glSurfaceView;
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

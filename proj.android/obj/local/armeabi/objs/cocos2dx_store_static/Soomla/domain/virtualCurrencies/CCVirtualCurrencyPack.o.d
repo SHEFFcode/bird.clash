@@ -1,7 +1,7 @@
 ./obj/local/armeabi/objs/cocos2dx_store_static/Soomla/domain/virtualCurrencies/CCVirtualCurrencyPack.o: \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrencyPack.cpp \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrencyPack.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaMacros.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrencyPack.cpp \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrencyPack.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaMacros.h \
   jni/../../cocos2d/cocos/3d/../cocos2d.h \
   jni/../../cocos2d/cocos/3d/../base/ccConfig.h \
   jni/../../cocos2d/cocos/3d/../platform/CCPlatformConfig.h \
@@ -9,136 +9,136 @@
   jni/../../cocos2d/cocos/3d/../platform/CCPlatformMacros.h \
   jni/../../cocos2d/cocos/3d/../platform/CCPlatformDefine.h \
   jni/../../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/log.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/log.h \
   jni/../../cocos2d/cocos/3d/../base/CCRefPtr.h \
   jni/../../cocos2d/cocos/3d/../base/ccMacros.h \
   jni/../../cocos2d/cocos/3d/../base/CCConsole.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/select.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs_elf.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/api-level.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/time.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdint.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_wchar_limits.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/limits.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/limits.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/limits.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/internal_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/limits.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/syslimits.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/page.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/posix_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/stddef.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/compiler.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/posix_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/kernel.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/sysmacros.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/time.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/signal.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/string.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/malloc.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/signal.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/signal.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/sigcontext.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/siginfo.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/siginfo.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/thread \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdio.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/utility \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/limits \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/system_error \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cerrno \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/errno.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/errno.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/errno.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/errno.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno-base.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/chrono \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ctime \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/time.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/time.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ratio \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__mutex_base \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/pthread.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sched.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/ctype.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/select.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs_elf.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/api-level.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/time.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdint.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/_types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_wchar_limits.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/limits.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/limits.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/limits.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/internal_types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/limits.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/syslimits.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/page.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/posix_types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/stddef.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/compiler.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/posix_types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/kernel.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/sysmacros.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/time.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/signal.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/string.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/malloc.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/signal.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/signal.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/sigcontext.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/siginfo.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/siginfo.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/thread \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdio.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/utility \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/limits \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/atomic \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/system_error \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cerrno \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/errno.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/errno.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/errno.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/errno.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno-base.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/chrono \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ctime \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/time.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/time.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ratio \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__mutex_base \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/pthread.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sched.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/ctype.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex \
   jni/../../cocos2d/cocos/3d/../platform/CCStdC.h \
   jni/../../cocos2d/cocos/3d/../platform/android/CCStdC-android.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/math.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdlib.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/alloca.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/strings.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/memory.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/assert.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/math.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdlib.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/alloca.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/strings.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/memory.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/assert.h \
   jni/../../cocos2d/cocos/3d/../base/ccRandom.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/numeric \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/istream \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ostream \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ios \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__locale \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/locale.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/locale.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/streambuf \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/locale \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdarg \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/numeric \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/istream \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ostream \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ios \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__locale \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/locale.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/locale.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/streambuf \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/locale \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdarg \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath \
   jni/../../cocos2d/cocos/3d/../base/CCVector.h \
   jni/../../cocos2d/cocos/3d/../base/CCMap.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table \
   jni/../../cocos2d/cocos/3d/../base/CCAutoreleasePool.h \
   jni/../../cocos2d/cocos/3d/../base/CCNS.h \
   jni/../../cocos2d/cocos/3d/../math/CCGeometry.h \
@@ -159,14 +159,14 @@
   jni/../../cocos2d/cocos/3d/../base/ccTypes.h \
   jni/../../cocos2d/cocos/3d/../platform/CCGL.h \
   jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h \
   jni/../../cocos2d/cocos/3d/../base/CCConfiguration.h \
   jni/../../cocos2d/cocos/3d/../base/CCDirector.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stack \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stack \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque \
   jni/../../cocos2d/cocos/3d/../2d/CCScene.h \
   jni/../../cocos2d/cocos/3d/../2d/CCNode.h \
   jni/../../cocos2d/cocos/3d/../base/CCProtocols.h \
@@ -177,20 +177,20 @@
   jni/../../cocos2d/cocos/3d/../base/CCEventTouch.h \
   jni/../../cocos2d/cocos/3d/../base/CCEvent.h \
   jni/../../cocos2d/cocos/3d/../base/CCEventKeyboard.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list \
   jni/../../cocos2d/cocos/3d/../math/CCAffineTransform.h \
   jni/../../cocos2d/cocos/3d/../platform/CCGLView.h \
   jni/../../cocos2d/cocos/3d/../base/CCScheduler.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set \
   jni/../../cocos2d/cocos/3d/../base/uthash.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/inttypes.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/inttypes.h \
   jni/../../cocos2d/cocos/3d/../base/base64.h \
   jni/../../cocos2d/cocos/3d/../base/ZipUtils.h \
   jni/../../cocos2d/cocos/3d/../platform/android/CCFileUtils-android.h \
   jni/../../cocos2d/cocos/3d/../platform/CCFileUtils.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/jni.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/asset_manager.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/jni.h \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/asset_manager.h \
   jni/../../cocos2d/cocos/3d/../base/CCProfiling.h \
   jni/../../cocos2d/cocos/3d/../base/ccUTF8.h \
   jni/../../cocos2d/cocos/3d/../base/CCUserDefault.h \
@@ -276,8 +276,8 @@
   jni/../../cocos2d/cocos/3d/../renderer/ccGLStateCache.h \
   jni/../../cocos2d/cocos/3d/../renderer/ccShaders.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCTextureCache.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/condition_variable \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/queue \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/condition_variable \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/queue \
   jni/../../cocos2d/cocos/3d/../renderer/CCVertexIndexBuffer.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCVertexIndexData.h \
   jni/../../cocos2d/cocos/3d/../renderer/CCPrimitive.h \
@@ -329,7 +329,7 @@
   jni/../../cocos2d/cocos/3d/../deprecated/CCArray.h \
   jni/../../cocos2d/cocos/3d/../base/CCDataVisitor.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCString.h \
-  /Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/sstream \
+  /Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/sstream \
   jni/../../cocos2d/cocos/3d/../deprecated/CCSet.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCInteger.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCFloat.h \
@@ -337,28 +337,28 @@
   jni/../../cocos2d/cocos/3d/../deprecated/CCBool.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/../CCPurchasableVirtualItem.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/CCVirtualItem.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCDomain.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreConsts.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCCoreConsts.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCSoomlaEntity.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCError.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/../PurchaseTypes/CCPurchaseType.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/CCStoreInfo.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreAssets.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/virtualGoods/CCUpgradeVG.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCVirtualGood.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCLifetimeVG.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/CCVirtualCategory.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaUtils.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrency.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualCurrencyStorage.h \
-  /Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualItemStorage.h
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/../CCPurchasableVirtualItem.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/CCVirtualItem.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCDomain.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreConsts.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCCoreConsts.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCSoomlaEntity.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCError.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/../PurchaseTypes/CCPurchaseType.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/CCStoreInfo.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreAssets.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/virtualGoods/CCUpgradeVG.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCVirtualGood.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCLifetimeVG.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/CCVirtualCategory.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaUtils.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrency.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualCurrencyStorage.h \
+  /Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualItemStorage.h
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrencyPack.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrencyPack.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaMacros.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaMacros.h:
 
 jni/../../cocos2d/cocos/3d/../cocos2d.h:
 
@@ -374,7 +374,7 @@ jni/../../cocos2d/cocos/3d/../platform/CCPlatformDefine.h:
 
 jni/../../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/log.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/log.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCRefPtr.h:
 
@@ -382,257 +382,257 @@ jni/../../cocos2d/cocos/3d/../base/ccMacros.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCConsole.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/select.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/select.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs_elf.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/api-level.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/api-level.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/time.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/time.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdint.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdint.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/_types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/_types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_wchar_limits.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/_wchar_limits.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/limits.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/limits.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/limits.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/limits.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/limits.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/limits.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/internal_types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/internal_types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/limits.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/limits.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/syslimits.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/syslimits.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/page.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/page.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/posix_types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/posix_types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/stddef.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/stddef.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/compiler.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/compiler.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/posix_types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/posix_types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/kernel.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/machine/kernel.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/sysmacros.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sys/sysmacros.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/time.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/time.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/signal.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/signal.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/string.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/string.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/string.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/malloc.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/malloc.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/monetary.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/signal.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/signal.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/signal.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/signal.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/sigcontext.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/sigcontext.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/siginfo.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/siginfo.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/siginfo.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/siginfo.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/thread:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/thread:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__config:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdio.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdio.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstddef:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/typeinfo:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/exception:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/new:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdint:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/utility:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/utility:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tuple:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/limits:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/limits:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iterator:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/iterator:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/tuple:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstring:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstring:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/atomic:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/atomic:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__undef_min_max:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/system_error:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/system_error:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cerrno:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cerrno:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/errno.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/errno.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/errno.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/errno.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/errno.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/linux/errno.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/errno.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm/errno.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno-base.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/asm-generic/errno-base.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stdexcept:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/chrono:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/chrono:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ctime:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ctime:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/time.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/time.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/time.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/time.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ratio:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ratio:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/climits:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__mutex_base:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__mutex_base:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/pthread.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/pthread.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sched.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/sched.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/vector:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__bit_reference:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/algorithm:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__split_buffer:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/map:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__tree:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/string:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdio:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwchar:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cwctype:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cctype:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/ctype.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/ctype.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/ctype.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/mutex:
 
 jni/../../cocos2d/cocos/3d/../platform/CCStdC.h:
 
 jni/../../cocos2d/cocos/3d/../platform/android/CCStdC-android.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/math.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/math.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/math.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/stdlib.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdlib.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/stdlib.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/alloca.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/alloca.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/strings.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/strings.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/memory.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/memory.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cassert:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/assert.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/assert.h:
 
 jni/../../cocos2d/cocos/3d/../base/ccRandom.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/random:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/numeric:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/numeric:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/istream:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/istream:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ostream:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ostream:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ios:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/ios:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__locale:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__locale:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/locale.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/locale.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/locale.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/locale.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/streambuf:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/streambuf:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/locale:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/locale:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdarg:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdarg:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cstdlib:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/nl_types.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/bitset:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/cmath:
 
 jni/../../cocos2d/cocos/3d/../base/CCVector.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCMap.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/unordered_map:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/__hash_table:
 
 jni/../../cocos2d/cocos/3d/../base/CCAutoreleasePool.h:
 
@@ -674,21 +674,21 @@ jni/../../cocos2d/cocos/3d/../platform/CCGL.h:
 
 jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCConfiguration.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCDirector.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stack:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/stack:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/deque:
 
 jni/../../cocos2d/cocos/3d/../2d/CCScene.h:
 
@@ -710,7 +710,7 @@ jni/../../cocos2d/cocos/3d/../base/CCEvent.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCEventKeyboard.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/list:
 
 jni/../../cocos2d/cocos/3d/../math/CCAffineTransform.h:
 
@@ -718,13 +718,13 @@ jni/../../cocos2d/cocos/3d/../platform/CCGLView.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCScheduler.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/set:
 
 jni/../../cocos2d/cocos/3d/../base/uthash.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include/inttypes.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/inttypes.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/inttypes.h:
 
 jni/../../cocos2d/cocos/3d/../base/base64.h:
 
@@ -734,9 +734,9 @@ jni/../../cocos2d/cocos/3d/../platform/android/CCFileUtils-android.h:
 
 jni/../../cocos2d/cocos/3d/../platform/CCFileUtils.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/jni.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/jni.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/asset_manager.h:
+/Users/sheffne/Documents/Android/android-ndk-r9d/platforms/android-17/arch-arm/usr/include/android/asset_manager.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCProfiling.h:
 
@@ -908,9 +908,9 @@ jni/../../cocos2d/cocos/3d/../renderer/ccShaders.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCTextureCache.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/condition_variable:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/condition_variable:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/queue:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/queue:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCVertexIndexBuffer.h:
 
@@ -1014,7 +1014,7 @@ jni/../../cocos2d/cocos/3d/../base/CCDataVisitor.h:
 
 jni/../../cocos2d/cocos/3d/../deprecated/CCString.h:
 
-/Users/seanrochlen/Desktop/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/sstream:
+/Users/sheffne/Documents/Android/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include/sstream:
 
 jni/../../cocos2d/cocos/3d/../deprecated/CCSet.h:
 
@@ -1030,38 +1030,38 @@ jni/../../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h:
 
 jni/../../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/../CCPurchasableVirtualItem.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/../CCPurchasableVirtualItem.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/CCVirtualItem.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/CCVirtualItem.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCDomain.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCDomain.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreConsts.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreConsts.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCCoreConsts.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCCoreConsts.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCSoomlaEntity.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/domain/CCSoomlaEntity.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCError.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCError.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/../PurchaseTypes/CCPurchaseType.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/../PurchaseTypes/CCPurchaseType.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/CCStoreInfo.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/CCStoreInfo.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreAssets.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/CCStoreAssets.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/virtualGoods/CCUpgradeVG.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/virtualGoods/CCUpgradeVG.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCVirtualGood.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCVirtualGood.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCLifetimeVG.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualGoods/CCLifetimeVG.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/CCVirtualCategory.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/../domain/CCVirtualCategory.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaUtils.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/soomla-cocos2dx-core/Soomla/CCSoomlaUtils.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrency.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/domain/virtualCurrencies/CCVirtualCurrency.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualCurrencyStorage.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualCurrencyStorage.h:
 
-/Users/seanrochlen/Desktop/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualItemStorage.h:
+/Users/sheffne/Desktop/cocosFiles/BirdClash/extensions/cocos2dx-store/Soomla/data/CCVirtualItemStorage.h:
