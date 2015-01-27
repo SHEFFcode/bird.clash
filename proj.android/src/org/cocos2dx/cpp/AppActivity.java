@@ -40,6 +40,7 @@ import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Display;
+import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
@@ -123,15 +124,20 @@ getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
 int width = getDisplaySize(getWindowManager().getDefaultDisplay()).x;
 
+adView = new AdView(this);
+adView.setAdSize(AdSize.SMART_BANNER);
+adView.setAdUnitId(AD_UNIT_ID);
 
+LinearLayout linearLayout = new LinearLayout( this );
 LinearLayout.LayoutParams adParams = new LinearLayout.LayoutParams(
 width,
 LinearLayout.LayoutParams.WRAP_CONTENT);
+adParams.gravity = Gravity.BOTTOM;
+linearLayout.addView( adView, adParams );
+mFrameLayout.addView( linearLayout );
 
 
-adView = new AdView(this);
-adView.setAdSize(AdSize.BANNER);
-adView.setAdUnitId(AD_UNIT_ID);
+
 
 
 AdRequest adRequest = new AdRequest.Builder()
@@ -140,11 +146,11 @@ AdRequest adRequest = new AdRequest.Builder()
 .build();
 
 adView.loadAd(adRequest);
-            adView.setBackgroundColor(Color.BLACK);
-            adView.setBackgroundColor(0);
-            addContentView(adView,adParams);
+adView.setBackgroundColor(Color.BLACK);
+adView.setBackgroundColor(0);
+//addContentView(adView,adParams);
 
-            _appActiviy = this;
+_appActiviy = this;
 
 }
 
