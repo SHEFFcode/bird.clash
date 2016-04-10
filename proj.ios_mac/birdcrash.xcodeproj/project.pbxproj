@@ -744,7 +744,7 @@
 				LastUpgradeCheck = 0610;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 3KDMTP3843;
+						DevelopmentTeam = T6E7R2ZW57;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 1;
@@ -1006,6 +1006,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/sheffne/Desktop/cocosFiles/BirdClash/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
@@ -1040,9 +1041,10 @@
 					copy/cocos2d/plugin/plugins/flurry/proj.ios,
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheffmachine.birdclash;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../cocos2d/plugin/protocols/include\" \"$(SRCROOT)/../cocos2d/plugin/plugins/admob/proj.ios/Admob\" \"$(SRCROOT)/../cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/A/Headers\" $(SRCROOT)/../cocos2d/extensions/soomla-cocos2dx-core/build/ios/headers/** $(SRCROOT)/../cocos2d/extensions/soomla-cocos2dx-core/Soomla/** $(SRCROOT)/../cocos2d/extensions/cocos2dx-store/Soomla/** $(SRCROOT)/../cocos2d/extensions/cocos2dx-store/build/ios/headers/** \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\"/** \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/Soomla\"/** \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/build/ios/headers/public\"/** \"$(SRCROOT)/../extensions/cocos2dx-store/build/ios/headers/public\"";
 			};
 			name = Debug;
@@ -1056,6 +1058,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/sheffne/Desktop/cocosFiles/BirdClash/cocos2d/plugin/plugins/facebook/proj.ios/sdk,
@@ -1088,9 +1091,10 @@
 					copy/cocos2d/plugin/plugins/flurry/proj.ios,
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sheffmachine.birdclash;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../cocos2d/plugin/protocols/include\" \"$(SRCROOT)/../cocos2d/plugin/plugins/admob/proj.ios/Admob\" \"$(SRCROOT)/../cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework/Versions/A/Headers\" $(SRCROOT)/../cocos2d/extensions/soomla-cocos2dx-core/build/ios/headers/** $(SRCROOT)/../cocos2d/extensions/soomla-cocos2dx-core/Soomla/** $(SRCROOT)/../cocos2d/extensions/cocos2dx-store/Soomla/** $(SRCROOT)/../cocos2d/extensions/cocos2dx-store/build/ios/headers/** \"$(SRCROOT)/../extensions/cocos2dx-store/Soomla\"/** \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/Soomla\"/** \"$(SRCROOT)/../extensions/soomla-cocos2dx-core/build/ios/headers/public\"/** \"$(SRCROOT)/../extensions/cocos2dx-store/build/ios/headers/public\"";
 			};
 			name = Release;

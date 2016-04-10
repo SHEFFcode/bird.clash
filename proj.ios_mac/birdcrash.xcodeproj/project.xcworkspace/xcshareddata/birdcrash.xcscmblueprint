@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BAD866C9FDD19D65B7E9CC9A77F606F8843B9079" : 0,
+    "5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C" : 0,
+    "7F41E3A86218147E742AB88280559E2C4A837E7E" : 0,
+    "E1C6A175F69FE775E12FC4745DF7A1DEA941144C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2F5534D4-3860-4B1A-8ADB-C0265467A513",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BAD866C9FDD19D65B7E9CC9A77F606F8843B9079" : "BirdClashextensions\/soomla-cocos2dx-core",
+    "5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C" : "BirdClash",
+    "7F41E3A86218147E742AB88280559E2C4A837E7E" : "BirdClashextensions\/cocos2dx-store",
+    "E1C6A175F69FE775E12FC4745DF7A1DEA941144C" : "BirdClashexternal\/jansson"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "birdcrash",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "proj.ios_mac\/birdcrash.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SHEFFcode\/BirdClash.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CE0A3648FC75FBF8B9DA859181D4BB7A38F0A8C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:soomla\/cocos2dx-store.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7F41E3A86218147E742AB88280559E2C4A837E7E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:soomla\/soomla-cocos2dx-core.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BAD866C9FDD19D65B7E9CC9A77F606F8843B9079"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:vedi\/jansson.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E1C6A175F69FE775E12FC4745DF7A1DEA941144C"
+    }
+  ]
+}

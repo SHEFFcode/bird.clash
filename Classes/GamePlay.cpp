@@ -134,7 +134,7 @@ bool GamePlay::init()
 #endif
     
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    iOSHelper::hideAdmobBanner();
+    iOSHelper::showAdmobBanner();
 #endif
     
 #if CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
